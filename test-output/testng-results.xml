@@ -11,10 +11,10 @@
       <![CDATA[<div "scenario">Scenario: Register with empty new user</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  I am on ZingPoll website &quot;chrome&quot; (passed : 12s)</div>]]>
+      <![CDATA[<div "result">Given  I am on ZingPoll website &quot;chrome&quot; (passed : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  I click the SignIn button (passed : 6s)</div>]]>
+      <![CDATA[<div "result">And  I click the SignIn button (passed : 5s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">Then  The SignIn form should be shown (undefined)</div>]]>
@@ -44,15 +44,15 @@
       <![CDATA[<div "result">And  I verify the failure message &quot;Please agree with the term!&quot; (undefined)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34887" started-at="2018-04-01T14:56:50Z" finished-at="2018-04-01T14:57:25Z">
+  <suite name="Default suite" duration-ms="21061" started-at="2018-04-01T16:18:03Z" finished-at="2018-04-01T16:18:24Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:runner.Runner@5442a311]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="34887" started-at="2018-04-01T14:56:50Z" finished-at="2018-04-01T14:57:25Z">
+    <test name="Default test" duration-ms="21061" started-at="2018-04-01T16:18:03Z" finished-at="2018-04-01T16:18:24Z">
       <class name="runner.Runner">
-        <test-method status="PASS" signature="run_cukes()[pri:0, instance:runner.Runner@5442a311]" name="run_cukes" duration-ms="34837" started-at="2018-04-01T21:56:50Z" description="Runs Cucumber Features" finished-at="2018-04-01T21:57:25Z">
+        <test-method status="PASS" signature="run_cukes()[pri:0, instance:runner.Runner@5442a311]" name="run_cukes" duration-ms="21037" started-at="2018-04-01T23:18:03Z" description="Runs Cucumber Features" finished-at="2018-04-01T23:18:24Z">
           <reporter-output>
             <line>
               <![CDATA[<div "featureFile">Feature File: RegisterToZingPoll.feature</div>]]>
@@ -64,10 +64,10 @@
               <![CDATA[<div "scenario">Scenario: Register with empty new user</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  I am on ZingPoll website &quot;chrome&quot; (passed : 12s)</div>]]>
+              <![CDATA[<div "result">Given  I am on ZingPoll website &quot;chrome&quot; (passed : 6s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  I click the SignIn button (passed : 6s)</div>]]>
+              <![CDATA[<div "result">And  I click the SignIn button (passed : 5s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">Then  The SignIn form should be shown (undefined)</div>]]>

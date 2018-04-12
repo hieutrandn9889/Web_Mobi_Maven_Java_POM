@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 01 15:55:24 ICT 2018</td>
+<td>Started on:</td><td>Sun Apr 01 23:05:54 ICT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44339 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13286 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,26 +80,43 @@ function toggleAllBoxes() {
 
 <a href="#Output-1961002599" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1961002599">
-<div "featureFile">Feature File: calculatorScenario.feature</div><br/>
-<div "feature">Feature: Calculator</div><br/>
-<div "scenario">Scenario: Calculator</div><br/>
-<div "result">Given  I open the Calculator application (passed : 1s)</div><br/>
-<div "result">When  I click number seven (failed : 0s)</div><br/>
-<div "result">Then  I click plus (skipped)</div><br/>
-<div "result">Then  I click number two (skipped)</div><br/>
-<div "result">Then  I click equal (skipped)</div><br/>
-<div "result">Then  I validate value (skipped)</div><br/>
+<div "featureFile">Feature File: RegisterToZingPoll.feature</div><br/>
+<div "feature">Feature: Register to ZingPoll</div><br/>
+<div "scenario">Scenario: Register with empty new user</div><br/>
+<div "result">Given  I am on ZingPoll website &quot;chrome&quot; (failed : 0s)</div><br/>
+<div "result">And  I click the SignIn button (skipped)</div><br/>
+<div "result">Then  The SignIn form should be shown (undefined)</div><br/>
+<div "result">And  Choose task new user radio button (undefined)</div><br/>
+<div "result">Then  The SignUp form should be shown (undefined)</div><br/>
+<div "result">When  I click Register button (undefined)</div><br/>
+<div "result">Then  I verify the failure message &quot;Please enter your name.&quot; (undefined)</div><br/>
+<div "result">And  I verify the failure message &quot;Please enter your email.&quot; (undefined)</div><br/>
+<div "result">And  I verify the failure message &quot;Please enter your password.&quot; (undefined)</div><br/>
+<div "result">And  I verify the failure message &quot;The re-type password is required and cannot be empty&quot; (undefined)</div><br/>
+<div "result">And  I verify the failure message &quot;Please agree with the term!&quot; (undefined)</div><br/>
 </div>
 </td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+<td><div><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;stepdefinations.RegisterPageSteps.i_am_on_ZingPoll_website() in file:/C:/Workspace/Web_Mobi_Maven_Java_POM/target/test-classes/&apos; with pattern [^I am on ZingPoll website &quot;(.*?)&quot;$] is declared with 0 parameters. However, the gherkin step has 1 arguments [chrome]. 
+Step: Given I am on ZingPoll website &quot;chrome&quot;
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
-Caused by: java.lang.NullPointerException
-	at stepdefinations.calculatorScenario.i_click_number_seven(calculatorScenario.java:28)
-	at ?.When I click number seven(calculatorScenario.feature:6)
+Caused by: cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;stepdefinations.RegisterPageSteps.i_am_on_ZingPoll_website() in file:/C:/Workspace/Web_Mobi_Maven_Java_POM/target/test-classes/&apos; with pattern [^I am on ZingPoll website &quot;(.*?)&quot;$] is declared with 0 parameters. However, the gherkin step has 1 arguments [chrome]. 
+Step: Given I am on ZingPoll website &quot;chrome&quot;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:100)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
+	at cucumber.runtime.Runtime.run(Runtime.java:120)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:43)
+	... 32 more
 ... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1961002599'><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
+<div class='stack-trace' id='stack-trace1961002599'><pre>cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;stepdefinations.RegisterPageSteps.i_am_on_ZingPoll_website() in file:/C:/Workspace/Web_Mobi_Maven_Java_POM/target/test-classes/&apos; with pattern [^I am on ZingPoll website &quot;(.*?)&quot;$] is declared with 0 parameters. However, the gherkin step has 1 arguments [chrome]. 
+Step: Given I am on ZingPoll website &quot;chrome&quot;
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -133,11 +150,21 @@ Caused by: java.lang.NullPointerException
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at stepdefinations.calculatorScenario.i_click_number_seven(calculatorScenario.java:28)
-	at ?.When I click number seven(calculatorScenario.feature:6)
+Caused by: cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;stepdefinations.RegisterPageSteps.i_am_on_ZingPoll_website() in file:/C:/Workspace/Web_Mobi_Maven_Java_POM/target/test-classes/&apos; with pattern [^I am on ZingPoll website &quot;(.*?)&quot;$] is declared with 0 parameters. However, the gherkin step has 1 arguments [chrome]. 
+Step: Given I am on ZingPoll website &quot;chrome&quot;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:100)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)
+	at cucumber.runtime.Runtime.run(Runtime.java:120)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:43)
+	... 32 more
 </pre></div></td>
-<td>44</td>
+<td>13</td>
 <td>runner.Runner@5442a311</td></tr>
 </table><p>
 </body>

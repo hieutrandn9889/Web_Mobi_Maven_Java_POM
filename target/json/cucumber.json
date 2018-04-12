@@ -6,22 +6,22 @@
         "before": [
           {
             "result": {
-              "duration": 13250614692,
+              "duration": 6976939415,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.setUpChrome()"
+              "location": "Hook.setUpFirefox()"
             }
           }
         ],
-        "line": 4,
+        "line": 5,
         "name": "Register with empty new user",
         "description": "",
         "id": "register-to-zingpoll;register-with-empty-new-user",
         "after": [
           {
             "result": {
-              "duration": 1412696294,
+              "duration": 1716394944,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 12892501294,
+              "duration": 6009628138,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I am on ZingPoll website \"chrome\"",
             "match": {
               "arguments": [
@@ -52,10 +52,10 @@
           },
           {
             "result": {
-              "duration": 6628013190,
+              "duration": 5599717989,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I click the SignIn button",
             "match": {
               "location": "RegisterPageSteps.i_click_the_SignIn_button()"
@@ -66,7 +66,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 7,
+            "line": 8,
             "name": "The SignIn form should be shown",
             "match": {},
             "keyword": "Then "
@@ -75,7 +75,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 8,
+            "line": 9,
             "name": "Choose task new user radio button",
             "match": {},
             "keyword": "And "
@@ -84,7 +84,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 9,
+            "line": 10,
             "name": "The SignUp form should be shown",
             "match": {},
             "keyword": "Then "
@@ -93,7 +93,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 10,
+            "line": 11,
             "name": "I click Register button",
             "match": {},
             "keyword": "When "
@@ -102,7 +102,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 11,
+            "line": 12,
             "name": "I verify the failure message \"Please enter your name.\"",
             "match": {},
             "keyword": "Then "
@@ -111,7 +111,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 12,
+            "line": 13,
             "name": "I verify the failure message \"Please enter your email.\"",
             "match": {},
             "keyword": "And "
@@ -120,7 +120,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 13,
+            "line": 14,
             "name": "I verify the failure message \"Please enter your password.\"",
             "match": {},
             "keyword": "And "
@@ -129,7 +129,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 14,
+            "line": 15,
             "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
             "match": {},
             "keyword": "And "
@@ -138,7 +138,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 15,
+            "line": 16,
             "name": "I verify the failure message \"Please agree with the term!\"",
             "match": {},
             "keyword": "And "
@@ -146,8 +146,8 @@
         ],
         "tags": [
           {
-            "line": 3,
-            "name": "@Chrome"
+            "line": 4,
+            "name": "@Firefox"
           }
         ]
       }

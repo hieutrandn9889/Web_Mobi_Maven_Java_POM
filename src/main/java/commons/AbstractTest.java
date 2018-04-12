@@ -5,8 +5,8 @@ import java.util.Random;
 import org.openqa.selenium.WebDriver;
 
 public class AbstractTest {
-	protected WebDriver driver;
-	
+	WebDriver driver;
+
 	// lấy số random
 	public String randomString() {
 		Random rand = new Random();
@@ -14,7 +14,7 @@ public class AbstractTest {
 		String numberString = Integer.toString(number);
 		return numberString;
 	}
-	
+
 	// random 4 numbers
 	public String randomFourNumbers() {
 		Random rand = new Random();
@@ -25,4 +25,5 @@ public class AbstractTest {
 		String numberString = Integer.toString(number);
 		return numberString;
 	}
+
 }

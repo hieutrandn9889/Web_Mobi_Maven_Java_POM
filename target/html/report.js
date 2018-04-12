@@ -7,11 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 13250614692,
+  "duration": 6976939415,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 4,
+  "line": 5,
   "name": "Register with empty new user",
   "description": "",
   "id": "register-to-zingpoll;register-with-empty-new-user",
@@ -19,63 +19,63 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 3,
-      "name": "@Chrome"
+      "line": 4,
+      "name": "@Firefox"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "I am on ZingPoll website \"chrome\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I click the SignIn button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "The SignIn form should be shown",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "Choose task new user radio button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "The SignUp form should be shown",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "I click Register button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "I verify the failure message \"Please enter your name.\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "I verify the failure message \"Please enter your email.\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "I verify the failure message \"Please enter your password.\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "I verify the failure message \"Please agree with the term!\"",
   "keyword": "And "
 });
@@ -89,14 +89,14 @@ formatter.match({
   "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
 });
 formatter.result({
-  "duration": 12892501294,
+  "duration": 6009628138,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.i_click_the_SignIn_button()"
 });
 formatter.result({
-  "duration": 6628013190,
+  "duration": 5599717989,
   "status": "passed"
 });
 formatter.match({});
@@ -136,7 +136,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 1412696294,
+  "duration": 1716394944,
   "status": "passed"
 });
 });

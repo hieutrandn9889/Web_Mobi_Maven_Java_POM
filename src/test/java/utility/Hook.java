@@ -17,38 +17,38 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import io.appium.java_client.ios.IOSDriver;
 
 public class Hook {
 	private static WebDriver driver;
 	private static AppiumDriver driverAppium;
 
-	@Before(value = "@Firefox")
-	public void setUpFirefox() {
-		System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH);
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		System.out.println("-----------------Firefox Hook------------------");
-	}
-
-	@Before(value = "@Chrome")
-	public void setUpChrome() {
-		System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH);
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		System.out.println("-----------------Chrome Hook------------------");
-	}
-
-	@Before(value = "@IE")
-	public void setUpIE() {
-		System.setProperty("webdriver.ie.driver", Constants.IE_PATH);
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		System.out.println("-----------------IE Hook------------------");
-	}
+	 @Before(value = "@Firefox")
+	 public void setUpFirefox() {
+	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH);
+	 driver = new FirefoxDriver();
+	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 driver.manage().window().maximize();
+	 System.out.println("-----------------Firefox Hook------------------");
+	 }
+	
+	 @Before(value = "@Chrome")
+	 public void setUpChrome() {
+	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH);
+	 driver = new ChromeDriver();
+	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 driver.manage().window().maximize();
+	 System.out.println("-----------------Chrome Hook------------------");
+	 }
+	
+	 @Before(value = "@IE")
+	 public void setUpIE() {
+	 System.setProperty("webdriver.ie.driver", Constants.IE_PATH);
+	 driver = new ChromeDriver();
+	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 driver.manage().window().maximize();
+	 System.out.println("-----------------IE Hook------------------");
+	 }
+	
 
 	@Before(value = "@AndroidSwipe")
 	public void setUpAppium() throws MalformedURLException {
@@ -73,21 +73,6 @@ public class Hook {
 		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
 		try {
 			driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
-	
-	@Before(value = "@IOS")
-	public void setUpIOS() throws Exception {
-		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("deviceName", "iPhone 5");
-		cap.setCapability("platformVersion", "10.3");
-		cap.setCapability("platformName", "iOS");
-		cap.setCapability("bundleId", "com.smartdev.SQEDit");
-		try {
-			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
