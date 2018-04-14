@@ -55,7 +55,7 @@ public class Hook {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 4");
-		cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "//App//ApiDemos.apk");
+		cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "//app//ApiDemos.apk");
 		try {
 			driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 		} catch (Exception e) {
@@ -71,6 +71,21 @@ public class Hook {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 4");
 		cap.setCapability("appPackage", "com.android.calculator2");
 		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
+		try {
+			driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	@Before(value = "@AndroidSMS")
+	public void setUpAppiumSMS() throws MalformedURLException {
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 4");
+		cap.setCapability("appPackage", "com.android.mms");
+		cap.setCapability("appActivity", "com.android.mms.ui.ConversationList");
 		try {
 			driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 		} catch (Exception e) {

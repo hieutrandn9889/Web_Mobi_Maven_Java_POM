@@ -3,8 +3,6 @@ package stepdefinations;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 import cucumber.api.java.en.And;
@@ -15,16 +13,16 @@ import interfaces.apiAppDemoUI;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PressesKeyCode;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
-import io.appium.java_client.remote.MobileCapabilityType;
 import pages.AbstractMobile;
 import utility.Hook;
 
 public class AppiumScenario extends AbstractMobile {
 
 	private AppiumDriver<MobileElement> driverAppium;
-
+	private AndroidDriver<MobileElement> driverAndroid;
 	public AppiumScenario() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
@@ -180,8 +178,8 @@ public class AppiumScenario extends AbstractMobile {
 	}
 
 	public String getOTP() {
-		// driverAppium.startActivity("com.android.messaging",
-		// "com.android.messaging.ui.conversationlist.ConversationListActivity");
+		// startActivity phải dùng driverAndroid
+		driverAndroid.startActivity(new Activity("com.android.mms", "com.android.mms.ui.ConversationList"));
 		// Detail sms: 004655 : split(":")[1].trim() sẽ lấy phần tử 2 và cắt từ
 		// Detail sms: chỉ lấy thằng 004655
 		String getOTPValue = driverAppium.findElement(By.id(apiAppDemoUI.CONTENT_SMS)).getText().split(":")[1].trim();
