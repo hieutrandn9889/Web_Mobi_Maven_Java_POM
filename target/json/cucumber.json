@@ -3,159 +3,103 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 6976939415,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpFirefox()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Register with empty new user",
+        "line": 46,
+        "name": "Test input msg then auto chosing dropdown",
         "description": "",
-        "id": "register-to-zingpoll;register-with-empty-new-user",
-        "after": [
-          {
-            "result": {
-              "duration": 1716394944,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriver()"
-            }
-          }
-        ],
+        "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6009628138,
-              "status": "passed"
+              "duration": 140658245,
+              "error_message": "java.lang.NullPointerException\n\tat stepdefinations.AppiumScenario.i_open_the_application(AppiumScenario.java:34)\n\tat ✽.Given I open the application(AppiumScenario.feature:37)\n",
+              "status": "failed"
             },
-            "line": 6,
-            "name": "I am on ZingPoll website \"chrome\"",
+            "line": 37,
+            "name": "I open the application",
             "match": {
-              "arguments": [
-                {
-                  "val": "chrome",
-                  "offset": 26
-                }
-              ],
-              "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
+              "location": "AppiumScenario.i_open_the_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5599717989,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "I click the SignIn button",
+            "line": 38,
+            "name": "I click view buton",
             "match": {
-              "location": "RegisterPageSteps.i_click_the_SignIn_button()"
+              "location": "AppiumScenario.i_click_view_button()"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "The SignIn form should be shown",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "Choose task new user radio button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "The SignUp form should be shown",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "I click Register button",
-            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 12,
-            "name": "I verify the failure message \"Please enter your name.\"",
-            "match": {},
+            "line": 39,
+            "name": "I click Auto complete button",
+            "match": {
+              "location": "AppiumScenario.i_click_Auto_complete_button()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "I verify the failure message \"Please enter your email.\"",
-            "match": {},
+            "line": 40,
+            "name": "I click screen top",
+            "match": {
+              "location": "AppiumScenario.i_click_screen_top()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 14,
-            "name": "I verify the failure message \"Please enter your password.\"",
-            "match": {},
-            "keyword": "And "
+            "line": 41,
+            "name": "I input content \"india\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "india",
+                  "offset": 17
+                }
+              ],
+              "location": "AppiumScenario.i_input_content(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 15,
-            "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 42,
+            "name": "I choose india dropdown",
+            "match": {
+              "location": "AppiumScenario.i_choose_india_drop_down()"
             },
-            "line": 16,
-            "name": "I verify the failure message \"Please agree with the term!\"",
-            "match": {},
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@Firefox"
+            "line": 35,
+            "name": "@AndroidDropdown"
           }
         ]
       }
     ],
-    "name": "Register to ZingPoll",
-    "description": "I want to registered successfull",
-    "id": "register-to-zingpoll",
+    "name": "Validate Different Options",
+    "description": "",
+    "id": "validate-different-options",
     "keyword": "Feature",
-    "uri": "RegisterToZingPoll.feature"
+    "uri": "AppiumScenario.feature"
   }
 ]

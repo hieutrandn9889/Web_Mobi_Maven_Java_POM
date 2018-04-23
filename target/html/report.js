@@ -1,142 +1,167 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RegisterToZingPoll.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("AppiumScenario.feature");
 formatter.feature({
   "line": 1,
-  "name": "Register to ZingPoll",
-  "description": "I want to registered successfull",
-  "id": "register-to-zingpoll",
+  "name": "Validate Different Options",
+  "description": "",
+  "id": "validate-different-options",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 6976939415,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "Register with empty new user",
+formatter.scenarioOutline({
+  "line": 36,
+  "name": "Test input msg then auto chosing dropdown",
   "description": "",
-  "id": "register-to-zingpoll;register-with-empty-new-user",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
-      "name": "@Firefox"
+      "line": 35,
+      "name": "@AndroidDropdown"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "I am on ZingPoll website \"chrome\"",
+  "line": 37,
+  "name": "I open the application",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "I click the SignIn button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "The SignIn form should be shown",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "Choose task new user radio button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "The SignUp form should be shown",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click Register button",
+  "line": 38,
+  "name": "I click view buton",
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
-  "name": "I verify the failure message \"Please enter your name.\"",
+  "line": 39,
+  "name": "I click Auto complete button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "I verify the failure message \"Please enter your email.\"",
+  "line": 40,
+  "name": "I click screen top",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
-  "name": "I verify the failure message \"Please enter your password.\"",
+  "line": 41,
+  "name": "I input content \"\u003ccontent_dropdown\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 42,
+  "name": "I choose india dropdown",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 44,
+  "name": "",
+  "description": "",
+  "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown;",
+  "rows": [
+    {
+      "cells": [
+        "content_dropdown"
+      ],
+      "line": 45,
+      "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown;;1"
+    },
+    {
+      "cells": [
+        "india"
+      ],
+      "line": 46,
+      "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 46,
+  "name": "Test input msg then auto chosing dropdown",
+  "description": "",
+  "id": "validate-different-options;test-input-msg-then-auto-chosing-dropdown;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 35,
+      "name": "@AndroidDropdown"
+    }
+  ]
+});
+formatter.step({
+  "line": 37,
+  "name": "I open the application",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 38,
+  "name": "I click view buton",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 39,
+  "name": "I click Auto complete button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "I click screen top",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
-  "keyword": "And "
+  "line": 41,
+  "name": "I input content \"india\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
-  "name": "I verify the failure message \"Please agree with the term!\"",
-  "keyword": "And "
+  "line": 42,
+  "name": "I choose india dropdown",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AppiumScenario.i_open_the_application()"
+});
+formatter.result({
+  "duration": 140658245,
+  "error_message": "java.lang.NullPointerException\n\tat stepdefinations.AppiumScenario.i_open_the_application(AppiumScenario.java:34)\n\tat ✽.Given I open the application(AppiumScenario.feature:37)\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "AppiumScenario.i_click_view_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "AppiumScenario.i_click_Auto_complete_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "AppiumScenario.i_click_screen_top()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "chrome",
-      "offset": 26
+      "val": "india",
+      "offset": 17
     }
   ],
-  "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
+  "location": "AppiumScenario.i_input_content(String)"
 });
 formatter.result({
-  "duration": 6009628138,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "RegisterPageSteps.i_click_the_SignIn_button()"
+  "location": "AppiumScenario.i_choose_india_drop_down()"
 });
 formatter.result({
-  "duration": 5599717989,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 1716394944,
-  "status": "passed"
+  "status": "skipped"
 });
 });
