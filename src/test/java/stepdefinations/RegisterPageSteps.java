@@ -5,19 +5,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import ZingPoll_pages.ZingPoll_HomePage;
+import ZingPoll_pages.ZingPoll_PageFactory;
 import commons.AbstractTest;
 import commons.Constants;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.HomePage;
-import pages.PageFactory;
 import utility.Hook;
 
 public class RegisterPageSteps extends AbstractTest {
 	private WebDriver driver;
-	private HomePage homePage;
+	private ZingPoll_HomePage homePage;
 	LogEvent LOG;
 	
 	
@@ -33,7 +33,7 @@ public class RegisterPageSteps extends AbstractTest {
 		LOG = new LogEvent();
 		LOG.info("ACTIVITY SCREEN: " + showActivityScreen());
 		
-		homePage = PageFactory.getHomePage(driver);
+		homePage = ZingPoll_PageFactory.getHomePage(driver);
 		LOG.info("Open the Home page");
 	}
 

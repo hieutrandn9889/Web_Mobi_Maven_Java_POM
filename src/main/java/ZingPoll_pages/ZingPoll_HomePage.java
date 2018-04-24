@@ -1,4 +1,4 @@
-package pages;
+package ZingPoll_pages;
 
 import org.openqa.selenium.WebDriver;
 
@@ -6,8 +6,8 @@ import commons.AbstractPage;
 import commons.Constants;
 import interfaces.zingPollPageUI;
 
-public class HomePage extends AbstractPage {
-	public HomePage(WebDriver driver) {
+public class ZingPoll_HomePage extends AbstractPage {
+	public ZingPoll_HomePage(WebDriver driver) {
 		this.driver = driver;
 	}
 
