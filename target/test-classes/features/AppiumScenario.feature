@@ -19,7 +19,7 @@ Feature: Validate Different Options
     When I input text to searching
     Then I click search button
 
-  @AndroidSMS1
+  @Android_API_SMS
   Scenario Outline: Test send SMS and get SMS
     Given I open the application
     When I click OS and click SMS Messaging

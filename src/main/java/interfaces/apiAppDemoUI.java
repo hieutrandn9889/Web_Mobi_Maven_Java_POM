@@ -17,9 +17,9 @@ public class apiAppDemoUI {
 	public static String SMS_MESSAGING_BUTTON = "//*[@text='SMS Messaging']";
 	public static String INPUT_TEXT_BOX_SMS = "io.appium.android.apis:id/sms_recipient";
 	public static String INPUT_CONTENT_SMS = "io.appium.android.apis:id/sms_content";
-	public static String SEND_BUTTON = "//*[@text='Send']";
+	public static String SEND_BUTTON = "//*[@text='SEND']";
 	public static String MSG_SENT = "//*[@text='Message sent!']";
-	public static String CONTENT_SMS = "com.android.mms:id/subject";
+	public static String CONTENT_SMS = "com.android.messaging:id/subject";
 
 	// sms
 	public static String AUTO_COMPLETE_BUTTON = "//*[@text='Auto Complete']";
@@ -29,7 +29,7 @@ public class apiAppDemoUI {
 	
 	
 	
-
+	// other
 	public static String PASSWORD_INCORECT_ERROR_MESSAGE = "//*[@id='loginMessageFail' and contains(text(),'%s')]";
 	public static String NAME_INCORECT_ERROR_MESSAGE = "//*[contains(text(),'%s')]";
 	public static String RE_PASSWORD_INCORECT_ERROR_MESSAGE = "//*[contains(text(),'%s')]";

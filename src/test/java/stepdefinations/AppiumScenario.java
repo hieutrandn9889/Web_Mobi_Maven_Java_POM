@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
+import commons.AbstractMobile;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,15 +15,13 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PressesKeyCode;
 import io.appium.java_client.android.Activity;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
-import pages.AbstractMobile;
+import io.appium.java_client.android.StartsActivity;
 import utility.Hook;
 
 public class AppiumScenario extends AbstractMobile {
 
 	private AppiumDriver<MobileElement> driverAppium;
-	private AndroidDriver<MobileElement> driverAndroid;
 	public AppiumScenario() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
@@ -166,11 +165,11 @@ public class AppiumScenario extends AbstractMobile {
 		}
 	}
 
-	@Then("^I verify message sent1$")
+	@Then("^I verify message sent$")
 	public void i_verify_message_sent() {
 		try {
 			String otpValue = getOTP();
-			System.out.println("OTP VALUE : " + otpValue);
+			System.out.println("OTP VALUE : "+otpValue);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -179,7 +178,7 @@ public class AppiumScenario extends AbstractMobile {
 
 	public String getOTP() {
 		// startActivity phải dùng driverAndroid
-		driverAndroid.startActivity(new Activity("com.android.mms", "com.android.mms.ui.ConversationList"));
+		((StartsActivity) driverAppium).startActivity(new Activity("com.android.messaging", "com.android.messaging.ui.conversationlist.ConversationListActivity"));
 		// Detail sms: 004655 : split(":")[1].trim() sẽ lấy phần tử 2 và cắt từ
 		// Detail sms: chỉ lấy thằng 004655
 		String getOTPValue = driverAppium.findElement(By.id(apiAppDemoUI.CONTENT_SMS)).getText().split(":")[1].trim();
@@ -224,14 +223,12 @@ public class AppiumScenario extends AbstractMobile {
 			((PressesKeyCode) driverAppium).pressKeyCode(AndroidKeyCode.ENTER);
 			Thread.sleep(2000);
 			String text = driverAppium.findElement(By.id(apiAppDemoUI.TEXT_BOX_CONTENT)).getText();
-			System.out.println("Text Found : "+text);
-			if(text.equals("India"))
-			{
+			System.out.println("Text Found : " + text);
+			if (text.equals("India")) {
 				System.out.println("Passed");
-			}else
-			{
+			} else {
 				System.out.println("Failed");
-	}
+			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -242,7 +239,7 @@ public class AppiumScenario extends AbstractMobile {
 	public void i_open_the_application_sms() {
 		System.out.println("Open application API demos");
 	}
-	
+
 	protected apiAppDemoUI apiUI = new apiAppDemoUI();
 
 }

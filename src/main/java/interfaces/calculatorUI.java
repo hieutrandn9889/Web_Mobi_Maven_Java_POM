@@ -5,7 +5,7 @@ public class calculatorUI {
 	public static String SYMBOL_PlUS = "com.android.calculator2:id/op_add";
 	public static String NUMER_TWO = "com.android.calculator2:id/digit_2";
 	public static String SYMBOL_EQUAL = "com.android.calculator2:id/eq";
-	public static String RESULT = "com.android.calculator2:id/formula";
+	public static String RESULT = "com.android.calculator2:id/result";
 
 	
 	

@@ -21,27 +21,27 @@ import io.appium.java_client.remote.MobileCapabilityType;
  */
 public class chonNhieuHanhDong {
 
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver<MobileElement> driverAppium;
 
 	public void setUp() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("deviceName", "Nexus 9");
 		cap.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "//app//ApiDemos.apk");
-		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+		driverAppium.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	public void tapAction()
 	{
 		// tap method using Appium driver
-		MobileElement view = driver.findElement(By.xpath(apiAppDemoUI.VIEW_BUTTON));
+		MobileElement view = driverAppium.findElement(By.xpath(apiAppDemoUI.VIEW_BUTTON));
 		view.click();
 //		driver.tap(1, view, 500);
 		// tap method using Touch Action Class
-		MobileElement autoComplete = driver.findElementByAccessibilityId("Auto Complete");
-		new TouchAction(driver).tap(autoComplete).perform().release();
-		boolean flag = driver.findElementByAccessibilityId("1. Screen Top").isDisplayed();
+		MobileElement autoComplete = driverAppium.findElementByAccessibilityId("Auto Complete");
+		new TouchAction(driverAppium).tap(autoComplete).perform().release();
+		boolean flag = driverAppium.findElementByAccessibilityId("1. Screen Top").isDisplayed();
 		if(flag)
 		{
 			System.out.println("Passed");
@@ -52,7 +52,7 @@ public class chonNhieuHanhDong {
 	}
 
 	public void tearDown() {
-		driver.quit();
+		driverAppium.quit();
 	}
 
 	/**

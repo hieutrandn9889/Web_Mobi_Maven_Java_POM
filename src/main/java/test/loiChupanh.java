@@ -23,7 +23,7 @@ import io.appium.java_client.android.AndroidDriver;
  */
 public class loiChupanh {
 
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver<MobileElement> driverAppium;
 	
 	public void setUp() throws MalformedURLException
 	{
@@ -32,28 +32,28 @@ public class loiChupanh {
 		cap.setCapability("deviceName", "Nexus 9");
 		cap.setCapability("appPackage", "com.android.mms");
 		cap.setCapability("appActivity", "com.android.mms.ui.ConversationList");
-		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+		driverAppium.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	public void testAddContact() throws InterruptedException, IOException
 	{
 		try {
-			TouchAction ac = new TouchAction(driver);
-			MobileElement ele = driver.findElementById("com.android.mms:id/subject");
+			TouchAction ac = new TouchAction(driverAppium);
+			MobileElement ele = driverAppium.findElementById("com.android.mms:id/subject");
 			ac.longPress(ele).perform().release();
 			Thread.sleep(2000);
-			boolean flag = driver.findElementById("com.android.mms:id/title1").isDisplayed();
+			boolean flag = driverAppium.findElementById("com.android.mms:id/title1").isDisplayed();
 			if(flag)
 			{
 				System.out.println("Passed");
 			}else
 			{
 				System.out.println("Failed");
-				getscreenshot(driver);
+				getscreenshot(driverAppium);
 			}
 		} catch (Exception e) {
-			getscreenshot(driver);
+			getscreenshot(driverAppium);
 		}
 		
 	}
@@ -70,7 +70,7 @@ public class loiChupanh {
 	
 	public void tearDown()
 	{
-		driver.quit();
+		driverAppium.quit();
 	}
 	/**
 	 * @param args

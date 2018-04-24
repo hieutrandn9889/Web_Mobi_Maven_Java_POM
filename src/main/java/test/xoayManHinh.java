@@ -17,7 +17,7 @@ import io.appium.java_client.android.AndroidDriver;
  */
 public class xoayManHinh {
 
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver<MobileElement> driverAppium;
 
 	public void setUp() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -25,13 +25,13 @@ public class xoayManHinh {
 		cap.setCapability("deviceName", "Nexus 9");
 		cap.setCapability("appPackage", "com.android.mms");
 		cap.setCapability("appActivity", "com.android.mms.ui.ConversationList");
-		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+		driverAppium.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 	public void testRotate()
 	{
-		if(driver.getOrientation().equals("LANDSCAPE"))
+		if(driverAppium.getOrientation().equals("LANDSCAPE"))
 		{
 			switchtomode("PORTRAIT");
 		}else
@@ -43,13 +43,13 @@ public class xoayManHinh {
 	
 	public void switchtomode(String modeType)
 	{
-		ScreenOrientation currentOrientation = driver.getOrientation();
+		ScreenOrientation currentOrientation = driverAppium.getOrientation();
 		System.out.println("CurrentOrientation : "+currentOrientation);
 		if(modeType.equalsIgnoreCase("LANDSCAPE"))
-		driver.rotate(ScreenOrientation.LANDSCAPE);
+			driverAppium.rotate(ScreenOrientation.LANDSCAPE);
 		else if(modeType.equalsIgnoreCase("PORTRAIT"))
 		{
-			driver.rotate(ScreenOrientation.PORTRAIT);
+			driverAppium.rotate(ScreenOrientation.PORTRAIT);
 		}
 		try {
 			Thread.sleep(5000);
@@ -57,12 +57,12 @@ public class xoayManHinh {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-		currentOrientation = driver.getOrientation();
+		currentOrientation = driverAppium.getOrientation();
 		System.out.println("AfterRotate : "+currentOrientation);
 	}
 
 	public void tearDown() {
-		driver.quit();
+		driverAppium.quit();
 	}
 
 	/**
