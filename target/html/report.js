@@ -1,142 +1,74 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RegisterToZingPoll.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("scScenario.feature");
 formatter.feature({
   "line": 1,
-  "name": "Register to ZingPoll",
-  "description": "I want to registered successfull",
-  "id": "register-to-zingpoll",
+  "name": "Verify login in SC",
+  "description": "",
+  "id": "verify-login-in-sc",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 2351300630,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "Register with empty new user",
+formatter.scenarioOutline({
+  "line": 3,
+  "name": "Test input username and password",
   "description": "",
-  "id": "register-to-zingpoll;register-with-empty-new-user",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "verify-login-in-sc;test-input-username-and-password",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
-      "name": "@Chrome"
+      "line": 2,
+      "name": "@AndroidSC"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "I am on ZingPoll website \"chrome\"",
+  "line": 4,
+  "name": "I open the app",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "I click the SignIn button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "The SignIn form should be shown",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "Choose task new user radio button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "The SignUp form should be shown",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click Register button",
+  "line": 5,
+  "name": "I click login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
-  "name": "I verify the failure message \"Please enter your name.\"",
+  "line": 6,
+  "name": "I input username \"\u003cusername\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "I verify the failure message \"Please enter your email.\"",
-  "keyword": "And "
+  "line": 7,
+  "name": "I input password \"\u003cpassword\u003e\"",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
-  "name": "I verify the failure message \"Please enter your password.\"",
-  "keyword": "And "
+  "line": 8,
+  "name": "I click submit button",
+  "keyword": "Then "
 });
-formatter.step({
-  "line": 15,
-  "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I verify the failure message \"Please agree with the term!\"",
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
+formatter.examples({
+  "line": 9,
+  "name": "",
+  "description": "",
+  "id": "verify-login-in-sc;test-input-username-and-password;",
+  "rows": [
     {
-      "val": "chrome",
-      "offset": 26
+      "cells": [
+        "username",
+        "",
+        "password"
+      ],
+      "line": 10,
+      "id": "verify-login-in-sc;test-input-username-and-password;;1"
+    },
+    {
+      "cells": [
+        "india",
+        "",
+        "india"
+      ],
+      "line": 11,
+      "id": "verify-login-in-sc;test-input-username-and-password;;2"
     }
   ],
-  "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
-});
-formatter.result({
-  "duration": 4220255970,
-  "status": "passed"
-});
-formatter.match({
-  "location": "RegisterPageSteps.i_click_the_SignIn_button()"
-});
-formatter.result({
-  "duration": 5162570381,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 140400373,
-  "status": "passed"
-});
+  "keyword": "Examples"
 });

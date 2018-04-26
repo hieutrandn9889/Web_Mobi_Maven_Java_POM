@@ -1,18 +1,13 @@
 package stepdefinations;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-
 import ZingPoll_pages.ZingPoll_HomePage;
 import ZingPoll_pages.ZingPoll_PageFactory;
 import commons.AbstractTest;
 import commons.Constants;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import utility.Hook;
 
 public class RegisterPageSteps extends AbstractTest {

@@ -29,7 +29,8 @@ public class AbstractMobile {
 	private AppiumDriver<MobileElement> driver;
 	LogEvent LOG = new LogEvent();
 	WebElement element;
-	int timeout = 30;
+	int timeout = 50;
+
 	// trượt dọc
 	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driver, double startPercentage,
 			double finalPercentage, double anchorPercentage, int duration) throws Exception {
@@ -99,177 +100,155 @@ public class AbstractMobile {
 		FileUtils.copyFile(des, new File(System.getProperty("user.dir") + "//Screenshot//" + fileName + ".png"));
 		System.out.println("Screenshot is captured");
 	}
-	// public void testAddContact() throws InterruptedException, IOException
-	// {
-	// try {
-	// TouchAction ac = new TouchAction(driver);
-	// MobileElement ele =
-	// driver.findElementById("com.android.messaging:id/conversation_snippet");
-	// ac.longPress(ele).perform().release();
-	// Thread.sleep(2000);
-	// boolean flag =
-	// driver.findElementById("com.android.messaging:id/action_add_contact12").isDisplayed();
-	// if(flag)
-	// {
-	// System.out.println("Passed");
-	// }else
-	// {
-	// System.out.println("Failed");
-	// getscreenshot(driver);
-	// }
-	// } catch (Exception e) {
-	// getscreenshot(driver);
-	// }
-	//
-	// }
-	
 
 	// common functions
-		public void typeToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
-			element = driverAppium.findElement(By.id(controlName));
-			element.clear();
-			element.sendKeys(value);
-		}
-		public void typeToElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
-			element = driverAppium.findElement(By.xpath(controlName));
-			element.clear();
-			element.sendKeys(value);
-		}
+	public void typeToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
+		element = driverAppium.findElement(By.id(controlName));
+		element.clear();
+		element.sendKeys(value);
+	}
 
-		public void typeToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String locator, String value) {
-			String newLocator = String.format(controlName, locator);
-			waitForControlVisible(driverAppium, newLocator, timeout);
-			element = driverAppium.findElement(By.id(newLocator));
-			element.clear();
-			element.sendKeys(value);
-		}
+	public void typeToElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		element.clear();
+		element.sendKeys(value);
+	}
 
-		public void clearTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.id(controlName));
-			element.clear();
-		}
-		public void clearTextOfElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.xpath(controlName));
-			element.clear();
-		}
+	public void typeToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String locator,
+			String value) {
+		String newLocator = String.format(controlName, locator);
+		waitForControlVisible(driverAppium, newLocator, timeout);
+		element = driverAppium.findElement(By.id(newLocator));
+		element.clear();
+		element.sendKeys(value);
+	}
 
-		public void pressTABkey(AppiumDriver<MobileElement> driver) {
-			element.sendKeys(Keys.TAB);
-		}
+	public void clearTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		element.clear();
+	}
 
-		public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.id(controlName));
-			element.click();
-		}
-		public void clickToElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.xpath(controlName));
-			element.click();
-		}
+	public void clearTextOfElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		element.clear();
+	}
 
-		public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			String newControl = String.format(controlName, value);
-			waitForControlVisible(driverAppium, newControl, timeout);
-			element = driverAppium.findElement(By.id(newControl));
-			element.click();
+	public void pressTABkey(AppiumDriver<MobileElement> driver) {
+		element.sendKeys(Keys.TAB);
+	}
+
+	public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		element.click();
+	}
+
+	public void clickToElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		element.click();
+	}
+
+	public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		String newControl = String.format(controlName, value);
+		waitForControlVisible(driverAppium, newControl, timeout);
+		element = driverAppium.findElement(By.xpath(newControl));
+		element.click();
+	}
+
+	public void selectDropdownlist(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
+		Select select = new Select(driverAppium.findElement(By.xpath(controlName)));
+		select.selectByVisibleText(value);
+	}
+
+	public void acceptAlert(AppiumDriver<MobileElement> driverAppium) {
+		waitForAlert(driverAppium, timeout);
+		Alert alert = driverAppium.switchTo().alert();
+		alert.accept();
+	}
+
+	public void navigateToURL(AppiumDriver<MobileElement> driverAppium, String value) {
+		driverAppium.navigate().to(value);
+	}
+
+	public String getTextAlert(AppiumDriver<MobileElement> driverAppium) {
+		waitForAlert(driverAppium, timeout);
+		Alert alert = driverAppium.switchTo().alert();
+		return alert.getText();
+	}
+
+	public void waitForDynamicControlVisible(AppiumDriver<MobileElement> driverAppium, String locator, String value,
+			int timeout) {
+		String newLocator = String.format(locator, value);
+		try {
+			WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(newLocator)));
+		} catch (Exception e) {
+			LOG.error("Not Found Element: " + newLocator);
+			LOG.error(e.getMessage());
 		}
+	}
 
-		public void selectDropdownlist(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
-			Select select = new Select(driverAppium.findElement(By.id(controlName)));
-			select.selectByVisibleText(value);
+	public void waitForControlVisible(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(controlName)));
+		} catch (Exception e) {
+			LOG.error("Not Found Element: " + controlName);
+			LOG.error(e.getMessage());
 		}
+	}
 
-		public void acceptAlert(AppiumDriver<MobileElement> driverAppium) {
-			waitForAlert(driverAppium, timeout);
-			Alert alert = driverAppium.switchTo().alert();
-			alert.accept();
+	public void waitForAlert(AppiumDriver<MobileElement> driverAppium, int timeout) {
+		try {
+			new WebDriverWait(driverAppium, timeout).ignoring(NoAlertPresentException.class)
+					.until(ExpectedConditions.alertIsPresent());
+		} catch (Exception e) {
+			LOG.error("Not Found Alert");
+			e.printStackTrace();
 		}
+	}
 
-		public void navigateToURL(AppiumDriver<MobileElement> driverAppium, String value) {
-			driverAppium.navigate().to(value);
-		}
+	public void verifyElementDisplayed(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		String newLocator = String.format(controlName, value);
+		WebElement element = driverAppium.findElement(By.id(newLocator));
+		element.isDisplayed();
+	}
 
-		public String getTextAlert(AppiumDriver<MobileElement> driverAppium) {
-			waitForAlert(driverAppium, timeout);
-			Alert alert = driverAppium.switchTo().alert();
-			return alert.getText();
-		}
+	public String getCurrentURL(AppiumDriver<MobileElement> driverAppium) {
+		return driverAppium.getCurrentUrl();
+	}
 
-		public void waitForDynamicControlVisible(AppiumDriver<MobileElement> driverAppium, String locator, String value,
-				int timeout) {
-			String newLocator = String.format(locator, value);
-			try {
-				WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(newLocator)));
-			} catch (Exception e) {
-				LOG.error("Not Found Element: " + newLocator);
-				LOG.error(e.getMessage());
-			}
-		}
+	// get text
+	public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.id(controlName));
+		return element.getText();
+	}
 
-		public void waitForControlVisible(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
-			try {
-				WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(controlName)));
-			} catch (Exception e) {
-				LOG.error("Not Found Element: " + controlName);
-				LOG.error(e.getMessage());
-			}
-		}
+	public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		String newLocator = String.format(controlName, value);
+		waitForControlVisible(driverAppium, newLocator, timeout);
+		element = driverAppium.findElement(By.id(newLocator));
+		return element.getText();
+	}
 
-		public void waitForAlert(AppiumDriver<MobileElement> driverAppium, int timeout) {
-			try {
-				new WebDriverWait(driverAppium, timeout).ignoring(NoAlertPresentException.class)
-						.until(ExpectedConditions.alertIsPresent());
-			} catch (Exception e) {
-				LOG.error("Not Found Alert");
-				e.printStackTrace();
-			}
-		}
+	public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisible(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.id(controlName));
+		((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
+	}
 
-		public void verifyElementDisplayed(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			String newLocator = String.format(controlName, value);
-			WebElement element = driverAppium.findElement(By.id(newLocator));
-			element.isDisplayed();
-		}
-
-		public String getCurrentURL(AppiumDriver<MobileElement> driverAppium) {
-			return driverAppium.getCurrentUrl();
-		}
-
-		// get text
-		public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.id(controlName));
-			return element.getText();
-		}
-
-		public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			String newLocator = String.format(controlName, value);
-			waitForControlVisible(driverAppium, newLocator, timeout);
-			element = driverAppium.findElement(By.id(newLocator));
-			return element.getText();
-		}
-
-		public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-			waitForControlVisible(driverAppium, controlName, timeout);
-			element = driverAppium.findElement(By.id(controlName));
-			((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
-		}
-
-		public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
-			String newControl = String.format(controlName, value);
-			waitForControlVisible(driverAppium, newControl, timeout);
-			element = driverAppium.findElement(By.id(newControl));
-			((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
-		}
-
-
+	public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		String newControl = String.format(controlName, value);
+		waitForControlVisible(driverAppium, newControl, timeout);
+		element = driverAppium.findElement(By.id(newControl));
+		((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
+	}
 
 }

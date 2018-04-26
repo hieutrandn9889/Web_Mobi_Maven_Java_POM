@@ -2,6 +2,7 @@ package SC_pages;
 
 import SC_interfaces.LogInPageUI;
 import commons.AbstractMobile;
+import commons.AbstractPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
@@ -29,7 +30,7 @@ public class LogInPage extends AbstractMobile {
 
 	public String getErrorMsg() {
 		return getTextOfElement(driverAppium, LogInPageUI.MESSAGE);
-
+		
 	}
 
 	// get text

@@ -22,3 +22,43 @@
 2018-04-24 08:51:07 INFO  LogEvent:18 - Open the Home page
 2018-04-24 15:33:40 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
 2018-04-24 15:33:40 INFO  LogEvent:18 - Open the Home page
+2018-04-26 14:06:49 ERROR LogEvent:26 - Not Found Element: //android.widget.TextView[@text='LOG IN']
+2018-04-26 14:06:49 ERROR LogEvent:26 - 
+2018-04-26 14:08:47 ERROR LogEvent:26 - Not Found Element: //android.widget.TextView[@text='LOG IN']
+2018-04-26 14:08:47 ERROR LogEvent:26 - 
+2018-04-26 17:34:36 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail
+2018-04-26 17:34:36 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 17:36:30 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail
+2018-04-26 17:36:30 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 17:37:37 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtpass
+2018-04-26 17:37:37 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtpass (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 17:46:20 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail[@text='Email address']
+2018-04-26 17:46:20 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail[@text='Email address'] (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 17:47:28 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtpass[@text='Password']
+2018-04-26 17:47:28 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtpass[@text='Password'] (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 18:01:59 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail
+2018-04-26 18:01:59 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 18:02:10 INFO  LogEvent:18 - Input username
+2018-04-26 18:02:41 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtpass
+2018-04-26 18:02:41 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtpass (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 18:02:48 INFO  LogEvent:18 - Input password
+2018-04-26 18:04:51 ERROR LogEvent:26 - Not Found Element: android.widget.EditText[@text='Email address']
+2018-04-26 18:04:51 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: android.widget.EditText[@text='Email address'] (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 18:05:53 ERROR LogEvent:26 - Not Found Element: android.widget.EditText[@text='Password']
+2018-04-26 18:05:53 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: android.widget.EditText[@text='Password'] (tried for 30 second(s) with 500 milliseconds interval)
+2018-04-26 18:15:49 ERROR LogEvent:26 - Not Found Element: android.widget.EditText[@text='Email address']
+2018-04-26 18:15:49 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: android.widget.EditText[@text='Email address'] (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-26 18:17:27 ERROR LogEvent:26 - Not Found Element: android.widget.EditText[@text='Password']
+2018-04-26 18:17:27 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: android.widget.EditText[@text='Password'] (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-26 18:35:56 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-26 18:35:56 INFO  LogEvent:18 - Open the Home page
+2018-04-26 18:41:55 ERROR LogEvent:26 - Not Found Element: android.widget.EditText[@text='Email address']
+2018-04-26 18:41:55 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: android.widget.EditText[@text='Email address'] (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-26 18:51:39 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail
+2018-04-26 18:51:39 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-26 18:51:46 INFO  LogEvent:18 - Input username
+2018-04-26 18:52:47 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtpass
+2018-04-26 18:52:47 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtpass (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-26 18:53:01 INFO  LogEvent:18 - Input password
+2018-04-26 19:14:47 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-26 19:14:47 INFO  LogEvent:18 - Open the Home page
