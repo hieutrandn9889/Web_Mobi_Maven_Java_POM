@@ -1,8 +1,11 @@
 package stepdefinations;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import commons.AbstractTest;
+import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -11,10 +14,10 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.Hook;
 
-public class calculatorScenario {
+public class calculatorScenario extends AbstractTest {
 
-	private AppiumDriver driverAppium;
-
+	private AppiumDriver<MobileElement> driverAppium;
+	LogEvent LOG;
 	public calculatorScenario() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
@@ -22,18 +25,23 @@ public class calculatorScenario {
 	@Given("^I open the Calculator application$")
 	public void i_open_the_Calculator_application() {
 		System.out.println("Opened calculator app");
+		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
+		LOG = new LogEvent();
+		LOG.info("ACTIVITY SCREEN: " + showActivityMobileScreen());
 	}
 
 	@When("^I click number seven$")
 	public void i_click_number_seven() {
 		// click number 7
 		driverAppium.findElement(By.id(calculatorUI.NUMER_SEVEN)).click();
+		LOG.info("number seven");
 	}
 
 	@Then("^I click plus$")
 	public void i_click_plus() {
 		// click symbol plus
 		driverAppium.findElement(By.id(calculatorUI.SYMBOL_PlUS)).click();
+		LOG.info("plus");
 
 	}
 
@@ -41,12 +49,14 @@ public class calculatorScenario {
 	public void i_click_number_two() {
 		// click number 2
 		driverAppium.findElement(By.id(calculatorUI.NUMER_TWO)).click();
+		LOG.info("number two");
 	}
 
 	@Then("^I click equal$")
 	public void i_click_equal() {
 
 		driverAppium.findElement(By.id(calculatorUI.SYMBOL_EQUAL)).click();
+		LOG.info("equal");
 
 	}
 

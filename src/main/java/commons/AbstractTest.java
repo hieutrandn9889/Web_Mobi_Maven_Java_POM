@@ -4,11 +4,12 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 
+import io.appium.java_client.android.StartsActivity;
 import utility.Hook;
 
 public class AbstractTest {
 	WebDriver driver = Hook.getDriver();
-	
+	WebDriver driverAppium = Hook.getAppiumDriver();
 	// lấy số random
 	public String randomString() {
 		Random rand = new Random();
@@ -31,5 +32,9 @@ public class AbstractTest {
 	public String showActivityScreen() {
 		//System.out.println("===>"+ driver.getCurrentUrl());
 		return driver.getCurrentUrl();
+	}
+	public String showActivityMobileScreen() {
+		//System.out.println("===>"+ driverAppium.currentActivity());
+		return ((StartsActivity) driverAppium).currentActivity();
 	}
 }

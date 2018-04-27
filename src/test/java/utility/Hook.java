@@ -65,6 +65,7 @@ public class Hook {
 			System.out.println(e.getMessage());
 		}
 		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
 	}
 
 	@Before(value = "@AndroidCalculator")
@@ -80,6 +81,7 @@ public class Hook {
 			System.out.println(e.getMessage());
 		}
 		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Hook------------------");
 	}
 	
 	@Before(value = "@Android_API_SMS")
@@ -96,6 +98,7 @@ public class Hook {
 			System.out.println(e.getMessage());
 		}
 		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
 	}
 	
 	
@@ -114,6 +117,7 @@ public class Hook {
 			System.out.println(e.getMessage());
 		}
 		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
 	}
 	
 	@Before(value = "@AndroidSC")
@@ -131,6 +135,7 @@ public class Hook {
 			System.out.println(e.getMessage());
 		}
 		driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
 	}
 
 	@After(value = "@Firefox, @Chrome")

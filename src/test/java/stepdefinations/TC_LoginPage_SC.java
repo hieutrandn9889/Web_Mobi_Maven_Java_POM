@@ -43,7 +43,7 @@ public class TC_LoginPage_SC extends AbstractTest {
 			
 			DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 			LOG = new LogEvent();
-			LOG.info("ACTIVITY SCREEN: " + showActivityScreen());
+			LOG.info("ACTIVITY SCREEN: " + showActivityMobileScreen());
 			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
