@@ -88,3 +88,15 @@
 2018-04-27 09:44:55 INFO  LogEvent:18 - ACTIVITY SCREEN: com.swisscard.prod.flows.setup.HomeActivity
 2018-04-27 09:45:56 ERROR LogEvent:26 - Not Found Element: com.swisscard.prod.debug:id/edtemail
 2018-04-27 09:45:56 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.swisscard.prod.debug:id/edtemail (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-28 16:56:17 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-28 16:57:33 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-28 16:58:45 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-28 16:58:47 INFO  LogEvent:18 - number seven
+2018-04-28 16:58:47 INFO  LogEvent:18 - plus
+2018-04-28 16:58:48 INFO  LogEvent:18 - number two
+2018-04-28 16:58:50 INFO  LogEvent:18 - equal
+2018-04-28 17:01:19 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-28 17:01:20 INFO  LogEvent:18 - number seven
+2018-04-28 17:01:21 INFO  LogEvent:18 - plus
+2018-04-28 17:01:24 INFO  LogEvent:18 - number two
+2018-04-28 17:01:25 INFO  LogEvent:18 - equal

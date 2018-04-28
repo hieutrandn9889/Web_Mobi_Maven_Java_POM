@@ -2,23 +2,19 @@ package stepdefinations;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 import commons.AbstractTest;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import interfaces.calculatorUI;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import utility.Hook;
 
 public class calculatorScenario extends AbstractTest {
-
-	private AppiumDriver<MobileElement> driverAppium;
+	WebDriver driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG;
-	public calculatorScenario() {
-		this.driverAppium = Hook.getAppiumDriver();
-	}
 
 	@Given("^I open the Calculator application$")
 	public void i_open_the_Calculator_application() {

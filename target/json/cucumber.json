@@ -1,0 +1,122 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23194378213,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpAppiumCalculator()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Calculator",
+        "description": "",
+        "id": "calculator;calculator",
+        "after": [
+          {
+            "result": {
+              "duration": 7189125397,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 880277523,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the Calculator application",
+            "match": {
+              "location": "calculatorScenario.i_open_the_Calculator_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 684716079,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click number seven",
+            "match": {
+              "location": "calculatorScenario.i_click_number_seven()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1334086579,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click plus",
+            "match": {
+              "location": "calculatorScenario.i_click_plus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2376591939,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click number two",
+            "match": {
+              "location": "calculatorScenario.i_click_number_two()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1057020524,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click equal",
+            "match": {
+              "location": "calculatorScenario.i_click_equal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1684093923,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I validate value",
+            "match": {
+              "location": "calculatorScenario.i_validate_value()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculator",
+    "description": "",
+    "id": "calculator",
+    "keyword": "Feature",
+    "uri": "calculatorScenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AndroidCalculator"
+      }
+    ]
+  }
+]

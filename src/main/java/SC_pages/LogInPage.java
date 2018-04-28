@@ -2,7 +2,6 @@ package SC_pages;
 
 import SC_interfaces.LogInPageUI;
 import commons.AbstractMobile;
-import commons.AbstractPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
@@ -24,7 +23,7 @@ public class LogInPage extends AbstractMobile {
 	}
 
 	public void clickLOGIN() {
-		clickToElement(driverAppium, LogInPageUI.LOGIN_BUTTON);
+		clickToElementByID(driverAppium, LogInPageUI.LOGIN_BUTTON);
 
 	}
 

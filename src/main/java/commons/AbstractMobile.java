@@ -43,14 +43,14 @@ public class AbstractMobile {
 	}
 
 	// trượt ngang
-	public static void swipeHorizontal(AppiumDriver<MobileElement> driver, double startPercentage,
+	public static void swipeHorizontal(AppiumDriver<MobileElement> driverAppium, double startPercentage,
 			double finalPercentage, double anchorPercentage, int duration) throws Exception {
 
-		Dimension size = driver.manage().window().getSize();
+		Dimension size = driverAppium.manage().window().getSize();
 		int anchor = (int) (size.height * anchorPercentage);
 		int startPoint = (int) (size.width * startPercentage);
 		int endPoint = (int) (size.width * finalPercentage);
-		new TouchAction(driver).press(startPoint, anchor).waitAction(Duration.ofMillis(duration))
+		new TouchAction(driverAppium).press(startPoint, anchor).waitAction(Duration.ofMillis(duration))
 				.moveTo(endPoint, anchor).release().perform();
 
 	}
@@ -85,18 +85,18 @@ public class AbstractMobile {
 	}
 
 	// take a screenshot
-	public static void getScreenshot(AppiumDriver<MobileElement> driver, String outputlocation) throws IOException {
+	public static void getScreenshot(AppiumDriver<MobileElement> driverAppium, String outputlocation) throws IOException {
 		System.out.println("Capturing the snapshot of the page ");
-		File srcFiler = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File srcFiler = ((TakesScreenshot) driverAppium).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFiler, new File(outputlocation));
 	}
 
 	// take a screenshot if error
-	public void getscreenshot(AppiumDriver<MobileElement> driver) throws IOException {
+	public void getscreenshot(AppiumDriver<MobileElement> driverAppium) throws IOException {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		Date date = new Date();
 		String fileName = sdf.format(date);
-		File des = driver.getScreenshotAs(OutputType.FILE);
+		File des = driverAppium.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(des, new File(System.getProperty("user.dir") + "//Screenshot//" + fileName + ".png"));
 		System.out.println("Screenshot is captured");
 	}
@@ -141,9 +141,9 @@ public class AbstractMobile {
 		element.sendKeys(Keys.TAB);
 	}
 
-	public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
+	public void clickToElementByID(AppiumDriver<MobileElement> driverAppium, String controlName) {
 		waitForControlVisible(driverAppium, controlName, timeout);
-		element = driverAppium.findElement(By.xpath(controlName));
+		element = driverAppium.findElement(By.id(controlName));
 		element.click();
 	}
 
@@ -153,7 +153,7 @@ public class AbstractMobile {
 		element.click();
 	}
 
-	public void clickToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+	public void clickToElementValue(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
 		String newControl = String.format(controlName, value);
 		waitForControlVisible(driverAppium, newControl, timeout);
 		element = driverAppium.findElement(By.xpath(newControl));

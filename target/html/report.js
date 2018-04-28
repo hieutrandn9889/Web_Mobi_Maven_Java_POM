@@ -1,146 +1,103 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("scScenario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("calculatorScenario.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Verify login in SC",
+  "line": 2,
+  "name": "Calculator",
   "description": "",
-  "id": "verify-login-in-sc",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "line": 3,
-  "name": "Test input username and password",
-  "description": "",
-  "id": "verify-login-in-sc;test-input-username-and-password",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
+  "id": "calculator",
+  "keyword": "Feature",
   "tags": [
     {
-      "line": 2,
-      "name": "@AndroidSC"
+      "line": 1,
+      "name": "@AndroidCalculator"
     }
   ]
 });
-formatter.step({
-  "line": 4,
-  "name": "I open the app",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "I click login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "I input username \"\u003cusername\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
-  "name": "I input password \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "I click submit button",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 9,
-  "name": "",
-  "description": "",
-  "id": "verify-login-in-sc;test-input-username-and-password;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "",
-        "password"
-      ],
-      "line": 10,
-      "id": "verify-login-in-sc;test-input-username-and-password;;1"
-    },
-    {
-      "cells": [
-        "india",
-        "",
-        "india"
-      ],
-      "line": 11,
-      "id": "verify-login-in-sc;test-input-username-and-password;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
 formatter.before({
-  "duration": 12852804713,
+  "duration": 23194378213,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "Test input username and password",
-  "description": "",
-  "id": "verify-login-in-sc;test-input-username-and-password;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 2,
-      "name": "@AndroidSC"
-    }
-  ]
-});
-formatter.step({
   "line": 4,
-  "name": "I open the app",
-  "keyword": "Given "
+  "name": "Calculator",
+  "description": "",
+  "id": "calculator;calculator",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "I click login button",
-  "keyword": "When "
+  "name": "I open the Calculator application",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "I input username \"india\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Then "
+  "name": "I click number seven",
+  "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "I input password \"india\"",
-  "matchedColumns": [
-    2
-  ],
+  "name": "I click plus",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I click submit button",
+  "name": "I click number two",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "I click equal",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I validate value",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TC_LoginPage_SC.I_open_the_app()"
+  "location": "calculatorScenario.i_open_the_Calculator_application()"
 });
 formatter.result({
-  "duration": 331270867,
+  "duration": 880277523,
   "status": "passed"
 });
 formatter.match({
-  "location": "TC_LoginPage_SC.i_click_login_button()"
+  "location": "calculatorScenario.i_click_number_seven()"
 });
 formatter.result({
-  "duration": 85954229301,
+  "duration": 684716079,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "india",
-      "offset": 18
-    }
-  ],
-  "location": "TC_LoginPage_SC.i_input_username(String)"
+  "location": "calculatorScenario.i_click_plus()"
+});
+formatter.result({
+  "duration": 1334086579,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_number_two()"
+});
+formatter.result({
+  "duration": 2376591939,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_equal()"
+});
+formatter.result({
+  "duration": 1057020524,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_validate_value()"
+});
+formatter.result({
+  "duration": 1684093923,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 7189125397,
+  "status": "passed"
+});
 });

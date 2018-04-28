@@ -14,7 +14,7 @@ public class SignUpPage extends AbstractMobile {
 	}
 	
 	public LogInPage openLogInPage(AppiumDriver<MobileElement> driverAppium){
-		clickToElement(driverAppium, SignUpPageUI.LOGIN_TAB_xpath);
+		clickToElementByID(driverAppium, SignUpPageUI.LOGIN_TAB_xpath);
 		return PageFactory.getLogInPage(driverAppium);
 	}
 

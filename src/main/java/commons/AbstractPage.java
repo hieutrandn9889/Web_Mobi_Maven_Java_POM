@@ -21,7 +21,6 @@ import commons.AutomationControl;
 
 public class AbstractPage {
 	
-	
 	// wait to click
 	public void click(WebDriver driver, String controlName) {
 		waitForControl(driver, controlName, timeWait);
