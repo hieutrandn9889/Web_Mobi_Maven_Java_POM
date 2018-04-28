@@ -26,19 +26,19 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
 public class AbstractMobile {
-	private AppiumDriver<MobileElement> driver;
+	private AppiumDriver<MobileElement> driverAppium;
 	LogEvent LOG = new LogEvent();
 	WebElement element;
 	int timeout = 50;
 
 	// trượt dọc
-	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driver, double startPercentage,
+	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driverAppium, double startPercentage,
 			double finalPercentage, double anchorPercentage, int duration) throws Exception {
-		Dimension size = driver.manage().window().getSize();
+		Dimension size = driverAppium.manage().window().getSize();
 		int anchor = (int) (size.width * anchorPercentage);
 		int startPoint = (int) (size.height * startPercentage);
 		int endPoint = (int) (size.height * finalPercentage);
-		new TouchAction(driver).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
+		new TouchAction(driverAppium).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
 				.moveTo(anchor, endPoint).release().perform();
 	}
 
@@ -57,7 +57,7 @@ public class AbstractMobile {
 
 	// LANDSCAPE & PORTRAIT
 	public void testRotate() {
-		if (driver.getOrientation().equals("LANDSCAPE")) {
+		if (driverAppium.getOrientation().equals("LANDSCAPE")) {
 			switchtomode("PORTRAIT");
 		} else {
 			switchtomode("LANDSCAPE");
@@ -67,12 +67,12 @@ public class AbstractMobile {
 
 	// LANDSCAPE & PORTRAIT
 	public void switchtomode(String modeType) {
-		ScreenOrientation currentOrientation = driver.getOrientation();
+		ScreenOrientation currentOrientation = driverAppium.getOrientation();
 		System.out.println("CurrentOrientation : " + currentOrientation);
 		if (modeType.equalsIgnoreCase("LANDSCAPE"))
-			driver.rotate(ScreenOrientation.LANDSCAPE);
+			driverAppium.rotate(ScreenOrientation.LANDSCAPE);
 		else if (modeType.equalsIgnoreCase("PORTRAIT")) {
-			driver.rotate(ScreenOrientation.PORTRAIT);
+			driverAppium.rotate(ScreenOrientation.PORTRAIT);
 		}
 		try {
 			Thread.sleep(5000);
@@ -80,7 +80,7 @@ public class AbstractMobile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		currentOrientation = driver.getOrientation();
+		currentOrientation = driverAppium.getOrientation();
 		System.out.println("AfterRotate : " + currentOrientation);
 	}
 

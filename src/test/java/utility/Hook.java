@@ -25,7 +25,7 @@ public class Hook {
 
 	 @Before(value = "@Firefox")
 	 public void setUpFirefox() {
-	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH);
+	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH_WIN);
 	 driver = new FirefoxDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();
@@ -34,7 +34,7 @@ public class Hook {
 	
 	 @Before(value = "@Chrome")
 	 public void setUpChrome() {
-	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH);
+	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH_WIN);
 	 driver = new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();
@@ -43,7 +43,7 @@ public class Hook {
 	
 	 @Before(value = "@IE")
 	 public void setUpIE() {
-	 System.setProperty("webdriver.ie.driver", Constants.IE_PATH);
+	 System.setProperty("webdriver.ie.driver", Constants.IE_PATH_WIN);
 	 driver = new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();

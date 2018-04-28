@@ -2,8 +2,6 @@ package stepdefinations;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
 import commons.AbstractTest;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
