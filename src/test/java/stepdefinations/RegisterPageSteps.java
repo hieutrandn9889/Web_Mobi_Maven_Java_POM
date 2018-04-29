@@ -5,25 +5,20 @@ import org.openqa.selenium.WebDriver;
 import ZingPoll_pages.ZingPoll_HomePage;
 import ZingPoll_pages.ZingPoll_PageFactory;
 import commons.AbstractTest;
-import commons.Constants;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import utility.Hook;
 
 public class RegisterPageSteps extends AbstractTest {
-	private WebDriver driver;
-	private ZingPoll_HomePage homePage;
+	WebDriver driver = Hook.getDriver();
+	private ZingPoll_HomePage homePage = new ZingPoll_HomePage();
 	LogEvent LOG;
-	
-	
-	public RegisterPageSteps() {
-		this.driver = Hook.getDriver();
-	}
 
 	@Given("^I am on ZingPoll website \"(.*?)\"$")
 	public void i_am_on_ZingPoll_website(String browser) {
 		
-		driver.get(Constants.ZINGPOLL_URL);
+//		driver.get(Constants.ZINGPOLL_URL);
+		homePage.openZingPollPage();
 		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 		LOG = new LogEvent();
 		LOG.info("ACTIVITY SCREEN: " + showActivityScreen());

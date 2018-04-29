@@ -4,6 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ZingPoll_PageFactory {
 	public static ZingPoll_HomePage getHomePage(WebDriver driver) {
-		return new ZingPoll_HomePage(driver);
+		return new ZingPoll_HomePage();
 	}
 }

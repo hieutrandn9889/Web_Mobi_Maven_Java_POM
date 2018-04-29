@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 23194378213,
+  "duration": 29211657566,
   "status": "passed"
 });
 formatter.scenario({
@@ -58,46 +58,46 @@ formatter.match({
   "location": "calculatorScenario.i_open_the_Calculator_application()"
 });
 formatter.result({
-  "duration": 880277523,
+  "duration": 1184547929,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_number_seven()"
 });
 formatter.result({
-  "duration": 684716079,
+  "duration": 2142614624,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_plus()"
 });
 formatter.result({
-  "duration": 1334086579,
+  "duration": 840659205,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_number_two()"
 });
 formatter.result({
-  "duration": 2376591939,
+  "duration": 910977345,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_equal()"
 });
 formatter.result({
-  "duration": 1057020524,
+  "duration": 1636473699,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_validate_value()"
 });
 formatter.result({
-  "duration": 1684093923,
+  "duration": 1500406306,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7189125397,
+  "duration": 5604572459,
   "status": "passed"
 });
 });

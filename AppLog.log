@@ -100,3 +100,18 @@
 2018-04-28 17:01:21 INFO  LogEvent:18 - plus
 2018-04-28 17:01:24 INFO  LogEvent:18 - number two
 2018-04-28 17:01:25 INFO  LogEvent:18 - equal
+2018-04-29 15:21:07 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 15:22:19 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 15:22:20 INFO  LogEvent:18 - number seven
+2018-04-29 15:22:20 INFO  LogEvent:18 - plus
+2018-04-29 15:22:21 INFO  LogEvent:18 - number two
+2018-04-29 15:22:22 INFO  LogEvent:18 - equal
+2018-04-29 15:53:17 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 15:53:17 INFO  LogEvent:18 - Open the Home page
+2018-04-29 15:56:36 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 15:56:36 INFO  LogEvent:18 - Open the Home page
+2018-04-29 16:00:59 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:01:01 INFO  LogEvent:18 - number seven
+2018-04-29 16:01:02 INFO  LogEvent:18 - plus
+2018-04-29 16:01:03 INFO  LogEvent:18 - number two
+2018-04-29 16:01:04 INFO  LogEvent:18 - equal

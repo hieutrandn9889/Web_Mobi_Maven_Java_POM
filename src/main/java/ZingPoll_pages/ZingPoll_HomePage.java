@@ -1,16 +1,17 @@
 package ZingPoll_pages;
 
 import org.openqa.selenium.WebDriver;
-
 import commons.AbstractPage;
 import commons.Constants;
 import interfaces.zingPollPageUI;
+import utility.Hook;
 
 public class ZingPoll_HomePage extends AbstractPage {
-	public ZingPoll_HomePage(WebDriver driver) {
-		this.driver = driver;
+	
+	
+	public ZingPoll_HomePage() {
+		this.driver = Hook.getDriver();
 	}
-
 	public void openZingPollPage() {
 		openURL(driver, Constants.ZINGPOLL_URL);
 	}

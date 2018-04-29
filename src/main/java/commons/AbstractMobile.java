@@ -16,6 +16,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -24,11 +25,12 @@ import commons.LogEvent;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import utility.Hook;
 
 public class AbstractMobile {
-	private AppiumDriver<MobileElement> driverAppium;
+	WebDriver driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG = new LogEvent();
-	WebElement element;
+	MobileElement element;
 	int timeout = 50;
 
 	// trượt dọc
@@ -57,7 +59,7 @@ public class AbstractMobile {
 
 	// LANDSCAPE & PORTRAIT
 	public void testRotate() {
-		if (driverAppium.getOrientation().equals("LANDSCAPE")) {
+		if (((AppiumDriver<MobileElement>) driverAppium).getOrientation().equals("LANDSCAPE")) {
 			switchtomode("PORTRAIT");
 		} else {
 			switchtomode("LANDSCAPE");
@@ -67,12 +69,12 @@ public class AbstractMobile {
 
 	// LANDSCAPE & PORTRAIT
 	public void switchtomode(String modeType) {
-		ScreenOrientation currentOrientation = driverAppium.getOrientation();
+		ScreenOrientation currentOrientation = ((AppiumDriver<MobileElement>) driverAppium).getOrientation();
 		System.out.println("CurrentOrientation : " + currentOrientation);
 		if (modeType.equalsIgnoreCase("LANDSCAPE"))
-			driverAppium.rotate(ScreenOrientation.LANDSCAPE);
+			((AppiumDriver<MobileElement>) driverAppium).rotate(ScreenOrientation.LANDSCAPE);
 		else if (modeType.equalsIgnoreCase("PORTRAIT")) {
-			driverAppium.rotate(ScreenOrientation.PORTRAIT);
+			((AppiumDriver<MobileElement>) driverAppium).rotate(ScreenOrientation.PORTRAIT);
 		}
 		try {
 			Thread.sleep(5000);
@@ -80,7 +82,7 @@ public class AbstractMobile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		currentOrientation = driverAppium.getOrientation();
+		currentOrientation = ((AppiumDriver<MobileElement>) driverAppium).getOrientation();
 		System.out.println("AfterRotate : " + currentOrientation);
 	}
 

@@ -21,8 +21,6 @@ public class Hook {
 	private static WebDriver driver;
 	private static AppiumDriver<MobileElement> driverAppium;
 	
-	
-
 	 @Before(value = "@Firefox")
 	 public void setUpFirefox() {
 	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH_WIN);
