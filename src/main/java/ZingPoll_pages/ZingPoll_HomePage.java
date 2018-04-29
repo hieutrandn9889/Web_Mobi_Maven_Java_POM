@@ -7,11 +7,8 @@ import interfaces.zingPollPageUI;
 import utility.Hook;
 
 public class ZingPoll_HomePage extends AbstractPage {
+	WebDriver driver = Hook.getDriver();
 	
-	
-	public ZingPoll_HomePage() {
-		this.driver = Hook.getDriver();
-	}
 	public void openZingPollPage() {
 		openURL(driver, Constants.ZINGPOLL_URL);
 	}
@@ -93,5 +90,5 @@ public class ZingPoll_HomePage extends AbstractPage {
 		isControlDisplayed(driver, zingPollPageUI.PROFILE_NAME_TITLE, profileName);
 	}
 
-	private WebDriver driver;
+	
 }

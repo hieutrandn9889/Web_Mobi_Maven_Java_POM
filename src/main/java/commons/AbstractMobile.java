@@ -16,7 +16,6 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -28,7 +27,7 @@ import io.appium.java_client.TouchAction;
 import utility.Hook;
 
 public class AbstractMobile {
-	WebDriver driverAppium = Hook.getAppiumDriver();
+	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG = new LogEvent();
 	MobileElement element;
 	int timeout = 50;
@@ -121,20 +120,20 @@ public class AbstractMobile {
 	public void typeToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String locator,
 			String value) {
 		String newLocator = String.format(controlName, locator);
-		waitForControlVisible(driverAppium, newLocator, timeout);
+		waitForControlVisibleID(driverAppium, newLocator, timeout);
 		element = driverAppium.findElement(By.id(newLocator));
 		element.clear();
 		element.sendKeys(value);
 	}
 
 	public void clearTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleXpath(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.xpath(controlName));
 		element.clear();
 	}
 
 	public void clearTextOfElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleXpath(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.xpath(controlName));
 		element.clear();
 	}
@@ -144,20 +143,20 @@ public class AbstractMobile {
 	}
 
 	public void clickToElementByID(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleID(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.id(controlName));
 		element.click();
 	}
 
 	public void clickToElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleXpath(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.xpath(controlName));
 		element.click();
 	}
 
 	public void clickToElementValue(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
 		String newControl = String.format(controlName, value);
-		waitForControlVisible(driverAppium, newControl, timeout);
+		waitForControlVisibleXpath(driverAppium, newControl, timeout);
 		element = driverAppium.findElement(By.xpath(newControl));
 		element.click();
 	}
@@ -195,8 +194,18 @@ public class AbstractMobile {
 			LOG.error(e.getMessage());
 		}
 	}
+	
+	public void waitForControlVisibleID(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(controlName)));
+		} catch (Exception e) {
+			LOG.error("Not Found Element: " + controlName);
+			LOG.error(e.getMessage());
+		}
+	}
 
-	public void waitForControlVisible(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
+	public void waitForControlVisibleXpath(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(controlName)));
@@ -228,27 +237,27 @@ public class AbstractMobile {
 
 	// get text
 	public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleID(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.id(controlName));
 		return element.getText();
 	}
 
 	public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
 		String newLocator = String.format(controlName, value);
-		waitForControlVisible(driverAppium, newLocator, timeout);
+		waitForControlVisibleID(driverAppium, newLocator, timeout);
 		element = driverAppium.findElement(By.id(newLocator));
 		return element.getText();
 	}
 
 	public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName) {
-		waitForControlVisible(driverAppium, controlName, timeout);
+		waitForControlVisibleID(driverAppium, controlName, timeout);
 		element = driverAppium.findElement(By.id(controlName));
 		((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
 	}
 
 	public void scrollPageToElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
 		String newControl = String.format(controlName, value);
-		waitForControlVisible(driverAppium, newControl, timeout);
+		waitForControlVisibleID(driverAppium, newControl, timeout);
 		element = driverAppium.findElement(By.id(newControl));
 		((JavascriptExecutor) driverAppium).executeScript("arguments[0].scrollIntoView();", element);
 	}

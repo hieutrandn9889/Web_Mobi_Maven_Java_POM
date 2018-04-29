@@ -1,12 +1,171 @@
 [
   {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 38780162426,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpChrome()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Register with empty new user",
+        "description": "",
+        "id": "register-to-zingpoll;register-with-empty-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 3228766022,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24630757611,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on ZingPoll website \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 26
+                }
+              ],
+              "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5619056051,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the SignIn button",
+            "match": {
+              "location": "RegisterPageSteps.i_click_the_SignIn_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "The SignIn form should be shown",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Choose task new user radio button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "The SignUp form should be shown",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I click Register button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I verify the failure message \"Please enter your name.\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I verify the failure message \"Please enter your email.\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I verify the failure message \"Please enter your password.\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I verify the failure message \"Please agree with the term!\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Chrome"
+          }
+        ]
+      }
+    ],
+    "name": "Register to ZingPoll",
+    "description": "I want to registered successfull",
+    "id": "register-to-zingpoll",
+    "keyword": "Feature",
+    "uri": "RegisterToZingPoll.feature"
+  },
+  {
     "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 29211657566,
+              "duration": 22710186763,
               "status": "passed"
             },
             "match": {
@@ -21,7 +180,7 @@
         "after": [
           {
             "result": {
-              "duration": 5604572459,
+              "duration": 7930804350,
               "status": "passed"
             },
             "match": {
@@ -34,7 +193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1184547929,
+              "duration": 1444122557,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 2142614624,
+              "duration": 1641369280,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +217,7 @@
           },
           {
             "result": {
-              "duration": 840659205,
+              "duration": 2939966837,
               "status": "passed"
             },
             "line": 7,
@@ -70,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 910977345,
+              "duration": 2707433557,
               "status": "passed"
             },
             "line": 8,
@@ -82,7 +241,7 @@
           },
           {
             "result": {
-              "duration": 1636473699,
+              "duration": 1535089580,
               "status": "passed"
             },
             "line": 9,
@@ -94,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 1500406306,
+              "duration": 1359555204,
               "status": "passed"
             },
             "line": 10,

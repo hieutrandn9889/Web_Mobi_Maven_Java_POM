@@ -115,3 +115,62 @@
 2018-04-29 16:01:02 INFO  LogEvent:18 - plus
 2018-04-29 16:01:03 INFO  LogEvent:18 - number two
 2018-04-29 16:01:04 INFO  LogEvent:18 - equal
+2018-04-29 16:08:31 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 16:08:31 INFO  LogEvent:18 - Open the Home page
+2018-04-29 16:24:11 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 16:24:11 INFO  LogEvent:18 - Open the Home page
+2018-04-29 16:25:02 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:25:05 INFO  LogEvent:18 - number seven
+2018-04-29 16:25:07 INFO  LogEvent:18 - plus
+2018-04-29 16:25:07 INFO  LogEvent:18 - number two
+2018-04-29 16:25:08 INFO  LogEvent:18 - equal
+2018-04-29 16:25:44 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 16:25:44 INFO  LogEvent:18 - Open the Home page
+2018-04-29 16:26:14 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:26:15 INFO  LogEvent:18 - number seven
+2018-04-29 16:26:16 INFO  LogEvent:18 - plus
+2018-04-29 16:26:18 INFO  LogEvent:18 - number two
+2018-04-29 16:26:20 INFO  LogEvent:18 - equal
+2018-04-29 16:34:38 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:35:41 ERROR LogEvent:26 - Not Found Element: com.android.calculator2:id/digit_7
+2018-04-29 16:35:41 ERROR LogEvent:26 - Expected condition failed: waiting for visibility of element located by By.xpath: com.android.calculator2:id/digit_7 (tried for 50 second(s) with 500 milliseconds interval)
+2018-04-29 16:35:42 INFO  LogEvent:18 - number seven
+2018-04-29 16:38:15 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:39:57 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:41:30 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:44:06 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:45:35 ERROR LogEvent:26 - Not Found Element: com.android.calculator2:id/digit_7
+2018-04-29 16:45:40 ERROR LogEvent:26 - A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MAYTINH-MF89NVV', ip: '192.168.101.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, databaseEnabled: false, desired: {appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, deviceName: Nexus 4, platformName: android}, deviceManufacturer: Genymotion, deviceModel: Samsung Galaxy S8 - 7.0.0 -..., deviceName: 192.168.101.101:5555, deviceScreenSize: 1440x2960, deviceUDID: 192.168.101.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 7.0, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 82602efa-4dea-4ace-84fd-70ad0311b673
+*** Element info: {Using=xpath, value=com.android.calculator2:id/digit_7}
+2018-04-29 16:51:31 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:53:39 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:55:12 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 16:56:31 ERROR LogEvent:26 - Not Found Element: com.android.calculator2:id/digit_7
+2018-04-29 16:56:44 ERROR LogEvent:26 - A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MAYTINH-MF89NVV', ip: '192.168.101.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, databaseEnabled: false, desired: {appActivity: com.android.calculator2.Cal..., appPackage: com.android.calculator2, deviceName: Nexus 4, platformName: android}, deviceManufacturer: Genymotion, deviceModel: Samsung Galaxy S8 - 7.0.0 -..., deviceName: 192.168.101.101:5555, deviceScreenSize: 1440x2960, deviceUDID: 192.168.101.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: LINUX, platformVersion: 7.0, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 356c24f9-149e-4dd5-838f-f4a3e5ecb547
+*** Element info: {Using=xpath, value=com.android.calculator2:id/digit_7}
+2018-04-29 16:57:40 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 17:02:05 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 17:04:14 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 17:04:16 INFO  LogEvent:18 - number seven
+2018-04-29 17:04:18 INFO  LogEvent:18 - plus
+2018-04-29 17:04:19 INFO  LogEvent:18 - number two
+2018-04-29 17:04:21 INFO  LogEvent:18 - equal
+2018-04-29 17:05:57 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-04-29 17:05:57 INFO  LogEvent:18 - Open the Home page
+2018-04-29 17:06:30 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-04-29 17:06:32 INFO  LogEvent:18 - number seven
+2018-04-29 17:06:35 INFO  LogEvent:18 - plus
+2018-04-29 17:06:38 INFO  LogEvent:18 - number two
+2018-04-29 17:06:39 INFO  LogEvent:18 - equal

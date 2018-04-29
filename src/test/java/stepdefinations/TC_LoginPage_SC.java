@@ -15,7 +15,7 @@ import utility.Hook;
 
 public class TC_LoginPage_SC extends AbstractTest {
 
-	private AppiumDriver<MobileElement> driverAppium;
+	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG;
 	SC_pages.LogInPage loginPage;
 	SC_pages.SignUpPage signUpPage;

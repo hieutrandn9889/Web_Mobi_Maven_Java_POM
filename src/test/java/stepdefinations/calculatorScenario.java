@@ -4,6 +4,8 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import ZingPoll_pages.ZingPoll_HomePage;
+import calculatorPages.calculator_page;
 import commons.AbstractTest;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
@@ -14,6 +16,7 @@ import utility.Hook;
 
 public class calculatorScenario extends AbstractTest {
 	WebDriver driverAppium = Hook.getAppiumDriver();
+	private calculator_page cal = new calculator_page();
 	LogEvent LOG;
 
 	@Given("^I open the Calculator application$")
@@ -27,14 +30,16 @@ public class calculatorScenario extends AbstractTest {
 	@When("^I click number seven$")
 	public void i_click_number_seven() {
 		// click number 7
-		driverAppium.findElement(By.id(calculatorUI.NUMER_SEVEN)).click();
+//		driverAppium.findElement(By.id(calculatorUI.NUMER_SEVEN)).click();
+		cal.clickSevenNumber();
 		LOG.info("number seven");
 	}
 
 	@Then("^I click plus$")
 	public void i_click_plus() {
 		// click symbol plus
-		driverAppium.findElement(By.id(calculatorUI.SYMBOL_PlUS)).click();
+//		driverAppium.findElement(By.id(calculatorUI.SYMBOL_PlUS)).click();
+		cal.clickPlus();
 		LOG.info("plus");
 
 	}
@@ -42,14 +47,16 @@ public class calculatorScenario extends AbstractTest {
 	@Then("^I click number two$")
 	public void i_click_number_two() {
 		// click number 2
-		driverAppium.findElement(By.id(calculatorUI.NUMER_TWO)).click();
+//		driverAppium.findElement(By.id(calculatorUI.NUMER_TWO)).click();
+		cal.clickTwoNumber();
 		LOG.info("number two");
 	}
 
 	@Then("^I click equal$")
 	public void i_click_equal() {
 
-		driverAppium.findElement(By.id(calculatorUI.SYMBOL_EQUAL)).click();
+//		driverAppium.findElement(By.id(calculatorUI.SYMBOL_EQUAL)).click();
+		cal.clickEqual();
 		LOG.info("equal");
 
 	}

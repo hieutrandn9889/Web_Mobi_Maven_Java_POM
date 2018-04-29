@@ -4,12 +4,14 @@ import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.StartsActivity;
 import utility.Hook;
 
 public class AbstractTest {
 	WebDriver driver = Hook.getDriver();
-	WebDriver driverAppium = Hook.getAppiumDriver();
+	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	// lấy số random
 	public String randomString() {
 		Random rand = new Random();
