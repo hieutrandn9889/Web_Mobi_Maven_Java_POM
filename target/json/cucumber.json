@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 38780162426,
+              "duration": 4067982565,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 5,
+        "line": 12,
         "name": "Register with empty new user",
         "description": "",
-        "id": "register-to-zingpoll;register-with-empty-new-user",
+        "id": "register-to-zingpoll;register-with-empty-new-user;;2",
         "after": [
           {
             "result": {
-              "duration": 3228766022,
+              "duration": 961371023,
               "status": "passed"
             },
             "match": {
@@ -30,29 +30,23 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 24630757611,
+              "duration": 3620492880,
               "status": "passed"
             },
             "line": 6,
-            "name": "I am on ZingPoll website \"chrome\"",
+            "name": "I am on ZingPoll website",
             "match": {
-              "arguments": [
-                {
-                  "val": "chrome",
-                  "offset": 26
-                }
-              ],
-              "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
+              "location": "RegisterPageSteps.i_am_on_ZingPoll_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5619056051,
+              "duration": 5238872897,
               "status": "passed"
             },
             "line": 7,
@@ -60,88 +54,33 @@
             "match": {
               "location": "RegisterPageSteps.i_click_the_SignIn_button()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 4554968058,
+              "status": "passed"
             },
             "line": 8,
-            "name": "The SignIn form should be shown",
-            "match": {},
+            "name": "I input username hieutrandn01@gmail.com and password 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hieutrandn01@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "123456",
+                  "offset": 53
+                }
+              ],
+              "location": "RegisterPageSteps.i_input_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "Choose task new user radio button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "The SignUp form should be shown",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "I click Register button",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "I verify the failure message \"Please enter your name.\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "I verify the failure message \"Please enter your email.\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "I verify the failure message \"Please enter your password.\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "I verify the failure message \"Please agree with the term!\"",
-            "match": {},
-            "keyword": "And "
           }
         ],
         "tags": [
@@ -157,125 +96,5 @@
     "id": "register-to-zingpoll",
     "keyword": "Feature",
     "uri": "RegisterToZingPoll.feature"
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 22710186763,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumCalculator()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Calculator",
-        "description": "",
-        "id": "calculator;calculator",
-        "after": [
-          {
-            "result": {
-              "duration": 7930804350,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1444122557,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I open the Calculator application",
-            "match": {
-              "location": "calculatorScenario.i_open_the_Calculator_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1641369280,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I click number seven",
-            "match": {
-              "location": "calculatorScenario.i_click_number_seven()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2939966837,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click plus",
-            "match": {
-              "location": "calculatorScenario.i_click_plus()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2707433557,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click number two",
-            "match": {
-              "location": "calculatorScenario.i_click_number_two()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1535089580,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click equal",
-            "match": {
-              "location": "calculatorScenario.i_click_equal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1359555204,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I validate value",
-            "match": {
-              "location": "calculatorScenario.i_validate_value()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Calculator",
-    "description": "",
-    "id": "calculator",
-    "keyword": "Feature",
-    "uri": "calculatorScenario.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@AndroidCalculator"
-      }
-    ]
   }
 ]

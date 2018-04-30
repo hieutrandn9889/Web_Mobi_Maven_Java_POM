@@ -6,17 +6,13 @@ formatter.feature({
   "id": "register-to-zingpoll",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 38780162426,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 5,
   "name": "Register with empty new user",
   "description": "",
   "id": "register-to-zingpoll;register-with-empty-new-user",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 4,
@@ -26,219 +22,114 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "I am on ZingPoll website \"chrome\"",
+  "name": "I am on ZingPoll website",
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
   "name": "I click the SignIn button",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "The SignIn form should be shown",
+  "name": "I input username \u003cusername\u003e and password \u003cpassword\u003e",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 9,
-  "name": "Choose task new user radio button",
-  "keyword": "And "
-});
-formatter.step({
+formatter.examples({
   "line": 10,
-  "name": "The SignUp form should be shown",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click Register button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "I verify the failure message \"Please enter your name.\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I verify the failure message \"Please enter your email.\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "I verify the failure message \"Please enter your password.\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I verify the failure message \"The re-type password is required and cannot be empty\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I verify the failure message \"Please agree with the term!\"",
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
+  "name": "",
+  "description": "",
+  "id": "register-to-zingpoll;register-with-empty-new-user;",
+  "rows": [
     {
-      "val": "chrome",
-      "offset": 26
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 11,
+      "id": "register-to-zingpoll;register-with-empty-new-user;;1"
+    },
+    {
+      "cells": [
+        "hieutrandn01@gmail.com",
+        "123456"
+      ],
+      "line": 12,
+      "id": "register-to-zingpoll;register-with-empty-new-user;;2"
     }
   ],
-  "location": "RegisterPageSteps.i_am_on_ZingPoll_website(String)"
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 4067982565,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Register with empty new user",
+  "description": "",
+  "id": "register-to-zingpoll;register-with-empty-new-user;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Chrome"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "I am on ZingPoll website",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "I click the SignIn button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I input username hieutrandn01@gmail.com and password 123456",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "RegisterPageSteps.i_am_on_ZingPoll_website()"
 });
 formatter.result({
-  "duration": 24630757611,
+  "duration": 3620492880,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.i_click_the_SignIn_button()"
 });
 formatter.result({
-  "duration": 5619056051,
+  "duration": 5238872897,
   "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "duration": 3228766022,
-  "status": "passed"
-});
-formatter.uri("calculatorScenario.feature");
-formatter.feature({
-  "line": 2,
-  "name": "Calculator",
-  "description": "",
-  "id": "calculator",
-  "keyword": "Feature",
-  "tags": [
+formatter.match({
+  "arguments": [
     {
-      "line": 1,
-      "name": "@AndroidCalculator"
+      "val": "hieutrandn01@gmail.com",
+      "offset": 17
+    },
+    {
+      "val": "123456",
+      "offset": 53
     }
-  ]
-});
-formatter.before({
-  "duration": 22710186763,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 4,
-  "name": "Calculator",
-  "description": "",
-  "id": "calculator;calculator",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 5,
-  "name": "I open the Calculator application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "I click number seven",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "I click plus",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "I click number two",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "I click equal",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "I validate value",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "calculatorScenario.i_open_the_Calculator_application()"
+  ],
+  "location": "RegisterPageSteps.i_input_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 1444122557,
-  "status": "passed"
-});
-formatter.match({
-  "location": "calculatorScenario.i_click_number_seven()"
-});
-formatter.result({
-  "duration": 1641369280,
-  "status": "passed"
-});
-formatter.match({
-  "location": "calculatorScenario.i_click_plus()"
-});
-formatter.result({
-  "duration": 2939966837,
-  "status": "passed"
-});
-formatter.match({
-  "location": "calculatorScenario.i_click_number_two()"
-});
-formatter.result({
-  "duration": 2707433557,
-  "status": "passed"
-});
-formatter.match({
-  "location": "calculatorScenario.i_click_equal()"
-});
-formatter.result({
-  "duration": 1535089580,
-  "status": "passed"
-});
-formatter.match({
-  "location": "calculatorScenario.i_validate_value()"
-});
-formatter.result({
-  "duration": 1359555204,
+  "duration": 4554968058,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7930804350,
+  "duration": 961371023,
   "status": "passed"
 });
 });

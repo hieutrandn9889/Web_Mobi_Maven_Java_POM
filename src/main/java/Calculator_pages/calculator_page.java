@@ -1,4 +1,4 @@
-package calculatorPages;
+package Calculator_pages;
 
 import commons.AbstractMobile;
 import interfaces.calculatorUI;

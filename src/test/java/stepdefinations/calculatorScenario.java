@@ -4,8 +4,8 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import Calculator_pages.calculator_page;
 import ZingPoll_pages.ZingPoll_HomePage;
-import calculatorPages.calculator_page;
 import commons.AbstractTest;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
