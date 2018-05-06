@@ -61,7 +61,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4067982565,
+  "duration": 3155611319,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,14 +101,14 @@ formatter.match({
   "location": "RegisterPageSteps.i_am_on_ZingPoll_website()"
 });
 formatter.result({
-  "duration": 3620492880,
+  "duration": 5517294610,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.i_click_the_SignIn_button()"
 });
 formatter.result({
-  "duration": 5238872897,
+  "duration": 5312426475,
   "status": "passed"
 });
 formatter.match({
@@ -125,11 +125,113 @@ formatter.match({
   "location": "RegisterPageSteps.i_input_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 4554968058,
+  "duration": 4835156221,
   "status": "passed"
 });
 formatter.after({
-  "duration": 961371023,
+  "duration": 284769020,
+  "status": "passed"
+});
+formatter.uri("calculatorScenario.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Calculator",
+  "description": "",
+  "id": "calculator",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@AndroidCalculator"
+    }
+  ]
+});
+formatter.before({
+  "duration": 13864447352,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "Calculator",
+  "description": "",
+  "id": "calculator;calculator",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 5,
+  "name": "I open the Calculator application",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "I click number seven",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I click plus",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I click number two",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "I click equal",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I validate value",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "calculatorScenario.i_open_the_Calculator_application()"
+});
+formatter.result({
+  "duration": 300116283,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_number_seven()"
+});
+formatter.result({
+  "duration": 734030839,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_plus()"
+});
+formatter.result({
+  "duration": 1550299376,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_number_two()"
+});
+formatter.result({
+  "duration": 1341452292,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_click_equal()"
+});
+formatter.result({
+  "duration": 1588757597,
+  "status": "passed"
+});
+formatter.match({
+  "location": "calculatorScenario.i_validate_value()"
+});
+formatter.result({
+  "duration": 1107242210,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 3147025113,
   "status": "passed"
 });
 });

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4067982565,
+              "duration": 3155611319,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 961371023,
+              "duration": 284769020,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3620492880,
+              "duration": 5517294610,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 5238872897,
+              "duration": 5312426475,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 4554968058,
+              "duration": 4835156221,
               "status": "passed"
             },
             "line": 8,
@@ -96,5 +96,125 @@
     "id": "register-to-zingpoll",
     "keyword": "Feature",
     "uri": "RegisterToZingPoll.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13864447352,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpAppiumCalculator()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Calculator",
+        "description": "",
+        "id": "calculator;calculator",
+        "after": [
+          {
+            "result": {
+              "duration": 3147025113,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 300116283,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the Calculator application",
+            "match": {
+              "location": "calculatorScenario.i_open_the_Calculator_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 734030839,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click number seven",
+            "match": {
+              "location": "calculatorScenario.i_click_number_seven()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1550299376,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click plus",
+            "match": {
+              "location": "calculatorScenario.i_click_plus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1341452292,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click number two",
+            "match": {
+              "location": "calculatorScenario.i_click_number_two()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1588757597,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click equal",
+            "match": {
+              "location": "calculatorScenario.i_click_equal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1107242210,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I validate value",
+            "match": {
+              "location": "calculatorScenario.i_validate_value()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculator",
+    "description": "",
+    "id": "calculator",
+    "keyword": "Feature",
+    "uri": "calculatorScenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AndroidCalculator"
+      }
+    ]
   }
 ]
