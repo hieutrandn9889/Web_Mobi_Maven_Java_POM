@@ -290,3 +290,43 @@ Session ID: 356c24f9-149e-4dd5-838f-f4a3e5ecb547
 2018-05-06 12:11:14 INFO  LogEvent:18 - Input username
 2018-05-06 12:11:41 INFO  LogEvent:18 - Input username
 2018-05-06 12:11:52 INFO  LogEvent:18 - Input username
+2018-05-07 15:13:47 INFO  LogEvent:18 - Input username
+2018-05-07 15:13:59 INFO  LogEvent:18 - Input username
+2018-05-07 16:19:30 INFO  LogEvent:18 - CLICK
+2018-05-07 16:21:24 INFO  LogEvent:18 - CLICK
+2018-05-07 16:24:07 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-07 16:24:07 INFO  LogEvent:18 - Open the Home page
+2018-05-07 16:24:29 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-07 16:24:29 INFO  LogEvent:18 - number seven
+2018-05-07 16:24:31 INFO  LogEvent:18 - plus
+2018-05-07 16:24:33 INFO  LogEvent:18 - number two
+2018-05-07 16:24:34 INFO  LogEvent:18 - equal
+2018-05-07 16:24:57 INFO  LogEvent:18 - CLICK
+2018-05-07 16:27:09 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-07 16:27:09 INFO  LogEvent:18 - Open the Home page
+2018-05-07 16:27:30 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-07 16:27:31 INFO  LogEvent:18 - number seven
+2018-05-07 16:27:32 INFO  LogEvent:18 - plus
+2018-05-07 16:27:34 INFO  LogEvent:18 - number two
+2018-05-07 16:27:36 INFO  LogEvent:18 - equal
+2018-05-07 16:28:01 INFO  LogEvent:18 - CLICK
+2018-05-07 16:35:35 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-07 16:35:35 INFO  LogEvent:18 - Open the Home page
+2018-05-07 16:35:54 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-07 16:35:55 INFO  LogEvent:18 - number seven
+2018-05-07 16:35:56 INFO  LogEvent:18 - plus
+2018-05-07 16:35:58 INFO  LogEvent:18 - number two
+2018-05-07 16:35:59 INFO  LogEvent:18 - equal
+2018-05-07 16:36:23 INFO  LogEvent:18 - CLICK
+2018-05-10 15:49:41 INFO  LogEvent:18 - Input username
+2018-05-10 15:49:52 INFO  LogEvent:18 - Input username
+2018-05-10 17:26:53 INFO  LogEvent:18 - Input username
+2018-05-10 17:52:48 INFO  LogEvent:18 - Input username
+2018-05-10 18:22:28 INFO  LogEvent:18 - Input username
+2018-05-10 18:22:49 INFO  LogEvent:18 - quit username
+2018-05-10 18:28:23 INFO  LogEvent:18 - clicked
+2018-05-10 18:28:31 INFO  LogEvent:18 - quit app
+2018-05-10 18:30:30 INFO  LogEvent:18 - clicked
+2018-05-10 18:30:30 INFO  LogEvent:18 - quit app
+2018-05-10 18:34:30 INFO  LogEvent:18 - clicked
+2018-05-10 18:34:30 INFO  LogEvent:18 - quit app

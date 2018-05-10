@@ -3,7 +3,6 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -57,8 +56,8 @@ public class configIOS{
 	
 	@AfterTest
 	public void tearDown() {
-//		driverAppium.quit();
-//		LOG.info("quit username");
+		driverAppium.quit();
+		LOG.info("quit app");
 	}
 }
 

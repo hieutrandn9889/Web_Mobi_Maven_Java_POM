@@ -17,4 +17,8 @@ public class Constants {
 	public static final String APP_SC = "..//Web_Mobi_Maven_Java_POM/App/SC.apk";
 	public static final String USEREMAIL = "testm2@test.ch";
 	public static final String PASSWORD = "Test1234!";
+	
+	// IOS
+	public static final String IOS_PATH = "..//Web_Mobi_Maven_Java_POM/App/UICatalog.app";
+	
 }

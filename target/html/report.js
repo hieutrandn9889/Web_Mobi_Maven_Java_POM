@@ -61,7 +61,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3155611319,
+  "duration": 3059719353,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,14 +101,14 @@ formatter.match({
   "location": "RegisterPageSteps.i_am_on_ZingPoll_website()"
 });
 formatter.result({
-  "duration": 5517294610,
+  "duration": 10762097670,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterPageSteps.i_click_the_SignIn_button()"
 });
 formatter.result({
-  "duration": 5312426475,
+  "duration": 5178793040,
   "status": "passed"
 });
 formatter.match({
@@ -125,11 +125,11 @@ formatter.match({
   "location": "RegisterPageSteps.i_input_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 4835156221,
+  "duration": 4703649959,
   "status": "passed"
 });
 formatter.after({
-  "duration": 284769020,
+  "duration": 1018184555,
   "status": "passed"
 });
 formatter.uri("calculatorScenario.feature");
@@ -147,7 +147,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 13864447352,
+  "duration": 7746863604,
   "status": "passed"
 });
 formatter.scenario({
@@ -192,46 +192,100 @@ formatter.match({
   "location": "calculatorScenario.i_open_the_Calculator_application()"
 });
 formatter.result({
-  "duration": 300116283,
+  "duration": 273574204,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_number_seven()"
 });
 formatter.result({
-  "duration": 734030839,
+  "duration": 927556391,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_plus()"
 });
 formatter.result({
-  "duration": 1550299376,
+  "duration": 1032340995,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_number_two()"
 });
 formatter.result({
-  "duration": 1341452292,
+  "duration": 1296022121,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_click_equal()"
 });
 formatter.result({
-  "duration": 1588757597,
+  "duration": 1621550152,
   "status": "passed"
 });
 formatter.match({
   "location": "calculatorScenario.i_validate_value()"
 });
 formatter.result({
-  "duration": 1107242210,
+  "duration": 1385789564,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3147025113,
+  "duration": 2349202491,
+  "status": "passed"
+});
+formatter.uri("iosScenario.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Run IOS",
+  "description": "",
+  "id": "run-ios",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 15138979212,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "Testing IOS",
+  "description": "",
+  "id": "run-ios;testing-ios",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@IOS"
+    }
+  ]
+});
+formatter.step({
+  "line": 5,
+  "name": "I open application IOS",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "I click UI to testing click function",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "iOSscenario.i_open_the_application_IOS()"
+});
+formatter.result({
+  "duration": 313698,
+  "status": "passed"
+});
+formatter.match({
+  "location": "iOSscenario.i_click_UI()"
+});
+formatter.result({
+  "duration": 18160995383,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 479098189,
   "status": "passed"
 });
 });

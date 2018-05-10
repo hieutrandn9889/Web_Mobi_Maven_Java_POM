@@ -15,6 +15,9 @@ import cucumber.api.java.Before;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.AutomationName;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Hook {
@@ -136,6 +139,30 @@ public class Hook {
 		System.out.println("-----------------Start Mobile Hook------------------");
 	}
 
+	
+	@Before(value = "@IOS")
+	public void setUpAppiumIOS() throws MalformedURLException {
+		
+		File f=new File(Constants.IOS_PATH);
+		DesiredCapabilities cap=new DesiredCapabilities();
+		cap.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
+		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.3");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 7");
+        cap.setCapability(MobileCapabilityType.BROWSER_NAME, "");
+        cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 50000);
+        cap.setCapability(MobileCapabilityType.APP, f.getAbsolutePath());
+        cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+		try {
+			driverAppium = new IOSDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		driverAppium.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
+	}
+	
+	
 	@After(value = "@Firefox, @Chrome")
 	public void closeDriver() {
 		try {
@@ -157,7 +184,7 @@ public class Hook {
 		}
 	}
 
-	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator,")
+	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator, @IOS")
 	public void closeDriverAppium() {
 		try {
 			driverAppium.quit();

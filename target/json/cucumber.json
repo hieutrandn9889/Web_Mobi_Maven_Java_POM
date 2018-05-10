@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3155611319,
+              "duration": 3059719353,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 284769020,
+              "duration": 1018184555,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5517294610,
+              "duration": 10762097670,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 5312426475,
+              "duration": 5178793040,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 4835156221,
+              "duration": 4703649959,
               "status": "passed"
             },
             "line": 8,
@@ -104,7 +104,7 @@
         "before": [
           {
             "result": {
-              "duration": 13864447352,
+              "duration": 7746863604,
               "status": "passed"
             },
             "match": {
@@ -119,7 +119,7 @@
         "after": [
           {
             "result": {
-              "duration": 3147025113,
+              "duration": 2349202491,
               "status": "passed"
             },
             "match": {
@@ -132,7 +132,7 @@
         "steps": [
           {
             "result": {
-              "duration": 300116283,
+              "duration": 273574204,
               "status": "passed"
             },
             "line": 5,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 734030839,
+              "duration": 927556391,
               "status": "passed"
             },
             "line": 6,
@@ -156,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 1550299376,
+              "duration": 1032340995,
               "status": "passed"
             },
             "line": 7,
@@ -168,7 +168,7 @@
           },
           {
             "result": {
-              "duration": 1341452292,
+              "duration": 1296022121,
               "status": "passed"
             },
             "line": 8,
@@ -180,7 +180,7 @@
           },
           {
             "result": {
-              "duration": 1588757597,
+              "duration": 1621550152,
               "status": "passed"
             },
             "line": 9,
@@ -192,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 1107242210,
+              "duration": 1385789564,
               "status": "passed"
             },
             "line": 10,
@@ -216,5 +216,77 @@
         "name": "@AndroidCalculator"
       }
     ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15138979212,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpAppiumIOS()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Testing IOS",
+        "description": "",
+        "id": "run-ios;testing-ios",
+        "after": [
+          {
+            "result": {
+              "duration": 479098189,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 313698,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open application IOS",
+            "match": {
+              "location": "iOSscenario.i_open_the_application_IOS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18160995383,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click UI to testing click function",
+            "match": {
+              "location": "iOSscenario.i_click_UI()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@IOS"
+          }
+        ]
+      }
+    ],
+    "name": "Run IOS",
+    "description": "",
+    "id": "run-ios",
+    "keyword": "Feature",
+    "uri": "iosScenario.feature"
   }
 ]
