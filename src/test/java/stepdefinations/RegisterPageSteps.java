@@ -38,7 +38,7 @@ public class RegisterPageSteps extends AbstractTest {
 	@Then("^I input username (.+) and password (.+)$")
 	public void i_input_username_and_password(String username, String password) throws Throwable {
 		// (.+): truyền cho  <username> với examples
-		// \"(.*?)\" : truyền cho "chrome"
+		// \"(.*?)\" : truyền cho "chrome" and "<content_dropdown>"
 		homePage.typeIntoEmail(username);
 		homePage.typeIntoPassword(password);
 	}

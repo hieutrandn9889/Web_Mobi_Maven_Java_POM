@@ -20,5 +20,7 @@ public class Constants {
 	
 	// IOS
 	public static final String IOS_PATH = "..//Web_Mobi_Maven_Java_POM/App/UICatalog.app";
+	public static final String IOS_INTERGRATION_PATH = "..//Web_Mobi_Maven_Java_POM/App/IntegrationApp.app";
+	public static final String IOS_BOODYTRAPP_PATH = "..//Web_Mobi_Maven_Java_POM/App/boobytrapp.app";
 	
 }

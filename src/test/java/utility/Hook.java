@@ -140,16 +140,38 @@ public class Hook {
 	}
 
 	
-	@Before(value = "@IOS")
+	@Before(value = "@SimulatorIOS")
 	public void setUpAppiumIOS() throws MalformedURLException {
 		
-		File f=new File(Constants.IOS_PATH);
+		File f=new File(Constants.IOS_BOODYTRAPP_PATH);
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
         cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.3");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 7");
         cap.setCapability(MobileCapabilityType.BROWSER_NAME, "");
+        cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 50000);
+        cap.setCapability(MobileCapabilityType.APP, f.getAbsolutePath());
+        cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+		try {
+			driverAppium = new IOSDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		driverAppium.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+		System.out.println("-----------------Start Mobile Hook------------------");
+	}
+	
+	@Before(value = "@RealDeviceIOS")
+	public void setUpAppiumRealDeviceIOS() throws MalformedURLException {
+		
+		File f=new File(Constants.IOS_INTERGRATION_PATH);
+		DesiredCapabilities cap=new DesiredCapabilities();
+		cap.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
+		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Thu's iPhone");
+        cap.setCapability(MobileCapabilityType.BROWSER_NAME, "");
+        cap.setCapability("udid","4a9ff9e339526894224e852a24508d49f1037d7a");
         cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 50000);
         cap.setCapability(MobileCapabilityType.APP, f.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
@@ -184,7 +206,7 @@ public class Hook {
 		}
 	}
 
-	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator, @IOS")
+	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator, @SimulatorIOS")
 	public void closeDriverAppium() {
 		try {
 			driverAppium.quit();

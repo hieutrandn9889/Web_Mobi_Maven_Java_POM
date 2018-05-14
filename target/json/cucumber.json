@@ -6,26 +6,26 @@
         "before": [
           {
             "result": {
-              "duration": 3059719353,
+              "duration": 12849096936,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.setUpChrome()"
+              "location": "Hook.setUpAppiumIOS()"
             }
           }
         ],
-        "line": 12,
-        "name": "Register with empty new user",
+        "line": 11,
+        "name": "Testing IOS",
         "description": "",
-        "id": "register-to-zingpoll;register-with-empty-new-user;;2",
+        "id": "run-ios;testing-ios;;2",
         "after": [
           {
             "result": {
-              "duration": 1018184555,
+              "duration": 589846311,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.closeDriver()"
+              "location": "Hook.closeDriverAppium()"
             }
           }
         ],
@@ -34,225 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10762097670,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on ZingPoll website",
-            "match": {
-              "location": "RegisterPageSteps.i_am_on_ZingPoll_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5178793040,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click the SignIn button",
-            "match": {
-              "location": "RegisterPageSteps.i_click_the_SignIn_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4703649959,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I input username hieutrandn01@gmail.com and password 123456",
-            "match": {
-              "arguments": [
-                {
-                  "val": "hieutrandn01@gmail.com",
-                  "offset": 17
-                },
-                {
-                  "val": "123456",
-                  "offset": 53
-                }
-              ],
-              "location": "RegisterPageSteps.i_input_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Chrome"
-          }
-        ]
-      }
-    ],
-    "name": "Register to ZingPoll",
-    "description": "I want to registered successfull",
-    "id": "register-to-zingpoll",
-    "keyword": "Feature",
-    "uri": "RegisterToZingPoll.feature"
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 7746863604,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumCalculator()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Calculator",
-        "description": "",
-        "id": "calculator;calculator",
-        "after": [
-          {
-            "result": {
-              "duration": 2349202491,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 273574204,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I open the Calculator application",
-            "match": {
-              "location": "calculatorScenario.i_open_the_Calculator_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 927556391,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I click number seven",
-            "match": {
-              "location": "calculatorScenario.i_click_number_seven()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1032340995,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click plus",
-            "match": {
-              "location": "calculatorScenario.i_click_plus()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1296022121,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click number two",
-            "match": {
-              "location": "calculatorScenario.i_click_number_two()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1621550152,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click equal",
-            "match": {
-              "location": "calculatorScenario.i_click_equal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1385789564,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I validate value",
-            "match": {
-              "location": "calculatorScenario.i_validate_value()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Calculator",
-    "description": "",
-    "id": "calculator",
-    "keyword": "Feature",
-    "uri": "calculatorScenario.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@AndroidCalculator"
-      }
-    ]
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 15138979212,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumIOS()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Testing IOS",
-        "description": "",
-        "id": "run-ios;testing-ios",
-        "after": [
-          {
-            "result": {
-              "duration": 479098189,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 313698,
+              "duration": 324674765,
               "status": "passed"
             },
             "line": 5,
@@ -264,21 +46,59 @@
           },
           {
             "result": {
-              "duration": 18160995383,
+              "duration": 3675937633,
               "status": "passed"
             },
             "line": 6,
-            "name": "I click UI to testing click function",
+            "name": "I click skip button",
             "match": {
-              "location": "iOSscenario.i_click_UI()"
+              "location": "iOSscenario.i_click_skip_button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11149674061,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input email \"thu.nguuyen@smartdev.vn\" and password \"Test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thu.nguuyen@smartdev.vn",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 54
+                }
+              ],
+              "location": "iOSscenario.i_input_email_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10336439737,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click login button of app",
+            "match": {
+              "location": "iOSscenario.i_click_login()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@IOS"
+            "name": "@SimulatorIOS"
           }
         ]
       }

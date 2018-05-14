@@ -23,8 +23,8 @@ public class configIOS{
 	@BeforeTest
 	public void setUp() throws MalformedURLException
 	{
-		//File f=new File("/Users/hieutran/Library/Developer/Xcode/DerivedData/boobytrapp-dycbkqsftwfybqdfeliyirqozabg/Build/Products/Release-iphonesimulator/boobytrapp.app");
-		File f=new File("/Users/hieutran/Library/Developer/Xcode/DerivedData/UICatalog-awfwyotvxeypmlgqarsnfkbhkvbb/Build/Products/Debug-iphonesimulator/UICatalog.app");
+		File f=new File("/Users/hieutran/Library/Developer/Xcode/DerivedData/boobytrapp-dycbkqsftwfybqdfeliyirqozabg/Build/Products/Release-iphonesimulator/boobytrapp.app");
+		//File f=new File("/Users/hieutran/Library/Developer/Xcode/DerivedData/UICatalog-awfwyotvxeypmlgqarsnfkbhkvbb/Build/Products/Debug-iphonesimulator/UICatalog.app");
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
@@ -43,15 +43,17 @@ public class configIOS{
 		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 		LOG = new LogEvent();
 		Thread.sleep(5000);	
-		LOG.info("Input username");
+		MobileElement skip = driverAppium.findElement(By.xpath("(//XCUIElementTypeOther[@name='Skip'])[6]"));
+		skip.click();
 		
-//		MobileElement skip = driverAppium.findElement(By.xpath("//XCUIElementTypeOther[@name='Skip']"));
-//		skip.click();
-		MobileElement skip1 = driverAppium.findElement(By.xpath("//XCUIElementTypeStaticText[@name='Toolbars']"));
-		skip1.click();
+		// email
+		driverAppium.findElement(By.xpath("	//XCUIElementTypeOther[@name='Enter email here']")).sendKeys("thu.nguuyen@smartdev.vn");
+		// password
+		driverAppium.findElement(By.xpath("	//XCUIElementTypeOther[@name='Enter password']")).sendKeys("Test@123");
+		driverAppium.findElement(By.xpath("//XCUIElementTypeOther[@name='Login']")).click();
 		
 		Thread.sleep(5000);
-		LOG.info("Input username");
+		LOG.info("Login is successful");
 	}
 	
 	@AfterTest
@@ -59,6 +61,7 @@ public class configIOS{
 		driverAppium.quit();
 		LOG.info("quit app");
 	}
+
 }
 
 

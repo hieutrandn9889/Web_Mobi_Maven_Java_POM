@@ -330,3 +330,38 @@ Session ID: 356c24f9-149e-4dd5-838f-f4a3e5ecb547
 2018-05-10 18:30:30 INFO  LogEvent:18 - quit app
 2018-05-10 18:34:30 INFO  LogEvent:18 - clicked
 2018-05-10 18:34:30 INFO  LogEvent:18 - quit app
+2018-05-11 16:25:55 INFO  LogEvent:18 - clicked and input text
+2018-05-11 16:26:01 INFO  LogEvent:18 - quit app
+2018-05-11 16:28:29 INFO  LogEvent:18 - clicked and input text
+2018-05-11 16:28:42 INFO  LogEvent:18 - quit app
+2018-05-11 16:30:49 INFO  LogEvent:18 - Input username
+2018-05-11 16:30:57 INFO  LogEvent:18 - Input username
+2018-05-11 16:30:57 INFO  LogEvent:18 - quit app
+2018-05-11 16:46:20 INFO  LogEvent:18 - Input username
+2018-05-11 16:46:29 INFO  LogEvent:18 - Input username
+2018-05-11 16:46:29 INFO  LogEvent:18 - quit app
+2018-05-11 16:51:12 INFO  LogEvent:18 - Input username
+2018-05-11 16:51:21 INFO  LogEvent:18 - Input username
+2018-05-11 16:51:21 INFO  LogEvent:18 - quit app
+2018-05-11 16:53:15 INFO  LogEvent:18 - Input username
+2018-05-11 17:02:42 INFO  LogEvent:18 - Input username
+2018-05-11 17:02:51 INFO  LogEvent:18 - Input username
+2018-05-11 17:02:51 INFO  LogEvent:18 - quit app
+2018-05-11 17:24:00 INFO  LogEvent:18 - Input username
+2018-05-11 17:24:09 INFO  LogEvent:18 - Input username
+2018-05-11 17:24:09 INFO  LogEvent:18 - quit app
+2018-05-11 17:40:28 INFO  LogEvent:18 - Slap screen
+2018-05-11 17:40:32 INFO  LogEvent:18 - quit app
+2018-05-11 17:43:31 INFO  LogEvent:18 - Slap screen
+2018-05-11 17:43:56 INFO  LogEvent:18 - Input username
+2018-05-11 17:43:56 INFO  LogEvent:18 - quit app
+2018-05-11 17:47:03 INFO  LogEvent:18 - Slap screen
+2018-05-11 17:47:28 INFO  LogEvent:18 - Input username
+2018-05-11 17:47:29 INFO  LogEvent:18 - quit app
+2018-05-11 17:54:05 INFO  LogEvent:18 - quit app
+2018-05-11 18:02:34 INFO  LogEvent:18 - Login is successful
+2018-05-11 18:02:34 INFO  LogEvent:18 - quit app
+2018-05-11 18:38:05 INFO  LogEvent:18 - Open application
+2018-05-11 18:39:13 INFO  LogEvent:18 - Open application
+2018-05-11 18:41:05 INFO  LogEvent:18 - Open application
+2018-05-11 18:41:30 INFO  LogEvent:18 - Login is successful
