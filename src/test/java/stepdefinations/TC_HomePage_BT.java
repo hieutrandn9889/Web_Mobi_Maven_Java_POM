@@ -1,9 +1,10 @@
 package stepdefinations;
 
 import org.apache.log4j.xml.DOMConfigurator;
+
 import commons.LogEvent;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.Hook;
@@ -16,7 +17,7 @@ public class TC_HomePage_BT {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
 
-	@Given("^I see home page$")
+	@Then("^I see home page$")
 	public void i_see_home_page() {
 		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 		LOG = new LogEvent();

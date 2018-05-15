@@ -142,10 +142,6 @@ public class Hook {
 	
 	@Before(value = "@SimulatorIOS")
 	public void setUpAppiumIOS() throws MalformedURLException {
-//		TC_LoginPage_BT loginPage;
-//		String email = Constants.EMAIL_BT;
-//		String password = Constants.PASSWORD_BT;
-		
 		
 		File f=new File(Constants.IOS_BOODYTRAPP_PATH);
 		DesiredCapabilities cap=new DesiredCapabilities();
@@ -164,10 +160,6 @@ public class Hook {
 		}
 		driverAppium.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
 		System.out.println("-----------------Start Mobile Hook------------------");
-//		loginPage = new TC_LoginPage_BT();
-//		loginPage.i_click_skip_button();
-//		loginPage.i_input_email_password(email, password);
-//		loginPage.i_click_login();
 	}
 	
 	@Before(value = "@RealDeviceIOS")
@@ -214,7 +206,7 @@ public class Hook {
 		}
 	}
 
-	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator, @homePageBT, @LogOutBT")
+	@After(value = "@AndroidSwipe, @AndroidCalculator, @Android_API_SMS, @AndroidSC, @AndroidSwipe, @AndroidCalculator, @SimulatorIOS")
 	public void closeDriverAppium() {
 		try {
 			driverAppium.quit();

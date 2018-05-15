@@ -4,7 +4,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import commons.LogEvent;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.Hook;
@@ -17,7 +17,7 @@ public class TC_LogOut_BT {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
 
-	@Given("^I open homepage$")
+	@Then("^I open homepage$")
 	public void i_open_homepage() {
 		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 		LOG = new LogEvent();
