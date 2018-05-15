@@ -19,10 +19,10 @@ import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.StartsActivity;
 import utility.Hook;
 
-public class AppiumScenario extends AbstractMobile {
+public class TC_AppiumScenario extends AbstractMobile {
 
 	private AppiumDriver<MobileElement> driverAppium;
-	public AppiumScenario() {
+	public TC_AppiumScenario() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
 

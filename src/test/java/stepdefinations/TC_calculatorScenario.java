@@ -14,7 +14,7 @@ import cucumber.api.java.en.When;
 import interfaces.calculatorUI;
 import utility.Hook;
 
-public class calculatorScenario extends AbstractTest {
+public class TC_calculatorScenario extends AbstractTest {
 	WebDriver driverAppium = Hook.getAppiumDriver();
 	private calculator_page cal = new calculator_page();
 	LogEvent LOG;

@@ -11,7 +11,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import utility.Hook;
 
-public class RegisterPageSteps extends AbstractTest {
+public class TC_RegisterPageSteps_ZP extends AbstractTest {
 	WebDriver driver = Hook.getDriver();
 	private ZingPoll_HomePage homePage = new ZingPoll_HomePage();
 	LogEvent LOG;
