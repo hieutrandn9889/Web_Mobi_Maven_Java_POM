@@ -23,4 +23,8 @@ public class Constants {
 	public static final String IOS_INTERGRATION_PATH = "..//Web_Mobi_Maven_Java_POM/App/IntegrationApp.app";
 	public static final String IOS_BOODYTRAPP_PATH = "..//Web_Mobi_Maven_Java_POM/App/boobytrapp.app";
 	
+	// Mobile BT
+	public static final String EMAIL_BT = "thu.nguuyen@smartdev.vn";
+	public static final String PASSWORD_BT = "Test@123";
+	
 }

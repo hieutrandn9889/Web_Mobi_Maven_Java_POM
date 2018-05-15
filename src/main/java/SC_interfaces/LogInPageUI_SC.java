@@ -1,6 +1,6 @@
 package SC_interfaces;
 
-public class LogInPageUI {
+public class LogInPageUI_SC {
 
 	public static final String USER_TXT = "com.swisscard.prod.debug:id/edtemail";
 	public static final String PASSWORD_TXT = "com.swisscard.prod.debug:id/edtpass";

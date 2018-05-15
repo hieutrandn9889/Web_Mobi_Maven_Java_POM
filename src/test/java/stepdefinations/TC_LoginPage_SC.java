@@ -2,7 +2,7 @@ package stepdefinations;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
-import SC_pages.PageFactory;
+import SC_pages.PageFactory_SC;
 import commons.AbstractTest;
 import commons.Constants;
 import commons.LogEvent;
@@ -17,8 +17,8 @@ public class TC_LoginPage_SC extends AbstractTest {
 
 	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG;
-	SC_pages.LogInPage loginPage;
-	SC_pages.SignUpPage signUpPage;
+	SC_pages.LogInPage_SC loginPage;
+	SC_pages.SignUpPage_SC signUpPage;
 
 	// test data
 	private String _valid_mail = Constants.USEREMAIL;
@@ -38,7 +38,7 @@ public class TC_LoginPage_SC extends AbstractTest {
 	@When("^I click login button$")
 	public void i_click_login_button() {
 		try {
-			signUpPage = PageFactory.getSignUpPage(driverAppium);
+			signUpPage = PageFactory_SC.getSignUpPage(driverAppium);
 			loginPage = signUpPage.openLogInPage(driverAppium);
 			
 			DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");

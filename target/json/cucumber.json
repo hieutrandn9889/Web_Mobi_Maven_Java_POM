@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 12849096936,
+              "duration": 9906764684,
               "status": "passed"
             },
             "match": {
@@ -14,51 +14,40 @@
             }
           }
         ],
-        "line": 11,
+        "line": 12,
         "name": "Testing IOS",
         "description": "",
         "id": "run-ios;testing-ios;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 589846311,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 324674765,
+              "duration": 310390799,
               "status": "passed"
             },
             "line": 5,
             "name": "I open application IOS",
             "match": {
-              "location": "iOSscenario.i_open_the_application_IOS()"
+              "location": "TC_LoginPage_BT.i_open_the_application_IOS()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3675937633,
+              "duration": 5152933401,
               "status": "passed"
             },
             "line": 6,
             "name": "I click skip button",
             "match": {
-              "location": "iOSscenario.i_click_skip_button()"
+              "location": "TC_LoginPage_BT.i_click_skip_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 11149674061,
+              "duration": 18009246910,
               "status": "passed"
             },
             "line": 7,
@@ -74,7 +63,7 @@
                   "offset": 54
                 }
               ],
-              "location": "iOSscenario.i_input_email_password(String,String)"
+              "location": "TC_LoginPage_BT.i_input_email_password(String,String)"
             },
             "matchedColumns": [
               0,
@@ -84,13 +73,13 @@
           },
           {
             "result": {
-              "duration": 10336439737,
+              "duration": 7915687551,
               "status": "passed"
             },
             "line": 8,
             "name": "I click login button of app",
             "match": {
-              "location": "iOSscenario.i_click_login()"
+              "location": "TC_LoginPage_BT.i_click_login()"
             },
             "keyword": "Then "
           }
@@ -101,12 +90,213 @@
             "name": "@SimulatorIOS"
           }
         ]
+      },
+      {
+        "line": 15,
+        "name": "Enter Homepage",
+        "description": "",
+        "id": "run-ios;enter-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 333581695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9178093,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I open homepage",
+            "match": {
+              "location": "TC_LogOut_BT.i_open_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11308495099,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click logout button",
+            "match": {
+              "location": "TC_LogOut_BT.i_click_logout_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@LogOutBT"
+          }
+        ]
       }
     ],
     "name": "Run IOS",
     "description": "",
     "id": "run-ios",
     "keyword": "Feature",
-    "uri": "iosScenario.feature"
+    "uri": "AddNewEventHomgPageBTScenario.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8562074838,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpAppiumIOS()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Testing IOS",
+        "description": "",
+        "id": "run-ios-to-login;testing-ios;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8600527,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open application IOS",
+            "match": {
+              "location": "TC_LoginPage_BT.i_open_the_application_IOS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5301068433,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click skip button",
+            "match": {
+              "location": "TC_LoginPage_BT.i_click_skip_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16680923869,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input email \"thu.nguuyen@smartdev.vn\" and password \"Test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thu.nguuyen@smartdev.vn",
+                  "offset": 15
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 54
+                }
+              ],
+              "location": "TC_LoginPage_BT.i_input_email_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7280336980,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click login button of app",
+            "match": {
+              "location": "TC_LoginPage_BT.i_click_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SimulatorIOS"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Enter Homepage",
+        "description": "",
+        "id": "run-ios-to-login;enter-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 331264250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9243383,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I see home page",
+            "match": {
+              "location": "TC_HomePage_BT.i_see_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11414047809,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click add new event",
+            "match": {
+              "location": "TC_HomePage_BT.i_click_add_new_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@homePageBT"
+          }
+        ]
+      }
+    ],
+    "name": "Run IOS to login",
+    "description": "",
+    "id": "run-ios-to-login",
+    "keyword": "Feature",
+    "uri": "LoginAndLogoutBTScenario.feature"
   }
 ]

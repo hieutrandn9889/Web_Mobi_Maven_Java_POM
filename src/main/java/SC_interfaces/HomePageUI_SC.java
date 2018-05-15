@@ -1,6 +1,6 @@
 package SC_interfaces;
 
-public class HomePageUI {
+public class HomePageUI_SC {
 
 	public static String MY_ACCOUNT_MENU = "//a[contains(text(),'My Account')]";
 	public static String SIGN_UP_MENU = "//a[contains(text(),'Sign Up')]";

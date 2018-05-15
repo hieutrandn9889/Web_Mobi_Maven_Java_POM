@@ -1,7 +1,8 @@
 package stepdefinations;
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 
+import org.apache.log4j.xml.DOMConfigurator;
+import BT_pages.HomePage_BT;
+import BT_pages.PageFactory_BT;
 import commons.AbstractMobile;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
@@ -10,53 +11,58 @@ import cucumber.api.java.en.When;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.Hook;
-public class iOSscenario extends AbstractMobile {
+
+public class TC_LoginPage_BT extends AbstractMobile {
 	AppiumDriver<MobileElement> driverAppium;
 	LogEvent LOG;
-	
-	public iOSscenario() {
+	BT_pages.SkipPage_BT skipPage;
+	static BT_pages.LogInPage_BT loginPage;
+	static HomePage_BT homePage;
+
+	public TC_LoginPage_BT() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
-	
+
 	@Given("^I open application IOS$")
 	public void i_open_the_application_IOS() {
-		
+
 		DOMConfigurator.configure("..//Web_Mobi_Maven_Java_POM/resource/log4j.xml");
 		LOG = new LogEvent();
 		LOG.info("Open application");
 	}
 
 	@When("^I click skip button$")
-	public void i_click_skip_button(){
+	public void i_click_skip_button() {
 		try {
-			MobileElement skip = driverAppium.findElement(By.xpath("(//XCUIElementTypeOther[@name='Skip'])[6]"));
-			skip.click();
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-	}
-	
-	@Then("^I input email \"([^\"]*)\" and password \"([^\"]*)\"$")
-	public void i_input_email_password(String email, String password) {
-		try {
-			driverAppium.findElement(By.xpath("	//XCUIElementTypeOther[@name='Enter email here']")).sendKeys(email);
-			// password
-			driverAppium.findElement(By.xpath("	//XCUIElementTypeOther[@name='Enter password']")).sendKeys(password);
+
+			skipPage = PageFactory_BT.getSkipPage(driverAppium);
+			loginPage = skipPage.openLogInPage_BT(driverAppium);
+			//loginPage = skipPage.openLogInPage_BT(driverAppium);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
-	
-	@Then("^I click login button of app$")
-	public void i_click_login(){
+
+	@Then("^I input email \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void i_input_email_password(String email, String password) {
 		try {
-			driverAppium.findElement(By.xpath("//XCUIElementTypeOther[@name='Login']")).click();
-			
-			Thread.sleep(5000);
-			LOG.info("Login is successful");
+			loginPage.enterUserName(email);
+			loginPage.enterPass(password);
+		
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+		}
+	}
+
+	@Then("^I click login button of app$")
+	public HomePage_BT i_click_login() {
+		try {
+			 return homePage = loginPage.clickLOGIN();
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return null;
 		}
 	}
 
