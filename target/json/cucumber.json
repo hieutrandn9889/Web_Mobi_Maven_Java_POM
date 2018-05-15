@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6626038546,
+              "duration": 6501848208,
               "status": "passed"
             },
             "line": 5,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 13428972541,
+              "duration": 13633290365,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 414388746,
+              "duration": 888569625,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21347446243,
+              "duration": 23900147288,
               "status": "passed"
             },
             "line": 9,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 10222942007,
+              "duration": 11709260789,
               "status": "passed"
             },
             "line": 10,
@@ -93,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 102203847,
+              "duration": 115920532,
               "status": "passed"
             },
             "line": 11,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 13338548766,
+              "duration": 15415763141,
               "status": "passed"
             },
             "line": 12,
@@ -136,7 +136,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6544980293,
+              "duration": 11131134756,
               "status": "passed"
             },
             "line": 5,
@@ -152,7 +152,7 @@
         "before": [
           {
             "result": {
-              "duration": 10802422394,
+              "duration": 22458791615,
               "status": "passed"
             },
             "match": {
@@ -167,7 +167,7 @@
         "after": [
           {
             "result": {
-              "duration": 656270148,
+              "duration": 669834811,
               "status": "passed"
             },
             "match": {
@@ -180,7 +180,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21283045242,
+              "duration": 31289512262,
               "status": "passed"
             },
             "line": 20,
@@ -206,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 10265721842,
+              "duration": 11605282331,
               "status": "passed"
             },
             "line": 21,
@@ -218,7 +218,7 @@
           },
           {
             "result": {
-              "duration": 14947284,
+              "duration": 58176239,
               "status": "passed"
             },
             "line": 22,
@@ -230,7 +230,7 @@
           },
           {
             "result": {
-              "duration": 13246089831,
+              "duration": 15181426552,
               "status": "passed"
             },
             "line": 23,
@@ -262,6 +262,224 @@
       {
         "line": 1,
         "name": "@SimulatorIOS"
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2802277509,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpChrome()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Register with empty new user",
+        "description": "",
+        "id": "register-to-zingpoll;register-with-empty-new-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 247313717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10568044486,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on ZingPoll website",
+            "match": {
+              "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5246003489,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the SignIn button",
+            "match": {
+              "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4996074334,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I input username hieutrandn01@gmail.com and password 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hieutrandn01@gmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "123456",
+                  "offset": 53
+                }
+              ],
+              "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Chrome"
+          }
+        ]
+      }
+    ],
+    "name": "Register to ZingPoll",
+    "description": "I want to registered successfull",
+    "id": "register-to-zingpoll",
+    "keyword": "Feature",
+    "uri": "RegisterTo_ZP_Scenario.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10224415098,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpAppiumCalculator()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Calculator",
+        "description": "",
+        "id": "calculator;calculator",
+        "after": [
+          {
+            "result": {
+              "duration": 2475787467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.closeDriverAppium()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 208464711,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the Calculator application",
+            "match": {
+              "location": "TC_calculatorScenario.i_open_the_Calculator_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1373076004,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click number seven",
+            "match": {
+              "location": "TC_calculatorScenario.i_click_number_seven()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1713225133,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click plus",
+            "match": {
+              "location": "TC_calculatorScenario.i_click_plus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1580917004,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click number two",
+            "match": {
+              "location": "TC_calculatorScenario.i_click_number_two()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1965535726,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click equal",
+            "match": {
+              "location": "TC_calculatorScenario.i_click_equal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1074053846,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I validate value",
+            "match": {
+              "location": "TC_calculatorScenario.i_validate_value()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculator",
+    "description": "",
+    "id": "calculator",
+    "keyword": "Feature",
+    "uri": "calculatorScenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AndroidCalculator"
       }
     ]
   }

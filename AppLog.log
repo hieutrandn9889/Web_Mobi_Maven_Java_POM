@@ -735,3 +735,20 @@ Driver info: driver.version: AppiumDriver
 2018-05-15 18:16:45 INFO  LogEvent:18 - Logout page
 2018-05-15 18:16:51 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
 2018-05-15 18:16:51 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-15 18:19:24 INFO  LogEvent:18 - Enter Home page
+2018-05-15 18:19:24 INFO  LogEvent:18 - Staring click add new events.
+2018-05-15 18:19:34 INFO  LogEvent:18 - Enter Add new event
+2018-05-15 18:19:39 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-15 18:19:39 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-15 18:20:57 INFO  LogEvent:18 - Enter Home page
+2018-05-15 18:20:57 INFO  LogEvent:18 - Clicking logout button.
+2018-05-15 18:21:07 INFO  LogEvent:18 - Logout page
+2018-05-15 18:21:12 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-15 18:21:12 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-15 18:21:26 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-15 18:21:26 INFO  LogEvent:18 - Open the Home page
+2018-05-15 18:21:47 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-15 18:21:48 INFO  LogEvent:18 - number seven
+2018-05-15 18:21:50 INFO  LogEvent:18 - plus
+2018-05-15 18:21:52 INFO  LogEvent:18 - number two
+2018-05-15 18:21:54 INFO  LogEvent:18 - equal
