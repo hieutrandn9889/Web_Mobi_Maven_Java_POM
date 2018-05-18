@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinations.SC;
 
 import org.apache.log4j.xml.DOMConfigurator;
 

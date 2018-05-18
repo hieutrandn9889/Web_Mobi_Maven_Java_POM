@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinations.BT;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import BT_pages.HomePage_BT;

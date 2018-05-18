@@ -1,4 +1,4 @@
-package ZingPoll_pages;
+package ZP_pages;
 
 import org.openqa.selenium.WebDriver;
 

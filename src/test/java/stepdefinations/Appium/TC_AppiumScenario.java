@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinations.Appium;
 
 import java.util.concurrent.TimeUnit;
 

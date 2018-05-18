@@ -1,278 +1,12 @@
 [
   {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
-        "name": "Given I open application IOS",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6501848208,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I click skip button",
-            "match": {
-              "location": "TC_LoginPage_BT.i_click_skip_button()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 13633290365,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumIOS()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Testing IOS",
-        "description": "",
-        "id": "run-ios-to-login;testing-ios;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 888569625,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 23900147288,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I input email \"thu.nguuyen@smartdev.vn\" and password \"Test@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thu.nguuyen@smartdev.vn",
-                  "offset": 15
-                },
-                {
-                  "val": "Test@123",
-                  "offset": 54
-                }
-              ],
-              "location": "TC_LoginPage_BT.i_input_email_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 11709260789,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I click login button of app",
-            "match": {
-              "location": "TC_LoginPage_BT.i_click_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 115920532,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I see home page",
-            "match": {
-              "location": "TC_HomePage_BT.i_see_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15415763141,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I click add new event",
-            "match": {
-              "location": "TC_HomePage_BT.i_click_add_new_button()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@SimulatorIOS"
-          },
-          {
-            "line": 7,
-            "name": "@tag1"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Given I open application IOS",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 11131134756,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I click skip button",
-            "match": {
-              "location": "TC_LoginPage_BT.i_click_skip_button()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 22458791615,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumIOS()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Enter Homepage",
-        "description": "",
-        "id": "run-ios-to-login;enter-homepage;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 669834811,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 31289512262,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I input email \"thu.nguuyen@smartdev.vn\" and password \"Test@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thu.nguuyen@smartdev.vn",
-                  "offset": 15
-                },
-                {
-                  "val": "Test@123",
-                  "offset": 54
-                }
-              ],
-              "location": "TC_LoginPage_BT.i_input_email_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 11605282331,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I click login button of app",
-            "match": {
-              "location": "TC_LoginPage_BT.i_click_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 58176239,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I open homepage",
-            "match": {
-              "location": "TC_LogOut_BT.i_open_homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 15181426552,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I click logout button",
-            "match": {
-              "location": "TC_LogOut_BT.i_click_logout_button()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 18,
-            "name": "@tag2"
-          },
-          {
-            "line": 1,
-            "name": "@SimulatorIOS"
-          }
-        ]
-      }
-    ],
-    "name": "Run IOS to login",
-    "description": "",
-    "id": "run-ios-to-login",
-    "keyword": "Feature",
-    "uri": "AddNewEventHomgPage_BT_Scenario.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@SimulatorIOS"
-      }
-    ]
-  },
-  {
     "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 2802277509,
+              "duration": 2219962672,
               "status": "passed"
             },
             "match": {
@@ -287,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 247313717,
+              "duration": 184493210,
               "status": "passed"
             },
             "match": {
@@ -300,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10568044486,
+              "duration": 6494876559,
               "status": "passed"
             },
             "line": 6,
@@ -312,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 5246003489,
+              "duration": 5199276778,
               "status": "passed"
             },
             "line": 7,
@@ -324,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 4996074334,
+              "duration": 4614521063,
               "status": "passed"
             },
             "line": 8,
@@ -362,125 +96,5 @@
     "id": "register-to-zingpoll",
     "keyword": "Feature",
     "uri": "RegisterTo_ZP_Scenario.feature"
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 10224415098,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpAppiumCalculator()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Calculator",
-        "description": "",
-        "id": "calculator;calculator",
-        "after": [
-          {
-            "result": {
-              "duration": 2475787467,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriverAppium()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 208464711,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I open the Calculator application",
-            "match": {
-              "location": "TC_calculatorScenario.i_open_the_Calculator_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1373076004,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I click number seven",
-            "match": {
-              "location": "TC_calculatorScenario.i_click_number_seven()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1713225133,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click plus",
-            "match": {
-              "location": "TC_calculatorScenario.i_click_plus()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1580917004,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I click number two",
-            "match": {
-              "location": "TC_calculatorScenario.i_click_number_two()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1965535726,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click equal",
-            "match": {
-              "location": "TC_calculatorScenario.i_click_equal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1074053846,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I validate value",
-            "match": {
-              "location": "TC_calculatorScenario.i_validate_value()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Calculator",
-    "description": "",
-    "id": "calculator",
-    "keyword": "Feature",
-    "uri": "calculatorScenario.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@AndroidCalculator"
-      }
-    ]
   }
 ]
