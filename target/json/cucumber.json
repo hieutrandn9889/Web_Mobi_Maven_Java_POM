@@ -6,11 +6,11 @@
         "before": [
           {
             "result": {
-              "duration": 2219962672,
+              "duration": 5982515438,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.setUpChrome()"
+              "location": "Hook.setUpFirefox()"
             }
           }
         ],
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 184493210,
+              "duration": 840419987,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6494876559,
+              "duration": 8407563267,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 5199276778,
+              "duration": 5421922949,
               "status": "passed"
             },
             "line": 7,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 4614521063,
+              "duration": 4359549295,
               "status": "passed"
             },
             "line": 8,
@@ -86,7 +86,7 @@
         "tags": [
           {
             "line": 4,
-            "name": "@Chrome"
+            "name": "@Firefox"
           }
         ]
       }
