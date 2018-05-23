@@ -14,3 +14,15 @@ Feature: Run IOS to login
     Examples: 
       | email                   | password |
       | thu.nguuyen@smartdev.vn | Test@123 |
+
+  @tag2
+  Scenario Outline: Testing IOS logout
+    Then I input email "<email>" and password "<password>"
+    Then I click login button of app
+    Then I open homepage
+		Then I click logout button
+		
+		Examples: 
+      | email                   | password |
+      | thu.nguuyen@smartdev.vn | Test@123 |
+

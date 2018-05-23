@@ -827,3 +827,70 @@ Driver info: driver.version: AppiumDriver
 2018-05-23 12:03:01 INFO  LogEvent:18 - Open the Home page
 2018-05-23 12:06:42 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
 2018-05-23 12:06:42 INFO  LogEvent:18 - Open the Home page
+2018-05-23 16:05:51 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-23 16:05:51 INFO  LogEvent:18 - Open the Home page
+2018-05-23 16:10:17 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-23 16:10:17 INFO  LogEvent:18 - number seven
+2018-05-23 16:10:19 INFO  LogEvent:18 - plus
+2018-05-23 16:11:18 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-23 16:11:19 INFO  LogEvent:18 - number seven
+2018-05-23 16:11:21 INFO  LogEvent:18 - plus
+2018-05-23 16:11:23 INFO  LogEvent:18 - number two
+2018-05-23 16:11:24 INFO  LogEvent:18 - equal
+2018-05-23 16:11:48 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-05-23 16:11:48 INFO  LogEvent:18 - number seven
+2018-05-23 16:11:50 INFO  LogEvent:18 - plus
+2018-05-23 16:11:53 INFO  LogEvent:18 - number two
+2018-05-23 16:11:55 INFO  LogEvent:18 - equal
+2018-05-23 16:12:17 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-23 16:12:17 INFO  LogEvent:18 - Open the Home page
+2018-05-23 16:49:38 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:49:38 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 16:49:45 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 16:49:50 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 16:49:50 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 16:50:32 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:50:32 INFO  LogEvent:18 - Clicking logout button.
+2018-05-23 16:50:39 INFO  LogEvent:18 - Logout page
+2018-05-23 16:50:44 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 16:50:44 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 16:52:02 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:52:02 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 16:52:10 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 16:52:15 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 16:52:15 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 16:53:07 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:53:07 INFO  LogEvent:18 - Clicking logout button.
+2018-05-23 16:53:14 INFO  LogEvent:18 - Logout page
+2018-05-23 16:53:19 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 16:53:19 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 16:56:46 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:56:46 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 16:56:53 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 16:56:58 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
+2018-05-23 16:56:58 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 16:59:08 INFO  LogEvent:18 - Enter Home page
+2018-05-23 16:59:08 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 16:59:15 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 16:59:20 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 16:59:20 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 17:01:02 INFO  LogEvent:18 - Enter Home page
+2018-05-23 17:01:02 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 17:01:09 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 17:01:14 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 17:01:14 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 17:01:54 INFO  LogEvent:18 - Enter Home page
+2018-05-23 17:01:54 INFO  LogEvent:18 - Clicking logout button.
+2018-05-23 17:02:01 INFO  LogEvent:18 - Logout page
+2018-05-23 17:02:06 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 17:02:06 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 17:05:32 INFO  LogEvent:18 - Enter Home page
+2018-05-23 17:05:32 INFO  LogEvent:18 - Staring click add new events.
+2018-05-23 17:05:38 INFO  LogEvent:18 - Enter Add new event
+2018-05-23 17:05:43 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 17:05:43 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-05-23 17:06:22 INFO  LogEvent:18 - Enter Home page
+2018-05-23 17:06:22 INFO  LogEvent:18 - Clicking logout button.
+2018-05-23 17:06:29 INFO  LogEvent:18 - Logout page
+2018-05-23 17:06:34 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-05-23 17:06:34 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
