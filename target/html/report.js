@@ -16,7 +16,7 @@ formatter.scenarioOutline({
   "tags": [
     {
       "line": 4,
-      "name": "@Chrome"
+      "name": "@Firefox"
     }
   ]
 });
@@ -61,7 +61,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5235900144,
+  "duration": 8161099507,
   "status": "passed"
 });
 formatter.scenario({
@@ -74,7 +74,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 4,
-      "name": "@Chrome"
+      "name": "@Firefox"
     }
   ]
 });
@@ -101,14 +101,14 @@ formatter.match({
   "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
 });
 formatter.result({
-  "duration": 6498073702,
+  "duration": 10969946888,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
 });
 formatter.result({
-  "duration": 5354283320,
+  "duration": 5434643986,
   "status": "passed"
 });
 formatter.match({
@@ -125,11 +125,11 @@ formatter.match({
   "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 4893958679,
+  "duration": 4434070393,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1616113270,
+  "duration": 1825346424,
   "status": "passed"
 });
 });

@@ -902,3 +902,7 @@ Driver info: driver.version: AppiumDriver
 2018-05-23 21:07:16 INFO  LogEvent:18 - Open the Home page
 2018-05-23 21:20:53 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
 2018-05-23 21:20:53 INFO  LogEvent:18 - Open the Home page
+2018-05-23 22:07:55 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-23 22:07:55 INFO  LogEvent:18 - Open the Home page
+2018-05-23 22:08:52 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-05-23 22:08:52 INFO  LogEvent:18 - Open the Home page
