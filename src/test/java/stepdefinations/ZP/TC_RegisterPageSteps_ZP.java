@@ -1,7 +1,6 @@
 package stepdefinations.ZP;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import ZP_pages.ZingPoll_HomePage;
