@@ -26,7 +26,7 @@ public class Hook {
 	
 	 @Before(value = "@Firefox")
 	 public void setUpFirefox() {
-	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH_WIN);
+	 System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_PATH_MAC);
 	 driver = new FirefoxDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();

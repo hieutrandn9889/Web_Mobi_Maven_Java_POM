@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Regression]" parallel="tests">
+  <parameter name="wda" value="8101"/>
+  <parameter name="port" value="4723"/>
+  <parameter name="deviceName" value="iPhone X"/>
+  <test name="Test one" preserve-order="false">
+    <parameter name="wda" value="8100"/>
+    <parameter name="port" value="4723"/>
+    <parameter name="deviceName" value="iPhone 7"/>
+    <classes>
+      <class name="test.ParallelTest"/>
+    </classes>
+  </test> <!-- Test one -->
+  <test name="Test two" preserve-order="false">
+    <parameter name="wda" value="8101"/>
+    <parameter name="port" value="4723"/>
+    <parameter name="deviceName" value="iPhone X"/>
+    <classes>
+      <class name="test.ParallelTest"/>
+    </classes>
+  </test> <!-- Test two -->
+</suite> <!-- Failed suite [Regression] -->
