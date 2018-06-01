@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="85848" started-at="2018-05-29T01:19:29Z" finished-at="2018-05-29T01:20:55Z">
+  <suite name="Regression" duration-ms="81071" started-at="2018-06-01T00:55:08Z" finished-at="2018-06-01T00:56:29Z">
     <groups>
     </groups>
-    <test name="Test one" duration-ms="79842" started-at="2018-05-29T01:19:29Z" finished-at="2018-05-29T01:20:49Z">
+    <test name="Test one" duration-ms="60781" started-at="2018-06-01T00:55:08Z" finished-at="2018-06-01T00:56:09Z">
       <class name="test.ParallelTest">
-        <test-method status="PASS" signature="beforeC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ParallelTest@204f30ec]" name="beforeC" is-config="true" duration-ms="19051" started-at="2018-05-29T08:19:29Z" finished-at="2018-05-29T08:19:48Z">
+        <test-method status="PASS" signature="beforeC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ParallelTest@204f30ec]" name="beforeC" is-config="true" duration-ms="11299" started-at="2018-06-01T07:55:08Z" finished-at="2018-06-01T07:55:20Z">
           <params>
             <param index="0">
               <value>
@@ -28,19 +28,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeC -->
-        <test-method status="PASS" signature="test()[pri:0, instance:test.ParallelTest@204f30ec]" name="test" duration-ms="59986" started-at="2018-05-29T08:19:48Z" finished-at="2018-05-29T08:20:48Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:test.ParallelTest@204f30ec]" name="test" duration-ms="48373" started-at="2018-06-01T07:55:20Z" finished-at="2018-06-01T07:56:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.ParallelTest@204f30ec]" name="after" is-config="true" duration-ms="780" started-at="2018-05-29T08:20:48Z" finished-at="2018-05-29T08:20:49Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.ParallelTest@204f30ec]" name="after" is-config="true" duration-ms="1086" started-at="2018-06-01T07:56:08Z" finished-at="2018-06-01T07:56:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.ParallelTest -->
     </test> <!-- Test one -->
-    <test name="Test two" duration-ms="85848" started-at="2018-05-29T01:19:29Z" finished-at="2018-05-29T01:20:55Z">
+    <test name="Test two" duration-ms="81071" started-at="2018-06-01T00:55:08Z" finished-at="2018-06-01T00:56:29Z">
       <class name="test.ParallelTest">
-        <test-method status="PASS" signature="beforeC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ParallelTest@5bcab519]" name="beforeC" is-config="true" duration-ms="25171" started-at="2018-05-29T08:19:29Z" finished-at="2018-05-29T08:19:54Z">
+        <test-method status="PASS" signature="beforeC(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.ParallelTest@5bcab519]" name="beforeC" is-config="true" duration-ms="16467" started-at="2018-06-01T07:55:08Z" finished-at="2018-06-01T07:55:25Z">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeC -->
-        <test-method status="PASS" signature="test()[pri:0, instance:test.ParallelTest@5bcab519]" name="test" duration-ms="60291" started-at="2018-05-29T08:19:54Z" finished-at="2018-05-29T08:20:54Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:test.ParallelTest@5bcab519]" name="test" duration-ms="64288" started-at="2018-06-01T07:55:25Z" finished-at="2018-06-01T07:56:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="after()[pri:0, instance:test.ParallelTest@5bcab519]" name="after" is-config="true" duration-ms="380" started-at="2018-05-29T08:20:54Z" finished-at="2018-05-29T08:20:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:test.ParallelTest@5bcab519]" name="after" is-config="true" duration-ms="308" started-at="2018-06-01T07:56:29Z" finished-at="2018-06-01T07:56:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

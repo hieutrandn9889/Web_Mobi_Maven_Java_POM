@@ -147,7 +147,7 @@ public class Hook {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.3");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.4");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 7");
         cap.setCapability(MobileCapabilityType.BROWSER_NAME, "");
         cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 50000);
