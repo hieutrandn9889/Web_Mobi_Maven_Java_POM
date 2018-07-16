@@ -1,100 +1,16 @@
 [
   {
-    "line": 1,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 7928545779,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setUpFirefox()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Register with empty new user",
-        "description": "",
-        "id": "register-to-zingpoll;register-with-empty-new-user;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 693310260,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriver()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 11910839978,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on ZingPoll website",
-            "match": {
-              "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5404597302,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I click the SignIn button",
-            "match": {
-              "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4308897861,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I input username hieutrandn01@gmail.com and password 123456",
-            "match": {
-              "arguments": [
-                {
-                  "val": "hieutrandn01@gmail.com",
-                  "offset": 17
-                },
-                {
-                  "val": "123456",
-                  "offset": 53
-                }
-              ],
-              "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@Firefox"
-          }
-        ]
-      }
-    ],
-    "name": "Register to ZingPoll",
-    "description": "I want to registered successfull",
-    "id": "register-to-zingpoll",
+    "line": 2,
+    "name": "Run app to skip screen",
+    "description": "",
+    "id": "run-app-to-skip-screen",
     "keyword": "Feature",
-    "uri": "ZP/RegisterTo_ZP_Scenario.feature"
+    "uri": "BT/skipScreen.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AndroidBT"
+      }
+    ]
   }
 ]

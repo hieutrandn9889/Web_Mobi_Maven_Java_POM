@@ -35,7 +35,7 @@ public class Hook {
 	
 	 @Before(value = "@Chrome")
 	 public void setUpChrome() {
-	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH_WIN);
+	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH_MAC);
 	 driver = new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();
@@ -50,6 +50,23 @@ public class Hook {
 	 driver.manage().window().maximize();
 	 System.out.println("-----------------IE Hook------------------");
 	 }
+	 
+	 @Before(value = "@AndroidBT")
+		public void setUpBT() throws MalformedURLException {
+			File app = new File(Constants.APP_BT);
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 4");
+			cap.setCapability("platformName", "Android");
+			cap.setCapability("app", app.getAbsolutePath());
+			try {
+				driverAppium = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), cap);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+			driverAppium.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			System.out.println("-----------------Start Mobile Hook------------------");
+		}
 	
 
 	@Before(value = "@AndroidSwipe")

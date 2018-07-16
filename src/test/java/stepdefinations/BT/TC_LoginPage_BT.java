@@ -3,7 +3,6 @@ package stepdefinations.BT;
 import org.apache.log4j.xml.DOMConfigurator;
 import BT_pages.HomePage_BT;
 import BT_pages.PageFactory_BT;
-import commons.AbstractMobile;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -12,7 +11,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import utility.Hook;
 
-public class TC_LoginPage_BT extends AbstractMobile {
+public class TC_LoginPage_BT {
 	AppiumDriver<MobileElement> driverAppium;
 	LogEvent LOG;
 	BT_pages.SkipPage_BT skipPage;

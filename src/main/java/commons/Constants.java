@@ -10,8 +10,12 @@ public class Constants {
 	// FOR MAC
 	public static final String FIREFOX_PATH_MAC = "..//Web_Mobi_Maven_Java_POM/resource/geckodriver";
 	public static final String CHROME_PATH_MAC = "..//Web_Mobi_Maven_Java_POM/resource/chromedriver";
+	
 	//Mobile API
 	public static final String APP_API = "..//Web_Mobi_Maven_Java_POM/App/ApiDemos.apk";
+	
+	//Mobile Boobytrap
+	public static final String APP_BT = "..//Web_Mobi_Maven_Java_POM/App/BT.apk";
 	
 	//Mobile SC
 	public static final String APP_SC = "..//Web_Mobi_Maven_Java_POM/App/SC.apk";

@@ -908,3 +908,14 @@ Driver info: driver.version: AppiumDriver
 2018-05-23 22:08:52 INFO  LogEvent:18 - Open the Home page
 2018-05-25 10:01:46 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
 2018-05-25 10:01:46 INFO  LogEvent:18 - Open the Home page
+2018-07-16 14:19:12 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-07-16 14:19:12 INFO  LogEvent:18 - Open the Home page
+2018-07-16 14:28:27 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-07-16 14:28:27 INFO  LogEvent:18 - Open the Home page
+2018-07-16 14:37:12 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-07-16 14:37:12 INFO  LogEvent:18 - Open the Home page
+2018-07-16 17:47:51 INFO  LogEvent:18 - ACTIVITY SCREEN: .Calculator
+2018-07-16 17:47:52 INFO  LogEvent:18 - number seven
+2018-07-16 17:47:54 INFO  LogEvent:18 - plus
+2018-07-16 17:47:55 INFO  LogEvent:18 - number two
+2018-07-16 17:47:56 INFO  LogEvent:18 - equal

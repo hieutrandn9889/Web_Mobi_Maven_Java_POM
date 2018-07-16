@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<!-- <suite name="ExecuteAutomation">
+<suite name="ExecuteAutomation">
 	<test name="Window">
 		<classes>
 			<class name="runner.Runner"></class>
 		</classes>
 	</test>
-</suite> -->
+</suite> 
 
 <!-- Parallel device -->
-<suite name="Regression" parallel= "tests" thread-count= "3" verbose= "5">
+<!-- <suite name="Regression" parallel= "tests" thread-count= "3" verbose= "5">
  <test name="Test one" preserve-order= "false">
 		<parameter name= "wda" value= "8100"/>
 		<parameter name= "deviceName" value= "iPhone 7"/>
@@ -27,4 +27,4 @@
 			<class name="test.ParallelTest"></class>
 		</classes>
 	</test> 
-</suite>
+</suite> -->
