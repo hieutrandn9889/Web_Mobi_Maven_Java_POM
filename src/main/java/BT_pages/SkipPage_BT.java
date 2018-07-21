@@ -13,7 +13,8 @@ public class SkipPage_BT extends AbstractMobile {
 	}
 	
 	public SkipPage_BT swideSkipPage_BT(AppiumDriver<MobileElement> driverAppium) throws Exception {
-		swipeHorizontal(driverAppium, 0.70, 0.30, 0.3, 2000);
+		Thread.sleep(2000);
+		swipeHorizontal(driverAppium, 0.90, 0.10, 0.6, 5000);
 		return this;
 	}
 	
@@ -22,6 +23,11 @@ public class SkipPage_BT extends AbstractMobile {
 		return PageFactory_BT.getLogInPage(driverAppium);
 	}
 	
+	
+	public LogInPage_BT openLogInPageForFinish_BT(AppiumDriver<MobileElement> driverAppium){
+		clickToElementByXpath(driverAppium, SkipPageUI_BT.FINISH_BUTTON);
+		return PageFactory_BT.getLogInPage(driverAppium);
+	}
 	
 
 }

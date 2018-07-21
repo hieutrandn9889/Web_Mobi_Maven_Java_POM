@@ -36,8 +36,8 @@ public class TC_LoginPage_BT {
 
 			skipPage = PageFactory_BT.getSkipPage(driverAppium);
 			loginPage = skipPage.openLogInPage_BT(driverAppium);
-			//loginPage = skipPage.openLogInPage_BT(driverAppium);
-
+			LOG.info("Swide screen 1 page");
+			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -48,6 +48,7 @@ public class TC_LoginPage_BT {
 		try {
 			loginPage.enterUserName(email);
 			loginPage.enterPass(password);
+			LOG.info("Swide screen 1 page");
 		
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -58,6 +59,7 @@ public class TC_LoginPage_BT {
 	public HomePage_BT i_click_login() {
 		try {
 			 return homePage = loginPage.clickLOGIN();
+			 
 			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
