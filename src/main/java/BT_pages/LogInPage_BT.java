@@ -24,6 +24,5 @@ public class LogInPage_BT extends AbstractMobile {
 	public HomePage_BT clickLOGIN() {
 		clickToElementByXpath(driverAppium, LogInPageUI_BT.SUBMIT_LOGIN);
 		return PageFactory_BT.getHomePage(driverAppium);
-
 	}
 }

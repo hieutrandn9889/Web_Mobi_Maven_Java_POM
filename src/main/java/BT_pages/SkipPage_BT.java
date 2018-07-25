@@ -18,15 +18,15 @@ public class SkipPage_BT extends AbstractMobile {
 		return this;
 	}
 	
-	public LogInPage_BT openLogInPage_BT(AppiumDriver<MobileElement> driverAppium){
+	public SignUpPage_BT openSignInPageForSkip_BT(AppiumDriver<MobileElement> driverAppium){
 		clickToElementByXpath(driverAppium, SkipPageUI_BT.SKIP_BUTTON);
-		return PageFactory_BT.getLogInPage(driverAppium);
+		return PageFactory_BT.getSignUpPage(driverAppium);
 	}
 	
 	
-	public LogInPage_BT openLogInPageForFinish_BT(AppiumDriver<MobileElement> driverAppium){
+	public SignUpPage_BT openSignUpPageForFinish_BT(AppiumDriver<MobileElement> driverAppium){
 		clickToElementByXpath(driverAppium, SkipPageUI_BT.FINISH_BUTTON);
-		return PageFactory_BT.getLogInPage(driverAppium);
+		return PageFactory_BT.getSignUpPage(driverAppium);
 	}
 	
 

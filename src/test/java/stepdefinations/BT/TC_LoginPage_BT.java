@@ -3,6 +3,7 @@ package stepdefinations.BT;
 import org.apache.log4j.xml.DOMConfigurator;
 import BT_pages.HomePage_BT;
 import BT_pages.PageFactory_BT;
+import BT_pages.SignUpPage_BT;
 import commons.LogEvent;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,8 +15,9 @@ import utility.Hook;
 public class TC_LoginPage_BT {
 	AppiumDriver<MobileElement> driverAppium;
 	LogEvent LOG;
-	BT_pages.SkipPage_BT skipPage;
+	static BT_pages.SkipPage_BT skipPage;
 	static BT_pages.LogInPage_BT loginPage;
+	static SignUpPage_BT signUpPage;
 	static HomePage_BT homePage;
 
 	public TC_LoginPage_BT() {
@@ -35,7 +37,7 @@ public class TC_LoginPage_BT {
 		try {
 
 			skipPage = PageFactory_BT.getSkipPage(driverAppium);
-			loginPage = skipPage.openLogInPage_BT(driverAppium);
+			signUpPage = skipPage.openSignInPageForSkip_BT(driverAppium);
 			LOG.info("Swide screen 1 page");
 			
 		} catch (Exception e) {
@@ -46,9 +48,10 @@ public class TC_LoginPage_BT {
 	@Then("^I input email \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void i_input_email_password(String email, String password) {
 		try {
+			loginPage = signUpPage.clickLoginBtnInSignUpPage();
 			loginPage.enterUserName(email);
 			loginPage.enterPass(password);
-			LOG.info("Swide screen 1 page");
+			LOG.info("login page");
 		
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

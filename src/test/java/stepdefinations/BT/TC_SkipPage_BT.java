@@ -3,6 +3,7 @@ package stepdefinations.BT;
 import org.apache.log4j.xml.DOMConfigurator;
 import BT_pages.HomePage_BT;
 import BT_pages.PageFactory_BT;
+import BT_pages.SignUpPage_BT;
 import BT_pages.SkipPage_BT;
 import commons.LogEvent;
 import cucumber.api.java.en.And;
@@ -15,8 +16,8 @@ import utility.Hook;
 public class TC_SkipPage_BT<swideScreen1> {
 	AppiumDriver<MobileElement> driverAppium;
 	LogEvent LOG;
-	BT_pages.SkipPage_BT skipPage;
-	static BT_pages.LogInPage_BT loginPage;
+	static BT_pages.SkipPage_BT skipPage;
+	static SignUpPage_BT signUpPage;
 	static HomePage_BT homePage;
 	private SkipPage_BT swideScreen1;
 	private SkipPage_BT swideScreen2;
@@ -70,7 +71,7 @@ public class TC_SkipPage_BT<swideScreen1> {
 	@And("^I click finish button$")
 	public void i_click_finish_button() {
 		try {
-			loginPage = swideScreen3.openLogInPageForFinish_BT(driverAppium);
+			signUpPage = swideScreen3.openSignUpPageForFinish_BT(driverAppium);
 			LOG.info("I staty in home page");
 
 		} catch (Exception e) {

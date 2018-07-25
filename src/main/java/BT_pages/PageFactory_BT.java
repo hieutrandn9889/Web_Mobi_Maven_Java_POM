@@ -19,5 +19,9 @@ public class PageFactory_BT {
 	public static LogInPage_BT getLogInPage(AppiumDriver<MobileElement> driverAppium) {
 		return new LogInPage_BT(driverAppium);
 	}
+	
+	public static ProfileSignInPage_BT getProfilePage(AppiumDriver<MobileElement> driverAppium) {
+		return new ProfileSignInPage_BT(driverAppium);
+	}
 
 }
