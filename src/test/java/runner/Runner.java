@@ -10,7 +10,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		format	 = {"pretty", "json:target//json//cucumber.json", "html:target//html//"},
 		features = {"src//test//resources//features"}, 
 		glue = { "stepdefinations","utility" },
-		tags = {"@AndroidBT"}
+		tags = {"@C3GooglePlus"}
 )
 
 @Test

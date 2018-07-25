@@ -6,15 +6,4 @@
       <class name="runner.Runner"/>
     </classes>
   </test> <!-- Window -->
-  <test name="Window(failed)">
-    <classes>
-      <class name="runner.Runner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- runner.Runner -->
-    </classes>
-  </test> <!-- Window(failed) -->
 </suite> <!-- Failed suite [ExecuteAutomation] -->

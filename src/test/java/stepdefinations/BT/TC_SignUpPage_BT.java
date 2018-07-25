@@ -44,6 +44,7 @@ public class TC_SignUpPage_BT {
 	@Then("^I click FB button of app$")
 	public void i_click_Fb_btn() {
 		try {
+			System.out.println("test");
 			signUpPage.clickFBBtn();
 			
 		} catch (Exception e) {

@@ -15,10 +15,8 @@ Feature: Run app to testing register screen
 
   @C2FB
   Scenario: Testing Sign up by fb
-    I click FB button of app
-
+    Then I click FB button of app
 
   @C3GooglePlus
   Scenario: Testing Sign up by google plus
-    I click Google plus button of app
-
+    Then I click Google plus button of app
