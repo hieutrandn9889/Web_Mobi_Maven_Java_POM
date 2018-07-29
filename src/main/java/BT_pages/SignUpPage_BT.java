@@ -3,6 +3,7 @@ package BT_pages;
 import BT_interfaces.LogInPageUI_BT;
 import BT_interfaces.SignUpPageUI_BT;
 import commons.AbstractMobile;
+import interfaces.pageUI_BT;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
@@ -14,12 +15,12 @@ public class SignUpPage_BT extends AbstractMobile {
 	}
 	
 	public HomePage_BT clickFBBtn() {
-		clickToElementByXpath(driverAppium, SignUpPageUI_BT.FB_BUTTON);
+		clickToElementByXpath(driverAppium, pageUI_BT.FB_BUTTON);
 		return PageFactory_BT.getHomePage(driverAppium);
 	}
 	
 	public HomePage_BT clickGoglePlusBtn() {
-		clickToElementByXpath(driverAppium, SignUpPageUI_BT.GOOGLE_PLUS_BUTTON);
+		clickToElementByXpath(driverAppium, pageUI_BT.GOOGLE_PLUS_BUTTON);
 		return PageFactory_BT.getHomePage(driverAppium);
 	}
 	

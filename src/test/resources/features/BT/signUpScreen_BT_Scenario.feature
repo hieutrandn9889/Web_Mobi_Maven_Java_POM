@@ -1,7 +1,7 @@
 @RegisterScreen
 Feature: Run app to testing register screen
 
-  Background: Given I open application
+  Background: Given I open app and testing
     When I click skip button to going register screen
 
   @C1InputEmail

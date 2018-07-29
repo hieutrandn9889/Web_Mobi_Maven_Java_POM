@@ -2,6 +2,9 @@ package stepdefinations.BT;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
+import BT_pages.HomePage_BT;
+import BT_pages.Medication_BT;
+import BT_pages.MenuTaskBar_BT;
 import commons.LogEvent;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -11,8 +14,10 @@ import utility.Hook;
 
 public class TC_HomePage_BT {
 	AppiumDriver<MobileElement> driverAppium;
-	LogEvent LOG;	
+	LogEvent LOG;
 	
+	static MenuTaskBar_BT  menuTaskBar;
+
 	public TC_HomePage_BT() {
 		this.driverAppium = Hook.getAppiumDriver();
 	}
@@ -24,11 +29,35 @@ public class TC_HomePage_BT {
 		LOG.info("Enter Home page");
 	}
 
-	@And("^I click add new event$")
-	public void i_click_add_new_button() {
+	@Then("^I click allow button$")
+	public void i_click_allow_button() {
 		try {
-			LOG.info("Staring click add new events.");
-			TC_LoginPage_BT.homePage.clickAddNewEvent();
+			TC_LogInPage_BT.homePage.clickAllowBtn();
+			LOG.info("Enter Add new event");
+			Thread.sleep(5000);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	@Then("^I click gps button$")
+	public void i_click_gps_button() {
+		try {
+			TC_LogInPage_BT.homePage.clickGPSBtn();
+			LOG.info("Enter Add new event");
+			Thread.sleep(5000);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	@Then("^I click menu taskbar$")
+	public void i_click_menu_taskbar() {
+		try {
+			menuTaskBar = TC_LogInPage_BT.homePage.clickMenuTaskBar();
+			
 			LOG.info("Enter Add new event");
 			Thread.sleep(5000);
 

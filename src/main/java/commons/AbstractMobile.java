@@ -241,6 +241,12 @@ public class AbstractMobile {
 		element = driverAppium.findElement(By.id(controlName));
 		return element.getText();
 	}
+	// get text by xpath
+	public String getTextOfElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
+		waitForControlVisibleID(driverAppium, controlName, timeout);
+		element = driverAppium.findElement(By.xpath(controlName));
+		return element.getText();
+	}
 
 	public String getTextOfElement(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
 		String newLocator = String.format(controlName, value);

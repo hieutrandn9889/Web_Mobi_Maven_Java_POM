@@ -28,7 +28,7 @@ public class TC_LogOut_Page_BT {
 	public void i_click_logout_button() {
 		try {
 			LOG.info("Clicking logout button.");
-			TC_LoginPage_BT.homePage.clickLogOutBtn();
+			TC_LogInPage_BT.homePage.clickLogOutBtn();
 			LOG.info("Logout page");
 			Thread.sleep(5000);
 

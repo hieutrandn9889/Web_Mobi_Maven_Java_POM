@@ -23,5 +23,12 @@ public class PageFactory_BT {
 	public static ProfileSignInPage_BT getProfilePage(AppiumDriver<MobileElement> driverAppium) {
 		return new ProfileSignInPage_BT(driverAppium);
 	}
-
+	
+	public static MenuTaskBar_BT getMenuTaskBarPage(AppiumDriver<MobileElement> driverAppium) {
+		return new MenuTaskBar_BT(driverAppium);
+	}
+	
+	public static Medication_BT getMedicationPage(AppiumDriver<MobileElement> driverAppium) {
+		return new Medication_BT(driverAppium);
+	}
 }

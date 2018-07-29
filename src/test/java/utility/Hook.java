@@ -51,7 +51,7 @@ public class Hook {
 	 System.out.println("-----------------IE Hook------------------");
 	 }
 	 
-	 @Before(value = "@C3GooglePlus")
+	 @Before(value = "@Medication")
 		public void setUpBT() throws MalformedURLException {
 			File app = new File(Constants.APP_BT);
 			DesiredCapabilities cap = new DesiredCapabilities();
