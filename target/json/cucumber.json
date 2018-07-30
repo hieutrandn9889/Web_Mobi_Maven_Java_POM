@@ -1,0 +1,239 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Given I open app and testing",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 101325279589,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click skip button",
+            "match": {
+              "location": "TC_LogInPage_BT.i_click_skip_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 729877648484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpBT()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Testing Login",
+        "description": "",
+        "id": "run-app-to-testing-medication;testing-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 170219,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click login button to login",
+            "match": {
+              "location": "TC_LogInPage_BT.i_click_login_button_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2993357,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I input email \"hieutrandn123@gmail.com\" and password \"Abc@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hieutrandn123@gmail.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Abc@123",
+                  "offset": 54
+                }
+              ],
+              "location": "TC_LogInPage_BT.i_input_email_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 157869,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click login button of app",
+            "match": {
+              "location": "TC_LogInPage_BT.i_click_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 299479,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click allow button",
+            "match": {
+              "location": "TC_HomePage_BT.i_click_allow_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5003035639,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click menu taskbar",
+            "match": {
+              "location": "TC_HomePage_BT.i_click_menu_taskbar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204477,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click My Pa button",
+            "match": {
+              "location": "TC_MenuTaskBar_Page_BT.i_click_my_pa_btn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 73686,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click medication button",
+            "match": {
+              "location": "TC_MenuTaskBar_Page_BT.i_click_medication_btn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Medication"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Given I open app and testing",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 100639090989,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click skip button",
+            "match": {
+              "location": "TC_LogInPage_BT.i_click_skip_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 282964209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUpBT()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "I check medication",
+        "description": "",
+        "id": "run-app-to-testing-medication;i-check-medication",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61074891,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I stay medication page",
+            "match": {
+              "location": "TC_MedicationPage_BT.i_stay_medication_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 174527,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click add a medication",
+            "match": {
+              "location": "TC_MedicationPage_BT.i_click_add_a_medication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@C1InputEmail"
+          }
+        ]
+      }
+    ],
+    "name": "Run app to testing medication",
+    "description": "",
+    "id": "run-app-to-testing-medication",
+    "keyword": "Feature",
+    "uri": "BT/signInScreen_BT_Scenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Medication"
+      }
+    ]
+  }
+] }
+    ]
+  }
+]

@@ -8,7 +8,6 @@ Feature: Run app to testing medication
     Then I input email "<email>" and password "<password>"
     Then I click login button of app
     Then I click allow button
-    Then I click gps button
     Then I click menu taskbar
     Then I click My Pa button
     Then I click medication button

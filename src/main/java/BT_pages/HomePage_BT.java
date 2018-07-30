@@ -33,7 +33,7 @@ public class HomePage_BT extends AbstractMobile {
 
 	}
 
-	public MenuTaskBar_BT clickMenuTaskBar() {
+	public MenuTaskBar_BT clickMenuTaskBar() throws InterruptedException {
 		clickToElementByXpath(driverAppium, HomePageUI_BT.MENU_BUTTON_TASKBAR);
 		return PageFactory_BT.getMenuTaskBarPage(driverAppium);
 	}

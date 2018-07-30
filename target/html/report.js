@@ -42,26 +42,21 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I click gps button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
   "name": "I click menu taskbar",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "I click My Pa button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "I click medication button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 16,
+  "line": 15,
   "name": "",
   "description": "",
   "id": "run-app-to-testing-medication;testing-login;",
@@ -71,7 +66,7 @@ formatter.examples({
         "email",
         "password"
       ],
-      "line": 17,
+      "line": 16,
       "id": "run-app-to-testing-medication;testing-login;;1"
     },
     {
@@ -79,14 +74,14 @@ formatter.examples({
         "hieutrandn123@gmail.com",
         "Abc@123"
       ],
-      "line": 18,
+      "line": 17,
       "id": "run-app-to-testing-medication;testing-login;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 11378422764,
+  "duration": 729877648484,
   "status": "passed"
 });
 formatter.background({
@@ -105,11 +100,11 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_click_skip_button()"
 });
 formatter.result({
-  "duration": 2435206195,
+  "duration": 101325279589,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
+  "line": 17,
   "name": "Testing Login",
   "description": "",
   "id": "run-app-to-testing-medication;testing-login;;2",
@@ -148,21 +143,16 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I click gps button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
   "name": "I click menu taskbar",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "I click My Pa button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "I click medication button",
   "keyword": "Then "
 });
@@ -170,7 +160,7 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_click_login_button_to_login()"
 });
 formatter.result({
-  "duration": 1112594666,
+  "duration": 170219,
   "status": "passed"
 });
 formatter.match({
@@ -187,30 +177,105 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_input_email_password(String,String)"
 });
 formatter.result({
-  "duration": 16761087390,
+  "duration": 2993357,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_LogInPage_BT.i_click_login()"
 });
 formatter.result({
-  "duration": 1093326657,
+  "duration": 157869,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_HomePage_BT.i_click_allow_button()"
 });
 formatter.result({
-  "duration": 7333941713,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_HomePage_BT.i_click_gps_button()"
-});
-formatter.result({
-  "duration": 3662813909,
+  "duration": 299479,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_HomePage_BT.i_click_menu_taskbar()"
+});
+formatter.result({
+  "duration": 5003035639,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TC_MenuTaskBar_Page_BT.i_click_my_pa_btn()"
+});
+formatter.result({
+  "duration": 204477,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TC_MenuTaskBar_Page_BT.i_click_medication_btn()"
+});
+formatter.result({
+  "duration": 73686,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 282964209,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "Given I open app and testing",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "I click skip button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "TC_LogInPage_BT.i_click_skip_button()"
+});
+formatter.result({
+  "duration": 100639090989,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "I check medication",
+  "description": "",
+  "id": "run-app-to-testing-medication;i-check-medication",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 19,
+      "name": "@C1InputEmail"
+    }
+  ]
+});
+formatter.step({
+  "line": 21,
+  "name": "I stay medication page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "I click add a medication",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TC_MedicationPage_BT.i_stay_medication_page()"
+});
+formatter.result({
+  "duration": 61074891,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TC_MedicationPage_BT.i_click_add_a_medication()"
+});
+formatter.result({
+  "duration": 174527,
+  "status": "passed"
+});
+});assed"
+});
 });

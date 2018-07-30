@@ -935,3 +935,15 @@ Driver info: driver.version: AppiumDriver
 2018-07-21 15:21:33 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
 2018-07-21 15:21:33 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
 2018-07-29 13:35:45 INFO  LogEvent:18 - Open application
+2018-07-29 17:46:13 INFO  LogEvent:18 - Open application
+2018-07-29 17:46:20 INFO  LogEvent:18 - Open application
+2018-07-29 17:49:10 INFO  LogEvent:18 - Open application
+2018-07-29 17:49:15 INFO  LogEvent:18 - Open application
+2018-07-29 17:52:32 INFO  LogEvent:18 - Open application
+2018-07-29 17:52:46 INFO  LogEvent:18 - Open application
+2018-07-29 17:55:28 INFO  LogEvent:18 - Open application
+2018-07-30 15:00:02 INFO  LogEvent:18 - Open application
+2018-07-30 15:03:30 INFO  LogEvent:18 - Open application
+2018-07-30 15:12:08 INFO  LogEvent:18 - Open application
+2018-07-30 15:20:49 INFO  LogEvent:18 - Open application
+2018-07-30 15:33:12 INFO  LogEvent:18 - Open application
