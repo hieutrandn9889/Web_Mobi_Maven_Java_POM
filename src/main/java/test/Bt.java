@@ -45,10 +45,16 @@ public class Bt {
 		driverAppium.findElement(By.xpath("//*[@text='Login']")).click();
 		Thread.sleep(3000);
 		driverAppium.findElement(By.xpath("//android.widget.Button[@text='Allow']")).click();
-//		Thread.sleep(2000);
-//		driverAppium.findElement(By.xpath("//*[@text='OK']")).click();
 		Thread.sleep(3000);
 		driverAppium.findElement(By.xpath("//*[@content-desc='menuTaskBar']")).click();
+		Thread.sleep(3000);
+		driverAppium.findElement(By.xpath("//*[@text='My PA']")).click();
+		Thread.sleep(3000);
+		driverAppium.findElement(By.xpath("//*[@text='Medication']")).click();
+		Thread.sleep(3000);
+		driverAppium.findElement(By.xpath("//android.widget.TextView[@text='Add a Medicine']")).click();
+		
+		
 	}
 
 

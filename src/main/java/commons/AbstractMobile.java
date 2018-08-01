@@ -30,7 +30,7 @@ public class AbstractMobile {
 	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG = new LogEvent();
 	MobileElement element;
-	int timeout = 100;
+	int timeout = 150;
 
 	// trượt dọc
 	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driverAppium, double startPercentage,

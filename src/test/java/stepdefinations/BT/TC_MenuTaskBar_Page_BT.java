@@ -23,7 +23,7 @@ public class TC_MenuTaskBar_Page_BT {
 	@Then("^I click My Pa button$")
 	public void i_click_my_pa_btn() {
 		try {
-			menuTaskBar.clickMyPa();
+			 TC_HomePage_BT.menuTaskBar.clickMyPa();
 			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -31,12 +31,13 @@ public class TC_MenuTaskBar_Page_BT {
 	}
 	
 	@Then("^I click medication button$")
-	public void i_click_medication_btn() {
+	public Medication_BT i_click_medication_btn() {
 		try {
-			medication = menuTaskBar.clickMedication();
+			return medication = TC_HomePage_BT.menuTaskBar.clickMedication();
 			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			return null;
 		}
 	}
 	

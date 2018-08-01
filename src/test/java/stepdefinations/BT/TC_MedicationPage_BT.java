@@ -2,6 +2,7 @@ package stepdefinations.BT;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import BT_pages.HomePage_BT;
+import BT_pages.MenuTaskBar_BT;
 import BT_pages.PageFactory_BT;
 import BT_pages.SignUpPage_BT;
 import commons.LogEvent;
@@ -20,6 +21,7 @@ public class TC_MedicationPage_BT {
 	static BT_pages.LogInPage_BT loginPage;
 	static SignUpPage_BT signUpPage;
 	static HomePage_BT homePage;
+	static MenuTaskBar_BT  menuTaskBar;
 
 	public TC_MedicationPage_BT() {
 		this.driverAppium = Hook.getAppiumDriver();
@@ -40,7 +42,7 @@ public class TC_MedicationPage_BT {
 	@Then("^I click add a medication$")
 	public void i_click_add_a_medication() {
 		try {
-		
+			Thread.sleep(5000);
 			TC_MenuTaskBar_Page_BT.medication.clickAddAMedicationBtn();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

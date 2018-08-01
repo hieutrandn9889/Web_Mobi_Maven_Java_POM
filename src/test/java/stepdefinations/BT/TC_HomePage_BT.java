@@ -42,16 +42,16 @@ public class TC_HomePage_BT {
 	}
 
 	@Then("^I click menu taskbar$")
-	public void i_click_menu_taskbar() {
+	public MenuTaskBar_BT i_click_menu_taskbar() {
 		try {
 			Thread.sleep(5000);
-			menuTaskBar = TC_LogInPage_BT.homePage.clickMenuTaskBar();
+			return menuTaskBar = TC_LogInPage_BT.homePage.clickMenuTaskBar();
 			
-			LOG.info("Enter Add new event");
-			Thread.sleep(5000);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+			return null;
 		}
 	}
+	
 }

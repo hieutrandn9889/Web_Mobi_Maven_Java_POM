@@ -18,8 +18,9 @@ public class MenuTaskBar_BT extends AbstractMobile {
 
 	}
 
-	public Medication_BT clickMedication() {
+	public Medication_BT clickMedication() throws InterruptedException {
 		clickToElementByXpath(driverAppium, MenuTarkBarPageUI_BT.MEDICATION_BUTTON);
+		Thread.sleep(5000);
 		return PageFactory_BT.getMedicationPage(driverAppium);
 	}
 }
