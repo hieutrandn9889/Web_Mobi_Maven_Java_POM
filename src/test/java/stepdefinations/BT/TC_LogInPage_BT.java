@@ -60,6 +60,7 @@ public class TC_LogInPage_BT {
 	public void i_input_email_password(String email, String password) {
 		try {
 			loginPage.enterUserName(email);
+			driverAppium.hideKeyboard();
 			loginPage.enterPass(password);
 			driverAppium.hideKeyboard();
 			LOG.info("Input value");

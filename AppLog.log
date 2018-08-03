@@ -1169,3 +1169,89 @@ Driver info: driver.version: AppiumDriver
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'Smartdevs-Mac-mini.local', ip: 'fe80:0:0:0:1030:387e:739:746c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
 Driver info: driver.version: AppiumDriver
+2018-08-03 11:11:22 INFO  LogEvent:18 - Open application
+2018-08-03 11:11:29 ERROR LogEvent:26 - Not Found Element: //android.widget.TextView[@text='Add a Medicine']
+2018-08-03 11:11:29 ERROR LogEvent:26 - Returned value cannot be converted to List<WebElement>: {error=invalid session id, message=A session is either terminated or not started, stacktrace=NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler$ (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:212:15)
+    at tryCatch (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at invoke (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:136:37)
+    at enqueueResult (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:185:17)
+    at new Promise (<anonymous>)
+    at new F (/usr/local/lib/node_modules/appium/node_modules/core-js/library/modules/$.export.js:30:36)
+    at AsyncIterator.enqueue (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:184:12)
+    at AsyncIterator.prototype.(anonymous function) [as next] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at Object.runtime.async (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:209:12)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/build/lib/protocol/protocol.js:331:32)
+    at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:403:15
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+    at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+    at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+    at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+    at /usr/local/lib/node_modules/appium/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:224:16)
+    at done (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)}
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Smartdevs-Mac-mini.local', ip: 'fe80:0:0:0:1c98:f7d8:5e69:f048%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
+Driver info: driver.version: AppiumDriver
+2018-08-03 11:20:26 INFO  LogEvent:18 - Open application
+2018-08-03 11:20:33 ERROR LogEvent:26 - Not Found Element: //android.widget.TextView[@text='Add a Medicine']
+2018-08-03 11:20:33 ERROR LogEvent:26 - Returned value cannot be converted to List<WebElement>: {error=invalid session id, message=A session is either terminated or not started, stacktrace=NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler$ (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:212:15)
+    at tryCatch (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:315:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at invoke (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:136:37)
+    at enqueueResult (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:185:17)
+    at new Promise (<anonymous>)
+    at new F (/usr/local/lib/node_modules/appium/node_modules/core-js/library/modules/$.export.js:30:36)
+    at AsyncIterator.enqueue (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:184:12)
+    at AsyncIterator.prototype.(anonymous function) [as next] (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:100:21)
+    at Object.runtime.async (/usr/local/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:209:12)
+    at asyncHandler (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/build/lib/protocol/protocol.js:331:32)
+    at /usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:403:15
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:281:22
+    at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:354:14)
+    at param (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:410:3)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+    at logger (/usr/local/lib/node_modules/appium/node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/local/lib/node_modules/appium/node_modules/express/lib/router/index.js:275:10)
+    at /usr/local/lib/node_modules/appium/node_modules/body-parser/lib/read.js:130:5
+    at invokeCallback (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:224:16)
+    at done (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/usr/local/lib/node_modules/appium/node_modules/raw-body/index.js:273:7)
+    at emitNone (events.js:106:13)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)}
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Smartdevs-Mac-mini.local', ip: 'fe80:0:0:0:1c98:f7d8:5e69:f048%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
+Driver info: driver.version: AppiumDriver

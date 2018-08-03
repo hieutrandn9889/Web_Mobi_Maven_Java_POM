@@ -81,7 +81,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 47433077196,
+  "duration": 18159582553,
   "status": "passed"
 });
 formatter.background({
@@ -100,7 +100,7 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_click_skip_button()"
 });
 formatter.result({
-  "duration": 31241885700,
+  "duration": 6492639204,
   "status": "passed"
 });
 formatter.scenario({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_click_login_button_to_login()"
 });
 formatter.result({
-  "duration": 1155714696,
+  "duration": 1290676077,
   "status": "passed"
 });
 formatter.match({
@@ -177,46 +177,46 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_input_email_password(String,String)"
 });
 formatter.result({
-  "duration": 24548942045,
+  "duration": 30072489940,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_LogInPage_BT.i_click_login()"
 });
 formatter.result({
-  "duration": 1074997736,
+  "duration": 1261645642,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_HomePage_BT.i_click_allow_button()"
 });
 formatter.result({
-  "duration": 4129143649,
+  "duration": 4133830772,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_HomePage_BT.i_click_menu_taskbar()"
 });
 formatter.result({
-  "duration": 7638148132,
+  "duration": 9214491615,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_MenuTaskBar_Page_BT.i_click_my_pa_btn()"
 });
 formatter.result({
-  "duration": 1951538353,
+  "duration": 2191117579,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_MenuTaskBar_Page_BT.i_click_medication_btn()"
 });
 formatter.result({
-  "duration": 6575594673,
+  "duration": 6610092152,
   "status": "passed"
 });
 formatter.before({
-  "duration": 27781233728,
+  "duration": 19140007099,
   "status": "passed"
 });
 formatter.background({
@@ -235,7 +235,7 @@ formatter.match({
   "location": "TC_LogInPage_BT.i_click_skip_button()"
 });
 formatter.result({
-  "duration": 151024652657,
+  "duration": 5587536537,
   "status": "passed"
 });
 formatter.scenario({
@@ -266,14 +266,14 @@ formatter.match({
   "location": "TC_MedicationPage_BT.i_stay_medication_page()"
 });
 formatter.result({
-  "duration": 70541797,
+  "duration": 55589393,
   "status": "passed"
 });
 formatter.match({
   "location": "TC_MedicationPage_BT.i_click_add_a_medication()"
 });
 formatter.result({
-  "duration": 7292976578,
+  "duration": 7020185369,
   "status": "passed"
 });
 });

@@ -44,7 +44,7 @@ public class TC_HomePage_BT {
 	@Then("^I click menu taskbar$")
 	public MenuTaskBar_BT i_click_menu_taskbar() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(6000);
 			return menuTaskBar = TC_LogInPage_BT.homePage.clickMenuTaskBar();
 			
 
