@@ -1,279 +1,135 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("BT/signInScreen_BT_Scenario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/ZP/RegisterTo_ZP_Scenario.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Run app to testing medication",
+  "line": 1,
+  "name": "Register to ZingPoll",
+  "description": "I want to registered successfull",
+  "id": "register-to-zingpoll",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 5,
+  "name": "Register with empty new user",
   "description": "",
-  "id": "run-app-to-testing-medication",
-  "keyword": "Feature",
+  "id": "register-to-zingpoll;register-with-empty-new-user",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
-      "name": "@Medication"
+      "line": 4,
+      "name": "@Chrome"
     }
   ]
 });
-formatter.scenarioOutline({
+formatter.step({
   "line": 6,
-  "name": "Testing Login",
-  "description": "",
-  "id": "run-app-to-testing-medication;testing-login",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "name": "I am on ZingPoll website",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "I click login button to login",
+  "name": "I click the SignIn button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I input email \"\u003cemail\u003e\" and password \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "I click login button of app",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "I click allow button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click menu taskbar",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "I click My Pa button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click medication button",
+  "name": "I input username \u003cusername\u003e and password \u003cpassword\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 15,
+  "line": 10,
   "name": "",
   "description": "",
-  "id": "run-app-to-testing-medication;testing-login;",
+  "id": "register-to-zingpoll;register-with-empty-new-user;",
   "rows": [
     {
       "cells": [
-        "email",
+        "username",
         "password"
       ],
-      "line": 16,
-      "id": "run-app-to-testing-medication;testing-login;;1"
+      "line": 11,
+      "id": "register-to-zingpoll;register-with-empty-new-user;;1"
     },
     {
       "cells": [
-        "hieutrandn123@gmail.com",
-        "Abc@123"
+        "hieutrandn01@gmail.com",
+        "123456"
       ],
-      "line": 17,
-      "id": "run-app-to-testing-medication;testing-login;;2"
+      "line": 12,
+      "id": "register-to-zingpoll;register-with-empty-new-user;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 18159582553,
-  "status": "passed"
-});
-formatter.background({
-  "line": 4,
-  "name": "Given I open app and testing",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 5,
-  "name": "I click skip button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TC_LogInPage_BT.i_click_skip_button()"
-});
-formatter.result({
-  "duration": 6492639204,
+  "duration": 2286013652,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
-  "name": "Testing Login",
+  "line": 12,
+  "name": "Register with empty new user",
   "description": "",
-  "id": "run-app-to-testing-medication;testing-login;;2",
+  "id": "register-to-zingpoll;register-with-empty-new-user;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 1,
-      "name": "@Medication"
+      "line": 4,
+      "name": "@Chrome"
     }
   ]
 });
 formatter.step({
+  "line": 6,
+  "name": "I am on ZingPoll website",
+  "keyword": "Given "
+});
+formatter.step({
   "line": 7,
-  "name": "I click login button to login",
+  "name": "I click the SignIn button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I input email \"hieutrandn123@gmail.com\" and password \"Abc@123\"",
+  "name": "I input username hieutrandn01@gmail.com and password 123456",
   "matchedColumns": [
     0,
     1
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "line": 9,
-  "name": "I click login button of app",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "I click allow button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click menu taskbar",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "I click My Pa button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click medication button",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "TC_LogInPage_BT.i_click_login_button_to_login()"
+  "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
 });
 formatter.result({
-  "duration": 1290676077,
+  "duration": 3005610557,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
+});
+formatter.result({
+  "duration": 5175578020,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "hieutrandn123@gmail.com",
-      "offset": 15
+      "val": "hieutrandn01@gmail.com",
+      "offset": 17
     },
     {
-      "val": "Abc@123",
-      "offset": 54
+      "val": "123456",
+      "offset": 53
     }
   ],
-  "location": "TC_LogInPage_BT.i_input_email_password(String,String)"
+  "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 30072489940,
+  "duration": 4946552434,
   "status": "passed"
 });
-formatter.match({
-  "location": "TC_LogInPage_BT.i_click_login()"
-});
-formatter.result({
-  "duration": 1261645642,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_HomePage_BT.i_click_allow_button()"
-});
-formatter.result({
-  "duration": 4133830772,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_HomePage_BT.i_click_menu_taskbar()"
-});
-formatter.result({
-  "duration": 9214491615,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_MenuTaskBar_Page_BT.i_click_my_pa_btn()"
-});
-formatter.result({
-  "duration": 2191117579,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_MenuTaskBar_Page_BT.i_click_medication_btn()"
-});
-formatter.result({
-  "duration": 6610092152,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 19140007099,
-  "status": "passed"
-});
-formatter.background({
-  "line": 4,
-  "name": "Given I open app and testing",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 5,
-  "name": "I click skip button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "TC_LogInPage_BT.i_click_skip_button()"
-});
-formatter.result({
-  "duration": 5587536537,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "I check medication",
-  "description": "",
-  "id": "run-app-to-testing-medication;i-check-medication",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@C1InputEmail"
-    }
-  ]
-});
-formatter.step({
-  "line": 21,
-  "name": "I stay medication page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "I click add a medication",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TC_MedicationPage_BT.i_stay_medication_page()"
-});
-formatter.result({
-  "duration": 55589393,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TC_MedicationPage_BT.i_click_add_a_medication()"
-});
-formatter.result({
-  "duration": 7020185369,
+formatter.after({
+  "duration": 200103716,
   "status": "passed"
 });
 });

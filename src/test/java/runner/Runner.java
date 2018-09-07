@@ -8,9 +8,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
 		format	 = {"pretty", "json:target//json//cucumber.json", "html:target//html//"},
-		features = {"src//test//resources//features"}, 
-		glue = { "stepdefinations","utility" },
-		tags = {"@Medication"}
+		features = {"src//test//resources//features//ZP//RegisterTo_ZP_Scenario.feature"}, 
+//		features = { "src/test/java/features/Register.feature" }, 
+		glue = { "stepdefinations","utility" }
+//		tags = {"@Medication"}
 )
 
 @Test

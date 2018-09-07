@@ -1255,3 +1255,5 @@ Driver info: driver.version: AppiumDriver
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'Smartdevs-Mac-mini.local', ip: 'fe80:0:0:0:1c98:f7d8:5e69:f048%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
 Driver info: driver.version: AppiumDriver
+2018-09-07 15:01:54 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-09-07 15:01:54 INFO  LogEvent:18 - Open the Home page
