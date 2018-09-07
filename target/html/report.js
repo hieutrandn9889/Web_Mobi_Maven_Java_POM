@@ -1,135 +1,82 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/ZP/RegisterTo_ZP_Scenario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/BT/skipScreen_BT_Scenario.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Register to ZingPoll",
-  "description": "I want to registered successfull",
-  "id": "register-to-zingpoll",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "line": 5,
-  "name": "Register with empty new user",
+  "line": 2,
+  "name": "Run app to skip screen",
   "description": "",
-  "id": "register-to-zingpoll;register-with-empty-new-user",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
+  "id": "run-app-to-skip-screen",
+  "keyword": "Feature",
   "tags": [
     {
-      "line": 4,
-      "name": "@Chrome"
+      "line": 1,
+      "name": "@AndroidBT"
     }
   ]
-});
-formatter.step({
-  "line": 6,
-  "name": "I am on ZingPoll website",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "I click the SignIn button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "I input username \u003cusername\u003e and password \u003cpassword\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 10,
-  "name": "",
-  "description": "",
-  "id": "register-to-zingpoll;register-with-empty-new-user;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 11,
-      "id": "register-to-zingpoll;register-with-empty-new-user;;1"
-    },
-    {
-      "cells": [
-        "hieutrandn01@gmail.com",
-        "123456"
-      ],
-      "line": 12,
-      "id": "register-to-zingpoll;register-with-empty-new-user;;2"
-    }
-  ],
-  "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2286013652,
+  "duration": 13697527331,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 12,
-  "name": "Register with empty new user",
+formatter.background({
+  "line": 4,
+  "name": "Given I open application amd show skip screen",
   "description": "",
-  "id": "register-to-zingpoll;register-with-empty-new-user;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 4,
-      "name": "@Chrome"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
 });
-formatter.step({
+formatter.scenario({
   "line": 6,
-  "name": "I am on ZingPoll website",
-  "keyword": "Given "
+  "name": "Testing view button",
+  "description": "",
+  "id": "run-app-to-skip-screen;testing-view-button",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 7,
-  "name": "I click the SignIn button",
+  "name": "I swide screen1",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "I input username hieutrandn01@gmail.com and password 123456",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "name": "I swide screen2",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 9,
+  "name": "I swide screen3",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "I click finish button",
+  "keyword": "And "
+});
 formatter.match({
-  "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
+  "location": "TC_SkipPage_BT.i_click_skip_button()"
 });
 formatter.result({
-  "duration": 3005610557,
+  "duration": 7049638313,
   "status": "passed"
 });
 formatter.match({
-  "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
+  "location": "TC_SkipPage_BT.i_swide_screen2()"
 });
 formatter.result({
-  "duration": 5175578020,
+  "duration": 6878056704,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "hieutrandn01@gmail.com",
-      "offset": 17
-    },
-    {
-      "val": "123456",
-      "offset": 53
-    }
-  ],
-  "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
+  "location": "TC_SkipPage_BT.i_swide_screen3()"
 });
 formatter.result({
-  "duration": 4946552434,
+  "duration": 7751266869,
   "status": "passed"
 });
-formatter.after({
-  "duration": 200103716,
+formatter.match({
+  "location": "TC_SkipPage_BT.i_click_finish_button()"
+});
+formatter.result({
+  "duration": 150528394819,
   "status": "passed"
 });
 });

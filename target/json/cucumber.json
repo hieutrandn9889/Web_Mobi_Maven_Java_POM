@@ -1,100 +1,94 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
+      {
+        "line": 4,
+        "name": "Given I open application amd show skip screen",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
       {
         "before": [
           {
             "result": {
-              "duration": 2286013652,
+              "duration": 13697527331,
               "status": "passed"
             },
             "match": {
-              "location": "Hook.setUpChrome()"
+              "location": "Hook.setUpBT()"
             }
           }
         ],
-        "line": 12,
-        "name": "Register with empty new user",
+        "line": 6,
+        "name": "Testing view button",
         "description": "",
-        "id": "register-to-zingpoll;register-with-empty-new-user;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 200103716,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.closeDriver()"
-            }
-          }
-        ],
+        "id": "run-app-to-skip-screen;testing-view-button",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3005610557,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on ZingPoll website",
-            "match": {
-              "location": "TC_RegisterPageSteps_ZP.i_am_on_ZingPoll_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5175578020,
+              "duration": 7049638313,
               "status": "passed"
             },
             "line": 7,
-            "name": "I click the SignIn button",
+            "name": "I swide screen1",
             "match": {
-              "location": "TC_RegisterPageSteps_ZP.i_click_the_SignIn_button()"
+              "location": "TC_SkipPage_BT.i_click_skip_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4946552434,
+              "duration": 6878056704,
               "status": "passed"
             },
             "line": 8,
-            "name": "I input username hieutrandn01@gmail.com and password 123456",
+            "name": "I swide screen2",
             "match": {
-              "arguments": [
-                {
-                  "val": "hieutrandn01@gmail.com",
-                  "offset": 17
-                },
-                {
-                  "val": "123456",
-                  "offset": 53
-                }
-              ],
-              "location": "TC_RegisterPageSteps_ZP.i_input_username_and_password(String,String)"
+              "location": "TC_SkipPage_BT.i_swide_screen2()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 4,
-            "name": "@Chrome"
+            "result": {
+              "duration": 7751266869,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I swide screen3",
+            "match": {
+              "location": "TC_SkipPage_BT.i_swide_screen3()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150528394819,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click finish button",
+            "match": {
+              "location": "TC_SkipPage_BT.i_click_finish_button()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Register to ZingPoll",
-    "description": "I want to registered successfull",
-    "id": "register-to-zingpoll",
+    "name": "Run app to skip screen",
+    "description": "",
+    "id": "run-app-to-skip-screen",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/ZP/RegisterTo_ZP_Scenario.feature"
+    "uri": "src/test/resources/features/BT/skipScreen_BT_Scenario.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AndroidBT"
+      }
+    ]
   }
 ]
