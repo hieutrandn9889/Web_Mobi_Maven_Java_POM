@@ -1259,3 +1259,72 @@ Driver info: driver.version: AppiumDriver
 2018-09-07 15:01:54 INFO  LogEvent:18 - Open the Home page
 2018-09-07 15:53:02 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
 2018-09-07 15:53:02 INFO  LogEvent:18 - Open the Home page
+2018-09-19 11:13:21 INFO  LogEvent:18 - Login is successful
+2018-09-19 11:13:21 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 11:13:21 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 11:13:59 INFO  LogEvent:18 - quit app
+2018-09-19 11:14:04 INFO  LogEvent:18 - Login is successful
+2018-09-19 11:14:04 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 11:14:04 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 11:14:06 INFO  LogEvent:18 - quit app
+2018-09-19 11:16:34 INFO  LogEvent:18 - Login is successful
+2018-09-19 11:16:34 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
+2018-09-19 11:16:34 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 11:16:35 INFO  LogEvent:18 - quit app
+2018-09-19 13:58:14 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 13:58:14 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 13:58:15 INFO  LogEvent:18 - Login is successful
+2018-09-19 13:58:16 INFO  LogEvent:18 - quit app
+2018-09-19 14:36:09 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:36:09 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:37:08 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:37:08 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:42:02 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
+2018-09-19 14:42:02 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:46:50 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:46:50 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:46:53 INFO  LogEvent:18 - quit app
+2018-09-19 14:48:00 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:48:00 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:48:01 INFO  LogEvent:18 - Login page
+2018-09-19 14:48:11 INFO  LogEvent:18 - quit app
+2018-09-19 14:49:03 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
+2018-09-19 14:49:03 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:49:04 INFO  LogEvent:18 - Login page
+2018-09-19 14:49:10 INFO  LogEvent:18 - quit app
+2018-09-19 14:50:36 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:50:36 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:50:36 INFO  LogEvent:18 - Login page
+2018-09-19 14:50:46 INFO  LogEvent:18 - quit app
+2018-09-19 14:53:54 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:53:54 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:53:55 INFO  LogEvent:18 - Login page
+2018-09-19 14:54:04 INFO  LogEvent:18 - quit app
+2018-09-19 14:54:55 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:54:55 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:54:55 INFO  LogEvent:18 - Login page
+2018-09-19 14:55:01 INFO  LogEvent:18 - quit app
+2018-09-19 14:57:54 INFO  RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://0.0.0.0:4723: The target server failed to respond
+2018-09-19 14:57:54 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 14:57:54 INFO  LogEvent:18 - Login page
+2018-09-19 14:58:04 INFO  LogEvent:18 - quit app
+2018-09-19 17:00:29 INFO  RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://0.0.0.0:4723: Connection reset
+2018-09-19 17:00:29 INFO  RetryExec:113 - Retrying request to {}->http://0.0.0.0:4723
+2018-09-19 17:00:30 INFO  LogEvent:18 - Login page
+2018-09-19 17:00:36 INFO  LogEvent:18 - quit app
+2018-09-19 17:10:37 INFO  LogEvent:18 - Login page
+2018-09-19 17:10:45 INFO  LogEvent:18 - Register page
+2018-09-19 17:10:46 INFO  LogEvent:18 - quit app
+2018-09-19 17:11:44 INFO  LogEvent:18 - Login page
+2018-09-19 17:11:56 INFO  LogEvent:18 - Register page
+2018-09-19 17:11:57 INFO  LogEvent:18 - quit app
+2018-09-19 17:31:14 INFO  LogEvent:18 - Login page
+2018-09-19 17:31:26 INFO  LogEvent:18 - Register page
+2018-09-19 17:31:33 INFO  LogEvent:18 - Register 1/7 page
+2018-09-19 17:31:47 INFO  LogEvent:18 - Register 2/7 page
+2018-09-19 17:31:48 INFO  LogEvent:18 - quit app
+2018-09-19 17:35:18 INFO  LogEvent:18 - Login page
+2018-09-19 17:35:31 INFO  LogEvent:18 - Register page
+2018-09-19 17:35:38 INFO  LogEvent:18 - Register 1/7 page
+2018-09-19 17:35:51 INFO  LogEvent:18 - Register 2/7 page
+2018-09-19 17:35:52 INFO  LogEvent:18 - quit app
