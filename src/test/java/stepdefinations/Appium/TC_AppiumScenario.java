@@ -19,6 +19,7 @@ import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.StartsActivity;
 import utility.Hook;
 
+@SuppressWarnings("deprecation")
 public class TC_AppiumScenario extends AbstractMobile {
 
 	private AppiumDriver<MobileElement> driverAppium;
@@ -81,7 +82,7 @@ public class TC_AppiumScenario extends AbstractMobile {
 				break;
 			} catch (Exception e) {
 				// TODO: handle exception
-				swipeVerticalTopToDown(driverAppium, 0.80, 0.20, 0.3, 2000);
+				//swipeVerticalTopToDown(driverAppium, 0.80, 0.20, 0.3, 2000);
 			}
 		}
 	}
