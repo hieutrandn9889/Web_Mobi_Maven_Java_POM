@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 
 /**
  * @author CHIRAG
@@ -39,9 +42,10 @@ public class loiChupanh {
 	public void testAddContact() throws InterruptedException, IOException
 	{
 		try {
-			TouchAction ac = new TouchAction(driverAppium);
 			MobileElement ele = driverAppium.findElementById("com.android.mms:id/subject");
-			ac.longPress(ele).perform().release();
+			LongPressOptions longPressOptions = new LongPressOptions();
+			longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(ele));
+			new TouchAction(driverAppium).longPress(longPressOptions).perform();
 			Thread.sleep(2000);
 			boolean flag = driverAppium.findElementById("com.android.mms:id/title1").isDisplayed();
 			if(flag)

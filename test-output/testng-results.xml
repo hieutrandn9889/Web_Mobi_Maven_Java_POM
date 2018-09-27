@@ -1,21 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56935" started-at="2018-09-19T10:34:55Z" finished-at="2018-09-19T10:35:52Z">
+  <suite name="Default suite" duration-ms="251663" started-at="2018-09-22T10:16:15Z" finished-at="2018-09-22T10:20:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56935" started-at="2018-09-19T10:34:55Z" finished-at="2018-09-19T10:35:52Z">
+    <test name="Default test" duration-ms="251663" started-at="2018-09-22T10:16:15Z" finished-at="2018-09-22T10:20:27Z">
       <class name="test.Newxcode_xs_xr_xmax">
-        <test-method status="PASS" signature="setUp123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="setUp123" is-config="true" duration-ms="17893" started-at="2018-09-19T17:34:55Z" finished-at="2018-09-19T17:35:13Z">
+        <test-method status="FAIL" signature="setUp123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="setUp123" is-config="true" duration-ms="0" started-at="2018-09-22T17:16:15Z" finished-at="2018-09-22T17:16:15Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'gai-goi.local', ip: 'fe80:0:0:0:1478:b097:4308:30ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
+Driver info: driver.version: IOSDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'gai-goi.local', ip: 'fe80:0:0:0:1478:b097:4308:30ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_172'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:95)
+	at test.Newxcode_xs_xr_xmax.setUp123(Newxcode_xs_xr_xmax.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+	... 35 more
+Caused by: java.io.IOException: unexpected end of stream on Connection{0.0.0.0:4723, proxy=DIRECT hostAddress=/0.0.0.0:4723 cipherSuite=none protocol=http/1.1}
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:208)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	... 40 more
+Caused by: java.io.EOFException: \n not found: limit=0 content=…
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:237)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	... 57 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp123 -->
-        <test-method status="PASS" signature="runMain123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="runMain123" duration-ms="37963" started-at="2018-09-19T17:35:13Z" finished-at="2018-09-19T17:35:51Z">
+        <test-method status="SKIP" signature="runMain123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="runMain123" duration-ms="2" started-at="2018-09-22T17:20:27Z" finished-at="2018-09-22T17:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runMain123 -->
-        <test-method status="PASS" signature="test123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="test123" is-config="true" duration-ms="1055" started-at="2018-09-19T17:35:51Z" finished-at="2018-09-19T17:35:52Z">
+        <test-method status="SKIP" signature="test123()[pri:0, instance:test.Newxcode_xs_xr_xmax@5abca1e0]" name="test123" is-config="true" duration-ms="0" started-at="2018-09-22T17:20:27Z" finished-at="2018-09-22T17:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test123 -->

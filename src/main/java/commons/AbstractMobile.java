@@ -9,6 +9,7 @@ import java.util.Date;
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSTouchAction;
+import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
@@ -40,136 +41,81 @@ public class AbstractMobile {
 	AppiumDriver<MobileElement> driverAppium = Hook.getAppiumDriver();
 	LogEvent LOG = new LogEvent();
 	MobileElement element;
+	MobileElement element1;
+	MobileElement element2;
 	int timeout = 150;
 
 	// trượt dọc old java-client 5.4.1
-//	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driverAppium, double startPercentage,
-//			double finalPercentage, double anchorPercentage, int duration) throws Exception {
-//		Dimension size = driverAppium.manage().window().getSize();
-//		int anchor = (int) (size.width * anchorPercentage);
-//		int startPoint = (int) (size.height * startPercentage);
-//		int endPoint = (int) (size.height * finalPercentage);
-//		new TouchAction(driverAppium).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
-//				.moveTo(anchor, endPoint).release().perform();
-//	}
+	// public static void swipeVerticalTopToDown(AppiumDriver<MobileElement>
+	// driverAppium, double startPercentage,
+	// double finalPercentage, double anchorPercentage, int duration) throws
+	// Exception {
+	// swipeVerticalTopToDown(0.80, 0.20, 0.3, 2000);
+	// Dimension size = driverAppium.manage().window().getSize();
+	// int anchor = (int) (size.width * anchorPercentage);
+	// int startPoint = (int) (size.height * startPercentage);
+	// int endPoint = (int) (size.height * finalPercentage);
+	// new TouchAction(driverAppium).press(anchor,
+	// startPoint).waitAction(Duration.ofMillis(duration))
+	// .moveTo(anchor, endPoint).release().perform();
+	// }
 
 	// trượt ngang old java-client 5.4.1
-//	public static void swipeHorizontal(AppiumDriver<MobileElement> driverAppium, double startPercentage,
-//			double finalPercentage, double anchorPercentage, int duration) throws Exception {
-//
-//		Dimension size = driverAppium.manage().window().getSize();
-//		int anchor = (int) (size.height * anchorPercentage);
-//		int startPoint = (int) (size.width * startPercentage);
-//		int endPoint = (int) (size.width * finalPercentage);
-//		new TouchAction(driverAppium).press(startPoint, anchor).waitAction(Duration.ofMillis(duration))
-//				.moveTo(endPoint, anchor).release().perform();
-//	}
-	
-//	// trượt dọc new java-client 6.1
-//	private void verticalSwipe(String locator) throws InterruptedException {
-//        Thread.sleep(3000);
-//        MobileElement slider = driverAppium.findElementByAccessibilityId(locator);
-//        Point source = slider.getCenter();
-//        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-//        Sequence dragNDrop = new Sequence(finger, 1);
-//        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(0),
-//                PointerInput.Origin.viewport(),
-//                source.x / 2, source.y + 400));
-//        dragNDrop.addAction(finger.createPointerDown(PointerInput.MouseButton.MIDDLE.asArg()));
-//        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(600),
-//                PointerInput.Origin.viewport(), source.getX() / 2, source.y / 2));
-//        dragNDrop.addAction(finger.createPointerUp(PointerInput.MouseButton.MIDDLE.asArg()));
-//        driverAppium.perform(Arrays.asList(dragNDrop));
-//    }
-//	
-//
-//	// trượt ngang new java-client 6.1
-//	 public void horizontalSwipingTest(String locator) throws Exception {
-//	        MobileElement slider = driverAppium.findElementByAccessibilityId(locator);
-//	        Point source = slider.getLocation();
-//	        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-//	        Sequence dragNDrop = new Sequence(finger, 1);
-//	        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(0),
-//	                PointerInput.Origin.viewport(), source.x, source.y));
-//	        dragNDrop.addAction(finger.createPointerDown(PointerInput.MouseButton.MIDDLE.asArg()));
-//	        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(600),
-//	                PointerInput.Origin.viewport(),
-//	                source.x + 400, +source.y));
-//	        dragNDrop.addAction(finger.createPointerUp(PointerInput.MouseButton.MIDDLE.asArg()));
-//	        driverAppium.perform(Arrays.asList(dragNDrop));
-//	    }
-	 
-	// trượt dọc old java-client 6.1
-		public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driverAppium, double startPercentage,
-				double finalPercentage, double anchorPercentage, int duration) throws Exception {
-			Dimension size = driverAppium.manage().window().getSize();
-			int anchor = (int) (size.width * anchorPercentage);
-			int startPoint = (int) (size.height * startPercentage);
-			int endPoint = (int) (size.height * finalPercentage);
-			new TouchAction(driverAppium).press(new PointOption().withCoordinates(anchor, startPoint)).waitAction(waitOptions(Duration.ofMillis(duration)))
-			.moveTo((PointOption) point(anchor, endPoint)).release().perform();
-		}
-		
-		// trượt dọc ngang java-client 6.1
-		public static void swipeHorizontal(AppiumDriver<MobileElement> driverAppium, double startPercentage,
-				double finalPercentage, double anchorPercentage, int duration) throws Exception {
-	
-			Dimension size = driverAppium.manage().window().getSize();
-			int anchor = (int) (size.height * anchorPercentage);
-			int startPoint = (int) (size.width * startPercentage);
-			int endPoint = (int) (size.width * finalPercentage);
-			new TouchAction(driverAppium).press(new PointOption().withCoordinates(startPoint, anchor)).waitAction(waitOptions(Duration.ofMillis(duration)))
-			.moveTo(point(endPoint, anchor)).release().perform();
-		}
-		private static WaitOptions waitOptions(Duration ofMillis) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		private static PointOption point(int anchor, int endPoint) {
-		// TODO Auto-generated method stub
-		return null;
-		}
-	
-	
-	 // dragAndDrop
-	 public void dragAndDrop(String dragMeLocator, String dropzone) throws InterruptedException {
+	// public static void swipeHorizontal(AppiumDriver<MobileElement> driverAppium,
+	// double startPercentage,
+	// double finalPercentage, double anchorPercentage, int duration) throws
+	// Exception {
+	// swipeHorizontal(driverAppium, 0.90, 0.10, 0.6, 5000);
+	// Dimension size = driverAppium.manage().window().getSize();
+	// int anchor = (int) (size.height * anchorPercentage);
+	// int startPoint = (int) (size.width * startPercentage);
+	// int endPoint = (int) (size.width * finalPercentage);
+	// new TouchAction(driverAppium).press(startPoint,
+	// anchor).waitAction(Duration.ofMillis(duration))
+	// .moveTo(endPoint, anchor).release().perform();
+	// }
 
-	        MobileElement dragMe = (MobileElement) new WebDriverWait(driverAppium, 30).until(ExpectedConditions
-	                .elementToBeClickable(MobileBy.AccessibilityId(dragMeLocator)));
-	        Point source = dragMe.getCenter();
-	        Point target = driverAppium.findElementByAccessibilityId(dropzone).getCenter();
-	        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-	        Sequence dragNDrop = new Sequence(finger, 1);
-	        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(0),
-	                PointerInput.Origin.viewport(), source.x, source.y));
-	        dragNDrop.addAction(finger.createPointerDown(PointerInput.MouseButton.MIDDLE.asArg()));
-	        dragNDrop.addAction(finger.createPointerMove(Duration.ofMillis(600),
-	                PointerInput.Origin.viewport(),
-	                target.x, target.y));
-	        dragNDrop.addAction(finger.createPointerUp(PointerInput.MouseButton.MIDDLE.asArg()));
-	        driverAppium.perform(Arrays.asList(dragNDrop));
-	    }
-	 
-	 
-	 // multin touch
-	 public void multiTouchTest() throws InterruptedException {
-	        MobileElement slider = driverAppium.findElementByAccessibilityId("slider");
-	        MobileElement slider1 = driverAppium.findElementByAccessibilityId("slider1");
+	// trượt ngang new java-client 6.1.0
+	public static void swipeVerticalTopToDown(AppiumDriver<MobileElement> driverAppium) throws Exception {
+		Dimension size = driverAppium.manage().window().getSize();
+		int anchor = (int) (size.width * 0.3);
+		int startPoint = (int) (size.height * 0.80);
+		int endPoint = (int) (size.height * 0.20);
+		new TouchAction(driverAppium).press(PointOption.point(anchor, startPoint)).waitAction()
+				.moveTo(PointOption.point(anchor, endPoint)).release().perform();
 
-	        Dimension sizeSlider = slider.getSize();
-	        Dimension sizeSlider1 = slider1.getSize();
-	        TouchAction touchAction1 =
-	                new TouchAction(driverAppium).press(ElementOption.element(slider, 0, sizeSlider.height / 2))
-	                        .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
-	                        .moveTo(ElementOption.element(slider, sizeSlider.width / 2, sizeSlider.height / 2));
-	        TouchAction touchAction2 =
-	                new TouchAction(driverAppium).press(ElementOption.element(slider1, 0, sizeSlider1.height / 2)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
-	                        .moveTo(ElementOption.element(slider1, sizeSlider1.width / 2, sizeSlider1.height / 2));
-	        new MultiTouchAction(driverAppium).add(touchAction1).add(touchAction2).perform();
-	        Thread.sleep(2000);
-	    }
-	 
-	 
+	}
+
+	// trượt ngang new java-client 6.1.0
+	public static void swipeHorizontal(AppiumDriver<MobileElement> driverAppium) throws Exception {
+		Dimension size = driverAppium.manage().window().getSize();
+		int anchor = (int) (size.height * 0.6);
+		int startPoint = (int) (size.width * 0.90);
+		int endPoint = (int) (size.width * 0.10);
+		new TouchAction(driverAppium).press(PointOption.point(startPoint, anchor)).waitAction()
+				.moveTo(PointOption.point(endPoint, anchor)).release().perform();
+	}
+
+	// long press
+	public void longPress(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
+		element = driverAppium.findElement(By.id(controlName));
+		LongPressOptions longPressOptions = new LongPressOptions();
+		longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(element));
+		new TouchAction(driverAppium).longPress(longPressOptions).perform();
+	}
+
+	// dragAndDrop
+	public void dragAndDrop(AppiumDriver<MobileElement> driverAppium, String controlName, String value) {
+		waitForDynamicControlVisible(driverAppium, controlName, value, timeout);
+		element1 = driverAppium.findElement(By.id(controlName));
+		element2 = driverAppium.findElement(By.id(controlName));
+		new TouchAction(driverAppium).press(ElementOption.element(element1))
+				.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(3))).moveTo(ElementOption.element(element2))
+				.release().perform();
+	}
+
+
 	// LANDSCAPE & PORTRAIT
 	public void testRotate() {
 		if (((AppiumDriver<MobileElement>) driverAppium).getOrientation().equals("LANDSCAPE")) {
@@ -200,7 +146,8 @@ public class AbstractMobile {
 	}
 
 	// take a screenshot
-	public static void getScreenshot(AppiumDriver<MobileElement> driverAppium, String outputlocation) throws IOException {
+	public static void getScreenshot(AppiumDriver<MobileElement> driverAppium, String outputlocation)
+			throws IOException {
 		System.out.println("Capturing the snapshot of the page ");
 		File srcFiler = ((TakesScreenshot) driverAppium).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFiler, new File(outputlocation));
@@ -308,7 +255,7 @@ public class AbstractMobile {
 			LOG.error(e.getMessage());
 		}
 	}
-	
+
 	public void waitForControlVisibleID(AppiumDriver<MobileElement> driverAppium, String controlName, int timeout) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driverAppium, timeout);
@@ -355,6 +302,7 @@ public class AbstractMobile {
 		element = driverAppium.findElement(By.id(controlName));
 		return element.getText();
 	}
+
 	// get text by xpath
 	public String getTextOfElementByXpath(AppiumDriver<MobileElement> driverAppium, String controlName) {
 		waitForControlVisibleID(driverAppium, controlName, timeout);

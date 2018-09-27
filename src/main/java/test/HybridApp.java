@@ -14,6 +14,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class HybridApp {
 	static AppiumDriver<MobileElement> driverAppium;
@@ -40,7 +41,7 @@ public class HybridApp {
 				driverAppium.findElementByAccessibilityId("WebView").click();
 				break;
 			} catch (Exception e) {
-				swipeVerticalTopToDown(0.80, 0.20, 0.3, 2000);
+				swipeVerticalTopToDown();
 			}
 		}
 		// Using this method we switch to web view
@@ -72,17 +73,17 @@ public class HybridApp {
 		System.out.println("After Switching : " + driverAppium.getContext());
 	}
 
-	public static void swipeVerticalTopToDown(double startPercentage, double finalPercentage, double anchorPercentage,
-			int duration) throws Exception {
-
+	
+	public static void swipeVerticalTopToDown() throws Exception {
 		Dimension size = driverAppium.manage().window().getSize();
-		int anchor = (int) (size.width * anchorPercentage);
-		int startPoint = (int) (size.height * startPercentage);
-		int endPoint = (int) (size.height * finalPercentage);
-		new TouchAction(driverAppium).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
-				.moveTo(anchor, endPoint).release().perform();
+		int anchor = (int) (size.width * 0.3);
+		int startPoint = (int) (size.height * 0.80);
+		int endPoint = (int) (size.height * 0.20);
+		new TouchAction(driverAppium).press(PointOption.point(anchor, startPoint)).waitAction()
+				.moveTo(PointOption.point(anchor, endPoint)).release().perform();
 
 	}
+	
 	
 	public void closeApp() {
 		driverAppium.quit();

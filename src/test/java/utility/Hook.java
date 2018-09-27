@@ -125,8 +125,10 @@ public class Hook {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus 4");
+		// old sms
 //		cap.setCapability("appPackage", "com.android.mms");
 //		cap.setCapability("appActivity", "com.android.mms.ui.ConversationList");
+		// new sms
 		cap.setCapability("appPackage", "com.android.messaging");
 		cap.setCapability("appActivity", "com.android.messaging.ui.conversationlist.ConversationListActivity");
 		try {

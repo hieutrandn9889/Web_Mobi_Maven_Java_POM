@@ -13,10 +13,10 @@ import cucumber.api.java.en.When;
 import interfaces.apiAppDemoUI;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.PressesKeyCode;
 import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.StartsActivity;
+import io.appium.java_client.windows.PressesKeyCode;
 import utility.Hook;
 
 @SuppressWarnings("deprecation")
@@ -82,7 +82,7 @@ public class TC_AppiumScenario extends AbstractMobile {
 				break;
 			} catch (Exception e) {
 				// TODO: handle exception
-				//swipeVerticalTopToDown(driverAppium, 0.80, 0.20, 0.3, 2000);
+				swipeVerticalTopToDown(driverAppium);
 			}
 		}
 	}

@@ -6,4 +6,14 @@
       <class name="test.Newxcode_xs_xr_xmax"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="test.Newxcode_xs_xr_xmax">
+        <methods>
+          <include name="setUp123"/>
+          <include name="runMain123"/>
+        </methods>
+      </class> <!-- test.Newxcode_xs_xr_xmax -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

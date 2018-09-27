@@ -14,7 +14,8 @@ public class SkipPage_BT extends AbstractMobile {
 	
 	public SkipPage_BT swideSkipPage_BT(AppiumDriver<MobileElement> driverAppium) throws Exception {
 		Thread.sleep(2000);
-		swipeHorizontal(driverAppium, 0.90, 0.10, 0.6, 5000);
+//		swipeHorizontal(driverAppium, 0.90, 0.10, 0.6, 5000);
+		swipeHorizontal(driverAppium);
 		return this;
 	}
 	

@@ -15,6 +15,8 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class NewSwipe {
 	static AppiumDriver<MobileElement> driverAppium;
@@ -41,31 +43,48 @@ public class NewSwipe {
 				break;
 			} catch (Exception e) {
 				// TODO: handle exception
-				swipeVerticalTopToDown(0.80, 0.20, 0.3, 2000);
+//				swipeVerticalTopToDown(0.80, 0.20, 0.3, 2000);
+				swipeVerticalTopToDown();
+//				swipeHorizontal();
 			}
 		}
 	}
 
-	public static void swipeVerticalTopToDown(double startPercentage, double finalPercentage, double anchorPercentage, int duration) throws Exception {
+	
+	
+//	public static void swipeHorizontal() throws Exception {		
+//		Dimension size = driverAppium.manage().window().getSize();
+//
+//	    int starty = (int) (size.height * 0.8);
+//	    int endy = (int) (size.height * 0.2);
+//	    int startx = size.width / 2;
+//
+//	    //Swipe from Bottom to Top.
+//	    new TouchAction(driverAppium).press(PointOption.point(startx, starty)).
+//	            moveTo(PointOption.point(startx, endy)).release().perform();	
+//	}
+	
+
+	public static void swipeVerticalTopToDown() throws Exception {
 
 		Dimension size = driverAppium.manage().window().getSize();
-		int anchor = (int) (size.width * anchorPercentage);
-		int startPoint = (int) (size.height * startPercentage);
-		int endPoint = (int) (size.height * finalPercentage);
-		new TouchAction(driverAppium).press(anchor, startPoint).waitAction(Duration.ofMillis(duration))
-				.moveTo(anchor, endPoint).release().perform();
+		int anchor = (int) (size.width * 0.3);
+		int startPoint = (int) (size.height * 0.80);
+		int endPoint = (int) (size.height * 0.20);
+		new TouchAction(driverAppium).press(PointOption.point(anchor, startPoint)).waitAction()
+				.moveTo(PointOption.point(anchor, endPoint)).release().perform();
 
 	}
 
-	public static void swipeHorizontal(double startPercentage, double finalPercentage, double anchorPercentage,int duration) throws Exception {
-
-		Dimension size = driverAppium.manage().window().getSize();
-		int anchor = (int) (size.height * anchorPercentage);
-		int startPoint = (int) (size.width * startPercentage);
-		int endPoint = (int) (size.width * finalPercentage);
-		new TouchAction(driverAppium).press(startPoint, anchor).waitAction(Duration.ofMillis(duration)).moveTo(endPoint, anchor).release().perform();
-
-	}
+//	public static void swipeHorizontal(double startPercentage, double finalPercentage, double anchorPercentage,int duration) throws Exception {
+//
+//		Dimension size = driverAppium.manage().window().getSize();
+//		int anchor = (int) (size.height * anchorPercentage);
+//		int startPoint = (int) (size.width * startPercentage);
+//		int endPoint = (int) (size.width * finalPercentage);
+//		new TouchAction(driverAppium).press(startPoint, anchor).waitAction(Duration.ofMillis(duration)).moveTo(endPoint, anchor).release().perform();
+//
+//	}
 
 	public void closeApp() {
 		driverAppium.quit();

@@ -1,12 +1,16 @@
 package test;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 
 /**
  * @author CHIRAG
@@ -39,11 +43,12 @@ public class anPhimLau {
 //		MobileElement ele = driverAppium.findElementById("com.android.mms:id/subject");
 //		ac.longPress(ele).perform().release();
 		
+		
 		// longpress new java-client 6.1.0
-		TouchActions action = new TouchActions(driverAppium);
 		MobileElement ele = driverAppium.findElementById("com.android.messaging:id/swipeableContent");
-		action.longPress(ele);
-		action.perform();
+	    LongPressOptions longPressOptions = new LongPressOptions();
+	    longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(ele));
+	    new TouchAction(driverAppium).longPress(longPressOptions).perform();
 		
 		
 		Thread.sleep(2000);

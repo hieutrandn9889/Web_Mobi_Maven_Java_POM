@@ -2,12 +2,17 @@ package test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 
 /**
  * @author CHIRAG
@@ -30,9 +35,11 @@ public class sms {
 	
 	public void longPress() throws InterruptedException
 	{
-		TouchAction ac = new TouchAction(driverAppium);
 		MobileElement ele = driverAppium.findElementById("com.android.messaging:id/conversation_snippet");
-		ac.longPress(ele).perform().release();
+		LongPressOptions longPressOptions = new LongPressOptions();
+		longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(ele));
+		new TouchAction(driverAppium).longPress(longPressOptions).perform();
+		
 		Thread.sleep(2000);
 		boolean flag = driverAppium.findElementById("com.android.messaging:id/action_add_contact").isDisplayed();
 		if(flag)
