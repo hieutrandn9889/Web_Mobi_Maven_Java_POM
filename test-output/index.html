@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-ExecuteAutomation">
+              <span class="suite-name border-failed">ExecuteAutomation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ExecuteAutomation">
+                    <span>C:\Users\MyPC\Downloads\Web_Mobi_Maven_Java_POM-master\TestSuite\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-ExecuteAutomation">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-ExecuteAutomation">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-ExecuteAutomation">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-ExecuteAutomation">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ExecuteAutomation">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-ExecuteAutomation">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ExecuteAutomation" class="hide-methods failed suite-ExecuteAutomation"> (hide)</a> <!-- hide-methods failed suite-ExecuteAutomation -->
+                      <a href="#" panel-name="suite-ExecuteAutomation" class="show-methods failed suite-ExecuteAutomation"> (show)</a> <!-- show-methods failed suite-ExecuteAutomation -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-ExecuteAutomation">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.Newxcode_xs_xr_xmax" hash-for-method="runMain123">runMain123</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ExecuteAutomation" title="runner.Runner" hash-for-method="feature(Register to ZingPoll)">feature(Register to ZingPoll)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-ExecuteAutomation -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,82 +116,107 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+        <div panel-name="suite-ExecuteAutomation" class="panel ExecuteAutomation">
+          <div class="suite-ExecuteAutomation-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">test.Newxcode_xs_xr_xmax</span>
+              <img src="failed.png"/>
+              <span class="class-name">runner.Runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runMain123">
-                  </a> <!-- runMain123 -->
-                  <span class="method-name">runMain123</span>
+                  <a name="feature(Register to ZingPoll)">
+                  </a> <!-- feature(Register to ZingPoll) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Register to ZingPoll)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\MyPC\Downloads\Web_Mobi_Maven_Java_POM-master\..\Web_Mobi_Maven_Java_POM\resource\chromedriver.exe
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: C:\Users\MyPC\Downloads\Web_Mobi_Maven_Java_POM-master\..\Web_Mobi_Maven_Java_POM\resource\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at utility.Hook.setUpChrome(Hook.java:39)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	... 26 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-ExecuteAutomation-class-failed -->
+        </div> <!-- panel ExecuteAutomation -->
+        <div panel-name="test-xml-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0k/wg5xx6sn0wqfhkjnb00swx1c0000gp/T/testng-eclipse-192951975/testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\MyPC\Downloads\Web_Mobi_Maven_Java_POM-master\TestSuite\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ExecuteAutomation&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Window&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.Newxcode_xs_xr_xmax&quot;/&gt;
+      &lt;class name=&quot;runner.Runner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-  &lt;test name=&quot;Default test(failed)&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;test.Newxcode_xs_xr_xmax&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;setUp123&quot;/&gt;
-          &lt;include name=&quot;runMain123&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Newxcode_xs_xr_xmax --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Window --&gt;
+&lt;/suite&gt; &lt;!-- ExecuteAutomation --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for ExecuteAutomation</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Default test(failed) (1 class)</span>
+                <span class="test-name">Window (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for ExecuteAutomation</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for ExecuteAutomation</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_ExecuteAutomation');
+function tableData_ExecuteAutomation() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -199,50 +224,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runMain123')
-data.setCell(0, 2, 'test.Newxcode_xs_xr_xmax')
-data.setCell(0, 3, 2);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'runner.Runner')
+data.setCell(0, 3, 227);
+window.suiteTableData['ExecuteAutomation']= { tableData: data, tableDiv: 'times-div-ExecuteAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 227 ms</span>
+              <div id="times-div-ExecuteAutomation">
+              </div> <!-- times-div-ExecuteAutomation -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for ExecuteAutomation</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-ExecuteAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.Newxcode_xs_xr_xmax</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">runner.Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setUp123</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">runMain123</span>
-                <span class="method-start">251650 ms</span>
+                <span class="method-name">feature(Register to ZingPoll)</span>
+                <span class="method-start">564 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">822 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

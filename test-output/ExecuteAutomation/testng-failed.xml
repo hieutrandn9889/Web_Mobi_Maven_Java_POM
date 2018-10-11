@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [ExecuteAutomation]">
-  <test name="Window">
+  <test thread-count="5" name="Window(failed)">
     <classes>
-      <class name="runner.Runner"/>
+      <class name="runner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.Runner -->
     </classes>
-  </test> <!-- Window -->
+  </test> <!-- Window(failed) -->
 </suite> <!-- Failed suite [ExecuteAutomation] -->
