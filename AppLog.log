@@ -1458,3 +1458,5 @@ Driver info: driver.version: AppiumDriver
 2018-09-22 17:15:09 INFO  LogEvent:18 - Register 1/7 page
 2018-09-22 17:15:20 INFO  LogEvent:18 - Register 2/7 page
 2018-09-22 17:15:57 INFO  LogEvent:18 - quit app
+2018-11-02 15:50:16 INFO  LogEvent:18 - ACTIVITY SCREEN: https://www.zingpoll.com/
+2018-11-02 15:50:16 INFO  LogEvent:18 - Open the Home page

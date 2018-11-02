@@ -35,7 +35,7 @@ public class Hook {
 	
 	 @Before(value = "@Chrome")
 	 public void setUpChrome() {
-	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH_WIN);
+	 System.setProperty("webdriver.chrome.driver", Constants.CHROME_PATH_MAC);
 	 driver = new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();
