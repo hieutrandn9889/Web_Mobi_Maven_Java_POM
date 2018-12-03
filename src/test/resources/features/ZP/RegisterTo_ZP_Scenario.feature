@@ -1,7 +1,7 @@
 Feature: Register to ZingPoll
   I want to registered successfull
 
-  @Firefox
+  @Chrome
   Scenario Outline: Register with empty new user
     Given I am on ZingPoll website
     Then I click the SignIn button

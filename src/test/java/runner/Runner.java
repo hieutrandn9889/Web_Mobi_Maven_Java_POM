@@ -12,7 +12,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = {"src//test//resources//features"}, 
 //		features = { "src/test/java/features/Register.feature" }, 
 		glue = { "stepdefinations","utility" },
-		tags = {"@Firefox"}
+		tags = {"@Chrome"}
 )
 
 @Test
